@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Updated Overview of Generative AI Tools – AI training</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./1-20250719-promptengineering.html" rel="next">
+<link href="./1-20250710-GAI-evolution.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-20250710-GAI-evolution.html">Part 1: Fundamentals of Generative AI e Tools</a></li><li class="breadcrumb-item"><a href="./1-20250718-GAItools.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI training</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 1: Fundamentals of Generative AI e Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250710-GAI-evolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Evolution of Generative Artificial Intelligence and its Application in Academic Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250718-GAItools.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250719-promptengineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250726-ricercaSSH.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250803-writingAI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250812-workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 2: Advanced applications of AI in Research and Creativity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250820-AIcreativepartner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250825-AIprogettazione.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">GAI as a Design support tool</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250830_GrantAutom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Writing calls, grants, abstracts, and intelligent automations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250903_Communic_Scient.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific and popular communication</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 3: Ethical aspects and responsibility in the use of AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_epistrasp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Epistemology and Transparency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Implications of the use of AI in research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250915_biasqualita.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_accountability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Accountability in peer review and responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_eticaselfaudit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Towards a renewed operational ethics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#practical-introduction-to-gai-tools" id="toc-practical-introduction-to-gai-tools" class="nav-link active" data-scroll-target="#practical-introduction-to-gai-tools"><span class="header-section-number">3.1</span> 1. Practical introduction to GAI Tools</a></li>
+  <li><a href="#large-language-models-llms-for-research" id="toc-large-language-models-llms-for-research" class="nav-link" data-scroll-target="#large-language-models-llms-for-research"><span class="header-section-number">3.2</span> 2. Large Language Models (LLMs) for research</a>
+  <ul class="collapse">
+  <li><a href="#chatgpt-4" id="toc-chatgpt-4" class="nav-link" data-scroll-target="#chatgpt-4"><span class="header-section-number">3.2.1</span> 2.1 ChatGPT-4</a></li>
+  <li><a href="#claude" id="toc-claude" class="nav-link" data-scroll-target="#claude"><span class="header-section-number">3.2.2</span> 2.2 Claude</a></li>
+  <li><a href="#gemini" id="toc-gemini" class="nav-link" data-scroll-target="#gemini"><span class="header-section-number">3.2.3</span> 2.3 Gemini</a></li>
+  <li><a href="#perplexity-ai" id="toc-perplexity-ai" class="nav-link" data-scroll-target="#perplexity-ai"><span class="header-section-number">3.2.4</span> 2.4 Perplexity AI</a></li>
+  <li><a href="#deepseek" id="toc-deepseek" class="nav-link" data-scroll-target="#deepseek"><span class="header-section-number">3.2.5</span> 2.5 DeepSeek</a></li>
+  </ul></li>
+  <li><a href="#specialized-tools-for-bibliographic-and-document-research" id="toc-specialized-tools-for-bibliographic-and-document-research" class="nav-link" data-scroll-target="#specialized-tools-for-bibliographic-and-document-research"><span class="header-section-number">3.3</span> 3. Specialized Tools for bibliographic and document research</a></li>
+  <li><a href="#plugins-and-apis-for-ssh-and-stem-when-and-why-to-use-them" id="toc-plugins-and-apis-for-ssh-and-stem-when-and-why-to-use-them" class="nav-link" data-scroll-target="#plugins-and-apis-for-ssh-and-stem-when-and-why-to-use-them"><span class="header-section-number">3.4</span> 4. Plugins and APIs for SSH and STEM: when and why to use them</a></li>
+  <li><a href="#operational-recommendations-for-researchers-in-social-sciences" id="toc-operational-recommendations-for-researchers-in-social-sciences" class="nav-link" data-scroll-target="#operational-recommendations-for-researchers-in-social-sciences"><span class="header-section-number">3.5</span> 5. Operational recommendations for researchers in Social Sciences</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-20250710-GAI-evolution.html">Part 1: Fundamentals of Generative AI e Tools</a></li><li class="breadcrumb-item"><a href="./1-20250718-GAItools.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Content
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Practical introduction to GAI Tools</li>
+<li>Large Language Models (LLMs) for research</li>
+<li>Specialized tools for bibliographic and document research</li>
+<li>Plugins and APIs for SSH and STEM: when and why to use them</li>
+<li>Operational recommendations for researchers in Social Sciences</li>
+</ul>
+</div>
+</div>
+<section id="practical-introduction-to-gai-tools" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="practical-introduction-to-gai-tools"><span class="header-section-number">3.1</span> 1. Practical introduction to GAI Tools</h2>
+<p>The integration of Generative AI (GAI) tools into research activities requires an informed and conscious selection of the available resources. It is essential for a researcher to distinguish between different types of operational tools and to understand how they work in relation to specific research goals.</p>
+<p>We can classify tools into three main categories:</p>
+<ul>
+<li><strong>General-purpose Language Models (LLMs)</strong>: mainly used for writing, editing, and language support tasks.</li>
+<li><strong>Specialized Documentary Tools</strong>: focused on the collection, synthesis, and analysis of scientific literature.</li>
+<li><strong>Integrated Automation Systems</strong>: plugins, APIs, or hybrid platforms that extend basic capabilities, adapting them to customized workflows.</li>
+</ul>
+<p>The effective use of these tools requires not only technical knowledge but also the ability to assess their suitability based on:</p>
+<ul>
+<li><em>Transparency and traceability of results</em></li>
+<li><em>Data source currency and validity</em></li>
+<li><em>Level of customization allowed (advanced prompting, proprietary data training)</em></li>
+<li><em>Compliance with ethical and regulatory requirements specific to academic research</em></li>
+</ul>
+<div class="callout callout-style-default callout-important no-icon callout-empty-content callout-titled" title="<span style='font-size:1.1em; color: #133869ff;'>Particularly in *SSH (Social Sciences and Humanities)*, these aspects are critical due to risks such as methodological biases, ambiguities in intellectual property management, and sensitive data handling issues.</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span><span style="font-size:1.1em; color: #133869ff;">Particularly in <em>SSH (Social Sciences and Humanities)</em>, these aspects are critical due to risks such as methodological biases, ambiguities in intellectual property management, and sensitive data handling issues.</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="large-language-models-llms-for-research" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="large-language-models-llms-for-research"><span class="header-section-number">3.2</span> 2. Large Language Models (LLMs) for research</h2>
+<p>LLMs currently represent some of the most widely adopted AI tools in academic research. These models rely on deep learning architectures trained on extensive volumes of textual data and are designed to generate coherent linguistic content, supporting activities such as drafting, summarization, and data analysis.</p>
+<section id="chatgpt-4" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="chatgpt-4"><span class="header-section-number">3.2.1</span> 2.1 ChatGPT-4</h3>
+<p><strong>Developed by:</strong> <a href="https://openai.com"><strong>OpenAI</strong></a></p>
+<p>ChatGPT-4 is a language model developed by OpenAI owned by Sam Altman, which was made available to the public in November 2022. It is based on state-of-the-art deep learning architectures and is designed for the production of textual content and human-machine interaction in a natural language.</p>
+<p><strong>Key Features:</strong><br>
+- The ability to generate multilingual texts, with a high level of semantic and syntactic coherence even on very articulated and specialized texts;<br>
+- The use in conversational mode optimized to be able to sustain prolonged dialogues while maintaining thematic and contextual coherence, progressively adapting the answers according to the user’s requests;<br>
+- Integration with pre-configured APIs and platforms to allow the incorporation of the model into custom software and workflows, although deep customization of the model (fine-tuning) remains reserved for authorized parties with regulated access.<br>
+- A wide availability of tools and ancillary resources, thanks to the wide diffusion and presence of a consolidated ecosystem of third-party applications, extensions and interfaces.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Strengths</strong></th>
+<th style="text-align: center;"><strong>Limitations</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">High versatility in writing, editing, translation tasks</td>
+<td style="text-align: center;">No native real-time data access except through plugins or external systems</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Large user community</td>
+<td style="text-align: center;">Outputs always require researcher validation to avoid the risk of inaccuracies or <strong>hallucinations</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Extensive documentation</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended uses cases:</strong><br>
+- Preliminary drafting of articles, abstracts, and project proposals<br>
+- Linguistic and stylistic revision<br>
+- Support in formulating research questions.</p>
+</section>
+<section id="claude" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="claude"><span class="header-section-number">3.2.2</span> 2.2 Claude</h3>
+<p><strong>Developed by:</strong> <a href="https://www.anthropic.com/"><strong>Anthropic</strong></a></p>
+<p>Claude is developed by Anthropic, known for its explicit orientation towards AI models called “<em>constitutional</em>”, i.e.&nbsp;designed to privilege security, transparency and respect for ethical principles defined a priori. The first model was released in March 2023.</p>
+<p><strong>Key Features:</strong><br>
+- It prioritizes robustness and control of the content generated, reducing the risk of inaccurate or inappropriate responses, particularly on complex or ethically sensitive topics. - It is very versatile, as it can be applied in diversified activities, from the drafting of texts to the analysis of complex data, therefore suitable for academic tasks or for structured business uses. - It demonstrates a high capacity for contextual comprehension, being able to grasp nuanced contexts and nuances of human language, also being able to manage very extensive conversation contexts, revision of long documents, transcriptions, legal acts or articulated reports. In fact, it is designed to maintain consistency on higher text sequences than other LLMs, being able to contain up to 200 thousand tokens (equivalent to about 500 pages of text) in the basic version without losing the logical thread. - It allows regulated access, as it is accessible through APIs and proprietary platforms with a less widespread usage model than other LLMs and a fine-tuning policy reserved exclusively for entities with advanced security requirements, such as public bodies and universities. - It was developed with a strong focus on AI ethics and safety . During his training, careful and controlled sources were privileged, with limited exposure to open data, reducing the risk of bias and information biases. - The owner company guarantees regular updates of the model, aimed at the progressive improvement of capabilities, precision and operational safety, with the aim of keeping Claude always aligned with market and research needs.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 61%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Strengths</strong></th>
+<th style="text-align: center;"><strong>Limitations</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">High safety and ethical standards, particularly suited to contexts involving sensitive data management</td>
+<td style="text-align: center;">No direct access to real-time data; less widespread in Europe</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Higher average operating costs compared to other LLMs</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended uses cases:</strong><br>
+- Drafting texts in fields governed by ethical codes<br>
+- Critical review of content generated by other models<br>
+- Interactions involving sensitive or highly specific data</p>
+</section>
+<section id="gemini" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="gemini"><span class="header-section-number">3.2.3</span> 2.3 Gemini</h3>
+<p><strong>Developed by:</strong> <a href="https://deepmind.google/"><strong>Google DeepMind</strong></a></p>
+<p>Gemini is a multimodal language model developed by Google DeepMind, designed to integrate the processing of text, images, structured data, and other input modalities within a single architecture. Released during 2024, it represents one of the most recent evolutions in the field of Large Language Models (LLMs) with extensive applications in both academic and industrial settings.</p>
+<p><strong>Key Features:</strong><br>
+- It has a multimodal architecture, as it has been designed to simultaneously process text, images, tabular data and other forms of input. This ability distinguishes it from models focused exclusively on natural language, expanding the application possibilities in interdisciplinary contexts, such as Digital Humanities or the analysis of complex datasets. - It has an advanced multilingual language capacity, comparable to that of ChatGPT-4, with the possibility of generating articulated content, summaries, translations and analysis of specialized texts. - It has native integration with the Google ecosystem: it has been designed to work in synergy with Google Workspace and other services of the Google Cloud platform, facilitating integration into the research and document management workflows already in use at many academic institutions. - Allows access via APIs and cloud tools. The model is available to users through Google Cloud Platform, with access and customization policies that provide specific configurations for universities, public bodies and companies. Fine-tuning personalization is only allowed in authorized environments, in line with Google’s security and compliance policies. Gemini benefits from constant updates, both at the data and architecture level, keeping the model aligned with evolving language, knowledge sources, and regulatory needs.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Strengths</strong></th>
+<th style="text-align: center;"><strong>Limitations</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Advanced multimodal data analysis</td>
+<td style="text-align: center;">Not a real-time information retrieval system</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">linguistic capabilities suited to specialized text analysis</td>
+<td style="text-align: center;">Requires substantial infrastructure</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Less documentation available within SSH academic contexts</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended uses cases:</strong><br>
+- Projects involving multimodal source analysis<br>
+- Development of integrated educational and communication materials<br>
+- Support in building complex datasets</p>
+</section>
+<section id="perplexity-ai" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="perplexity-ai"><span class="header-section-number">3.2.4</span> 2.4 Perplexity AI</h3>
+<p><strong>Developed by:</strong> <a href="https://www.perplexity.ai/"><strong>Perplexity AI</strong></a></p>
+<p>Perplexity AI is a language model-based query system designed to complement the capabilities of LLMs with document search and source verification capabilities. Launched in 2022 and further developed until 2025, it differs from traditional LLMs for the combination of text generation and retrieval of updated information, with transparent indication of the sources consulted.</p>
+<p><strong>Key Features:</strong><br>
+- Avere una architettura ibrida LLM + motore di ricerca. Combina l’elaborazione linguistica tipica dei modelli generativi con un sistema di interrogazione su database e fonti online, restituendo risposte accompagnate da riferimenti bibliografici o collegamenti diretti alle fonti originali. - E’ stato concepito specificamente per supportare attività di revisione della letteratura, fact-checking e interrogazioni esplorative, risultando quindi particolarmente utile in ambito giornalistico e accademico, essendo anche ottimizzazione per la ricerca bibliografica. - Possiede una capacità linguistica focalizzata perché pur basandosi su modelli linguistici comparabili a quelli di altri LLM, Perplexity AI privilegia risposte concise e orientate all’informazione piuttosto che alla generazione di testi lunghi o articolati. - E’ disponibile sia come applicazione web sia integrabile in sistemi di gestione documentale tramite API, con configurazioni specifiche per istituzioni di ricerca e aziende. La possibilità di personalizzazione mediante fine-tuning è limitata e subordinata ad accordi specifici. - A differenza di modelli addestrati su dati statici, Perplexity AI si aggiorna automaticamente grazie alla componente search integrata, garantendo risposte basate su fonti recenti. - Possiede una elevata trasparenza nel processo di generazione delle risposte.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 59%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Strengths</strong></th>
+<th style="text-align: center;"><strong>Limitations</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Automatic updating via integrated search components</td>
+<td style="text-align: center;">Less suitable than other LLMs for drafting extended content or managing complex documents</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">High transparency in the response generation process</td>
+<td style="text-align: center;">The quality and relevance of answers depend on the availability and reliability of the queried sources.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended uses cases:</strong><br>
+- Preliminary research and verification<br>
+- Exploratory bibliographic research<br>
+- Fact-checking activities</p>
+</section>
+<section id="deepseek" class="level3" data-number="3.2.5">
+<h3 data-number="3.2.5" class="anchored" data-anchor-id="deepseek"><span class="header-section-number">3.2.5</span> 2.5 DeepSeek</h3>
+<p><strong>Developed by:</strong> <a href="https://www.deepseek.com/en"><strong>DeepSeek AI</strong></a></p>
+<p><strong>Key Features:</strong><br>
+- Specifically designed with an emphasis on long-context understanding and multilingual processing, offering optimized performance for both general-purpose and domain-specific academic tasks.<br>
+- Built on transformer architectures and trained on an extensive multilingual corpus (including scientific and technical texts), enhancing its applicability in research settings that require high linguistic precision.<br>
+- Capable of handling extended input sequences beyond the standard limits of many mainstream LLMs, allowing for the processing of large documents, legal texts, or comprehensive datasets without fragmentation.<br>
+- Provides configurable access through both web interfaces and APIs, with customization options such as proprietary dataset integration and specialized vocabulary training, particularly relevant for academic and institutional use.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 54%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Strengths</th>
+<th style="text-align: center;">Limitations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">High reliability in multilingual academic writing and translation tasks, with particular attention to terminological consistency.</td>
+<td style="text-align: center;">As of now, DeepSeek is less widespread in Western academic institutions compared to models like ChatGPT‑4 or Claude, partly due to access policies and licensing restrictions.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Enhanced performance in long-document summarization, literature review synthesis, and complex query handling within structured academic frameworks.</td>
+<td style="text-align: center;">Real-time data retrieval capabilities are not natively embedded; reliance on external plugins or customized configurations is necessary for up-to-date information access.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Integration with knowledge base systems and research management platforms, supporting structured data extraction and semantic analysis workflows.</td>
+<td style="text-align: center;">Requires higher computational resources than standard LLMs, especially when operating at full capacity for long-context processing.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended uses cases:</strong><br>
+- Drafting and reviewing multilingual academic papers, particularly in contexts involving technical or regulatory terminology.<br>
+- Summarization and synthesis of large volumes of research literature, including legal or policy documents.<br>
+- Integration into academic platforms for semantic search, knowledge extraction, and multilingual document management.</p>
+</section>
+</section>
+<section id="specialized-tools-for-bibliographic-and-document-research" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="specialized-tools-for-bibliographic-and-document-research"><span class="header-section-number">3.3</span> 3. Specialized Tools for bibliographic and document research</h2>
+<p>Beyond general-purpose LLMs, there are AI tools designed specifically to support bibliographic and document research. They integrate querying, classification, and synthesis functions aimed at optimizing literature review phases.</p>
+<section id="elicit" class="level4" data-number="3.3.0.1">
+<h4 data-number="3.3.0.1" class="anchored" data-anchor-id="elicit"><span class="header-section-number">3.3.0.1</span> <a href="https://elicit.com/"><img src="images/elicit.png" class="img-fluid" style="width:16.0%" alt="Elicit"></a></h4>
+<p>Elicit is a tool specifically developed to <strong>support bibliographic and document research activities</strong> by leveraging LLMs applied to structured academic corpora.<br>
+Unlike traditional search engines, Elicit is <u>capable of automatically extracting structured information from scientific articles, such as research questions, methods, key results, and citations</u>.</p>
+<p>Its core functions include:<br>
+- <em>Automatic identification and extraction of research-relevant elements from articles (e.g., title, authors, research questions, methods, results, citations)</em>.<br>
+- <em>Synthesis of responses through thematic clustering and semantic categorization, facilitating the formulation of research hypotheses already informed by the state of the art</em>.<br>
+- <em>Export of structured data in CSV or JSON formats, allowing integration with qualitative analysis software or reference management systems</em>.</p>
+<p>For example, using Elicit, researchers can generate summary tables containing:<br>
+- <em>Main articles identified based on a query</em><br>
+- <em>Automatically synthesized abstracts</em><br>
+- <em>Extracted research questions and primary findings</em><br>
+- <em>Structured citation metadata</em>.</p>
+<p>These features make Elicit particularly suitable for <u>preparing systematic reviews and meta-analyses</u>, offering researchers not only a <u>list of sources</u> but also <u>structured overviews</u> that can directly inform project design, grant proposal drafting, and academic writing processes.</p>
+<p>Compared to generic LLMs, Elicit provides:<br>
+- <strong>Focused output</strong>: responses are oriented towards factual and structured information rather than general linguistic generation.<br>
+- <strong>Source verification</strong>: results are derived from curated academic databases, enhancing the reliability and validity of the information obtained.<br>
+- <strong>Workflow integration</strong>: data produced by Elicit can be incorporated into existing academic workflows, including qualitative analysis platforms and reference management systems.</p>
+<p>However, it is important to note that Elicit does not replace the critical evaluation of sources by the researcher. While the tool offers substantial support in reducing the time needed for literature search and data extraction, <u><strong>each piece of information should be validated</strong></u> according to the standards of academic rigor and methodology.</p>
+</section>
+<section id="scite" class="level4" data-number="3.3.0.2">
+<h4 data-number="3.3.0.2" class="anchored" data-anchor-id="scite"><span class="header-section-number">3.3.0.2</span> <a href="https://scite.ai/"><img src="images/scite.png" class="img-fluid" style="width:14.0%" alt="Scite"></a></h4>
+<p>Scite is a specialized platform designed to <strong>support bibliometric analysis and literature evaluation</strong> by focusing on the citation context of academic publications.<br>
+Unlike traditional bibliographic databases, which report citation counts without specifying their nature, Scite <u>enables researchers to assess not only the number but also the type and content of citations received by a given article</u>.</p>
+<p>Its principal functionalities include:<br>
+- <em>Analysis of citation context, distinguishing between supportive citations, contrasting citations, and neutral mentions</em>.<br>
+- <em>Integration with academic databases to provide comprehensive and structured citation data across multiple disciplines</em>.<br>
+- <em>Visualization of citation patterns through interactive dashboards, facilitating both individual article assessment and broader literature mapping</em>.</p>
+<p>For each publication, Scite provides:<br>
+- <em>The total number of citations, classified into supportive, contrasting, and mentioning categories</em>.<br>
+- <em>Detailed reports including the text surrounding each citation, allowing for qualitative evaluation of the citing sources</em>.<br>
+- <em>Metrics that can complement traditional bibliometric indicators, offering a more nuanced understanding of a publication’s impact</em>.</p>
+<p>These features make Scite particularly valuable in phases such as:<br>
+- <strong>Literature review</strong>, where researchers need to identify not only frequently cited works but also those that are positively or negatively discussed within the academic community.<br>
+- <strong>Research assessment and evaluation processes</strong>, where citation context can inform more sophisticated performance metrics.<br>
+- <strong>Grant proposal preparation and institutional reporting</strong>, where evidence of scholarly impact requires qualitative as well as quantitative support.</p>
+<p>While Scite enhances citation analysis capabilities, <strong>it does not substitute for in-depth content analysis by domain experts</strong>. <u>The interpretation of citation types and their implications remains the responsibility of the researcher</u>. Additionally, coverage may vary depending on discipline and database integration, making it advisable to verify source completeness and relevance in each specific research context.</p>
+</section>
+</section>
+<section id="plugins-and-apis-for-ssh-and-stem-when-and-why-to-use-them" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="plugins-and-apis-for-ssh-and-stem-when-and-why-to-use-them"><span class="header-section-number">3.4</span> 4. Plugins and APIs for SSH and STEM: when and why to use them</h2>
+<p>In Academic research contexts — whether in Social Sciences and Humanities (SSH) or STEM discipline — the use of plugins and <strong>APIs associated with GAI models plays a crucial role</strong> whenever functional integration with existing information systems or automation of recurring tasks is required.<br>
+Unlike general-purpose tools, <a href="https://www.ibm.com/think/topics/api"><strong>APIs (Application Programming Interface)</strong></a> allow direct incorporation of language model capabilities or specialized platforms into workflows already established within institutional or corporate environments.</p>
+<p>Typical applications include:<br>
+- <u>Automated classification and organization of textual data</u>, achieved by integrating language models within document management systems or digital archives, allowing for more efficient handling and retrieval of large volumes of unstructured information.<br>
+- <u>Automated generation of metadata and descriptors for datasets</u>, which facilitates the management and curation of research archives, bibliographic repositories, or complex digital collections by systematically assigning structured information to each resource.<br>
+- <u>Controlled multilingual content translation</u>, through the use of AI integrated into editorial platforms or academic repositories. This approach enables not only the automatic translation of content but also the application of customized dictionaries or specialized glossaries to ensure terminological consistency and accuracy across different languages.<br>
+- <u>Semantic querying of complex databases</u>, allowing researchers to submit natural language queries that surpass the limitations of traditional keyword-based search systems, thereby improving the precision and relevance of retrieved results.</p>
+<p>In <strong>STEM fields</strong>, plugins are commonly adopted to extend functionalities such as:<br>
+- <em>Statistical analysis</em><br>
+- <em>Symbolic computation</em><br>
+- <em>Code generation</em><br>
+- <em>Data visualization</em>.</p>
+<p>In <strong>SSH contexts</strong>, plugins are particularly useful for:<br>
+- <em>Extending bibliographic database and historical archive querying capabilities</em><br>
+- <em>Integrating text mining and sentiment analysis tools</em><br>
+- <em>Automating the production of reports or summaries from complex linguistic corpora</em>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="<span style='font-size:1.1em; color: #133869ff;'>Important Considerations</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><span style="font-size:1.1em; color: #133869ff;">Important Considerations</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The adoption of plugins and APIs involves <strong>specific evaluations concerning security, sensitive data management, and regulatory compliance, especially within the European academic context where regulations such as GDPR apply</strong>.<br>
+You can choose between plugins and APIs depending on your project’s nature.<br>
+Plugins are easier to use because they come ready-made and already integrated. APIs, on the other hand, let you customize things more, but they require <u>more technical skills</u> to set up and manage.</p>
+</div>
+</div>
+</section>
+<section id="operational-recommendations-for-researchers-in-social-sciences" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="operational-recommendations-for-researchers-in-social-sciences"><span class="header-section-number">3.5</span> 5. Operational recommendations for researchers in Social Sciences</h2>
+<p>Integrating GAI tools into social research processes requires a <strong>rigorous methodological approach and careful assessment of operational and ethical implications</strong>.<br>
+Below are some key recommendations to guide their effective and ethical integration:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Recommendations</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Clearly define the scope of LLM and AI tool usage</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Systematically verify content reliability—AI outputs always require critical review.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Prefer tools with transparent source referencing (e.g., Perplexity AI, Scite).</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Ensure data adequacy, favoring SSH-specific corpora.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Document all AI tool usage explicitly in reports and publications.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Address ethical and legal profiles, ensuring compliance with GDPR, AI Act, and institutional policies</td>
+</tr>
+</tbody>
+</table>
+<p>It is advisable for Research Institutions and Groups to <strong>establish clear internal AI use policies</strong>, updated regularly according to technological and regulatory evolution, ensuring adequate training for team members.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./1-20250710-GAI-evolution.html" class="pagination-link" aria-label="The Evolution of Generative Artificial Intelligence and its Application in Academic Research">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Evolution of Generative Artificial Intelligence and its Application in Academic Research</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./1-20250719-promptengineering.html" class="pagination-link" aria-label="Prompt Engineering for Research: Techniques, Workflows, and Evaluation">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>14&nbsp; Bias and source quality – AI training</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./3-20250922_accountability.html" rel="next">
+<link href="./3-20250908_intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-20250908_epistrasp.html">Part 3: Ethical aspects and responsibility in the use of AI</a></li><li class="breadcrumb-item"><a href="./3-20250915_biasqualita.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI training</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 1: Fundamentals of Generative AI e Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250710-GAI-evolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Evolution of Generative Artificial Intelligence and its Application in Academic Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250718-GAItools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250719-promptengineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250726-ricercaSSH.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250803-writingAI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250812-workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 2: Advanced applications of AI in Research and Creativity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250820-AIcreativepartner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250825-AIprogettazione.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">GAI as a Design support tool</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250830_GrantAutom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Writing calls, grants, abstracts, and intelligent automations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250903_Communic_Scient.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific and popular communication</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 3: Ethical aspects and responsibility in the use of AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_epistrasp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Epistemology and Transparency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Implications of the use of AI in research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250915_biasqualita.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_accountability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Accountability in peer review and responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_eticaselfaudit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Towards a renewed operational ethics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sources-of-bias-in-training-data-1" id="toc-sources-of-bias-in-training-data-1" class="nav-link active" data-scroll-target="#sources-of-bias-in-training-data-1"><span class="header-section-number">14.1</span> 1. Sources of bias in training data</a>
+  <ul class="collapse">
+  <li><a href="#further-readings" id="toc-further-readings" class="nav-link" data-scroll-target="#further-readings"><span class="header-section-number">14.1.1</span> Further Readings</a></li>
+  </ul></li>
+  <li><a href="#strategies-for-the-traceability-and-verifiability-of-algorithmic-decisions-1" id="toc-strategies-for-the-traceability-and-verifiability-of-algorithmic-decisions-1" class="nav-link" data-scroll-target="#strategies-for-the-traceability-and-verifiability-of-algorithmic-decisions-1"><span class="header-section-number">14.2</span> 2. Strategies for the traceability and verifiability of algorithmic decisions</a>
+  <ul class="collapse">
+  <li><a href="#further-readings-1" id="toc-further-readings-1" class="nav-link" data-scroll-target="#further-readings-1"><span class="header-section-number">14.2.1</span> Further Readings</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3-20250908_epistrasp.html">Part 3: Ethical aspects and responsibility in the use of AI</a></li><li class="breadcrumb-item"><a href="./3-20250915_biasqualita.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span style="font-size:1.2em; color: #133869ff;">Content</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<section id="sources-of-bias-in-training-data" class="level5" data-number="14.0.0.0.1">
+<h5 data-number="14.0.0.0.1" class="anchored" data-anchor-id="sources-of-bias-in-training-data"><span class="header-section-number">14.0.0.0.1</span> Sources of bias in training data</h5>
+</section>
+<section id="strategies-for-the-traceability-and-verifiability-of-algorithmic-decisions" class="level5" data-number="14.0.0.0.2">
+<h5 data-number="14.0.0.0.2" class="anchored" data-anchor-id="strategies-for-the-traceability-and-verifiability-of-algorithmic-decisions"><span class="header-section-number">14.0.0.0.2</span> Strategies for the traceability and verifiability of algorithmic decisions</h5>
+</section>
+</div>
+</div>
+<section id="sources-of-bias-in-training-data-1" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="sources-of-bias-in-training-data-1"><span class="header-section-number">14.1</span> 1. Sources of bias in training data</h2>
+<p>One of the most problematic aspects of using AI in research processes is the <strong>bias</strong> inherent in training data.<br>
+The data of training of models are never <u>neutral</u>, but reflect <em>quantitative</em> and <em>qualitative</em> imbalances that derive from their very composition.</p>
+<p>The prevalence of certain languages, geographical areas or disciplines leads to an <u>over-representation</u> of specific contexts, while other perspectives remain marginal or absent.</p>
+<p><mark>👉 The result is <strong>partial knowledge</strong>, which risks presenting itself as universal despite being based on incomplete foundations.</mark></p>
+<p>Alongside these quantitative imbalances, AI systems incorporate <strong>implicit cultural biases</strong>.<br>
+The data reflect the <em>values</em>, <em>conventions</em> and <em>symbolic hierarchies</em> of the communities that generated them.<br>
+When these perspectives are assumed to be neutral, algorithms end up replicating <em>gender stereotypes, ethnocentric views</em> or <em>ideologically oriented representations</em>, masking them behind the supposed objectivity of statistical calculation.</p>
+<p>A further source of criticism lies in <strong>methodological biases</strong>.<br>
+The collection, selection and normalisation of data respond to criteria that are not always made “explicit”, but which directly influence the outcomes of training.<br>
+Choices relating to <em>sampling methods</em>, <em>corpus cleaning</em> or the definition of <em>conceptual categories</em> determine an invisible structure that guides the model’s inferences.</p>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span style="font-size:1.2em; color: #ff0000ff;"> 👉 In this sense, bias is not an accidental residue, but rather a <strong>structural consequence</strong> of the dataset construction process. </span></p>
+</div>
+</div>
+</div>
+<p>These different levels of distortion converge to generate a significant <strong>epistemic risk</strong>, i.e.&nbsp;the possibility that scientific research is based on already compromised knowledge, without these limitations being immediately recognisable.<br>
+The apparent authority of AI-generated texts can conceal <u>systematic imbalances</u>, imposing on the Academic Community the need to develop <strong>critical monitoring tools</strong>.</p>
+<p>The issue of the <strong>traceability</strong> of algorithmic decisions therefore takes on importance. <u>Audit logs</u>, <u>fairness metrics</u> and <u>data documentation practices</u> are fundamental tools for making the path leading to a given output recognisable and verifiable.</p>
+<p>These mechanisms do not solve the structural problems of datasets, but they introduce elements of <strong>accountability</strong> that allow researchers to evaluate the consistency of results with criteria of transparency and fairness.</p>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span style="font-size:1.2em; color: #ff0000ff;"> 👉 The distinction between <u>verified knowledge</u> and <u>probabilistic inference</u> becomes an essential condition for preventing automation from compromising the epistemic reliability of research. </span></p>
+</div>
+</div>
+</div>
+<p>Another critical element concerns the <strong>nature of the content</strong> produced by generative systems, which may include <em>non-existent bibliographic references</em>, <em>invented citations</em>, or <em>distorted summaries of articles</em> that have actually been published.<br>
+These phenomena, often referred to as algorithmic <strong>“hallucinations”</strong>, directly undermine scientific credibility if they are not promptly recognised and corrected.</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span style="font-size:1.2em"> The responsibility therefore falls on the <u>researcher</u>, who is called upon to <strong>rigorously distinguish</strong> between what belongs to the domain of scientific validity and what remains a statistical projection without empirical basis. </span></p>
+</div>
+</div>
+</div>
+<p>The problem of bias, therefore, cannot be reduced to a technical issue, but also has <strong>ethical</strong> and <strong>political implications</strong>.<br>
+Research risks consolidating inequalities already present in society if shared criteria of inclusivity and fairness are not developed in the selection and management of data.<br>
+The GAI, from a potentially emancipatory resource, can become a <u>device of exclusion</u> if left unchecked.</p>
+<p><mark>👉 For this reason, alongside individual critical vigilance, it is essential to promote <strong>institutional policies</strong> and <strong>editorial guidelines</strong> that guarantee the reliability of sources, the transparency of datasets and respect for the principles of pluralism and neutrality that underpin the scientific community.</mark></p>
+<section id="further-readings" class="level3" data-number="14.1.1">
+<h3 data-number="14.1.1" class="anchored" data-anchor-id="further-readings"><span class="header-section-number">14.1.1</span> Further Readings</h3>
+<blockquote class="blockquote">
+<p><em>See</em> Types of bias in AI models <a href="https://www.modernpathology.org/article/S0893-3952(24)00266-7/fulltext">Article on bias in AI - (data/dev/interaction bias)</a><br>
+<em>See</em> Quantification of bias in pre-existing content <a href="https://viterbischool.usc.edu/news/2022/05/thats-just-common-sense-usc-researchers-find-bias-in-up-to-38-6-of-facts-used-by-ai/">USC analysis of “common” facts used by AI</a><br>
+<em>See</em> Bibliographic hallucinations <a href="https://doi.org/10.1038/s41598-023-41032-5">Nature research on citations invented by ChatGPT</a><br>
+<em>See</em> Frequency of hallucinations in scientific texts <a href="https://www.psypost.org/chatgpt-hallucinates-fake-but-plausible-scientific-citations-at-a-staggering-rate-study-finds/">Study on the rate of false citations in psychology</a><br>
+<em>See</em> Open-source tools for managing and measuring bias <a href="https://doi.org/10.48550/arXiv.1810.01943">AI Fairness 360 Toolkit (IBM)</a><br>
+<em>See</em> Generative image production analysis <a href="https://doi.org/10.48550/arXiv.2403.02726">Bias in Generative AI</a><br>
+<em>See</em> AI and SSH <a href="https://doi.org/10.1073/pnas.2314021121">Can Generative AI improve social science?</a><br>
+<em>See</em> Bias embedded in training data <a href="https://dl.acm.org/doi/abs/10.1145/3442188.3445922">On the Dangers of Stochastic Parrots</a></p>
+</blockquote>
+</section>
+</section>
+<section id="strategies-for-the-traceability-and-verifiability-of-algorithmic-decisions-1" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="strategies-for-the-traceability-and-verifiability-of-algorithmic-decisions-1"><span class="header-section-number">14.2</span> 2. Strategies for the traceability and verifiability of algorithmic decisions</h2>
+<p>One of the key issues in the use of AI systems in scientific research, is the ability to guarantee the <strong>reconstruction</strong> and <strong>validation</strong> of the <u>decision-making processes</u> that lead to a given output.</p>
+<p>Unlike human work, where the analysis and inference phases can be explicitly justified and discussed, algorithms operate through <u>chains of calculations</u> that are often <em>opaque</em> and <em>difficult to interpret</em>, even for the developers themselves.</p>
+<p>👉 <strong>To reduce this lack of transparency, it is necessary to introduce tools that allow the model’s performance to be systematically documented, monitored and evaluated.</strong></p>
+<p>In this perspective, <strong>audit logs</strong> represent a first fundamental mechanism.<br>
+They consist of udetailed records of the <u>steps taken by the algorithm during data processing</u>, from the input phase to the generation of the output, including any intermediate transformations.<br>
+These records not only allow the path followed by the system to be <em>traced retrospectively</em>, but also identify any <u>critical issues</u>, such as the use of partial sources or the application of undeclared selection criteria.</p>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span style="font-size:1.1em; color: #000000ff;"> 👉 In Academic context, this traceability has significant <strong>epistemic value</strong>, because it allows not only the final results to be subjected to intersubjective control, but also the entire process that produced them. </span></p>
+</div>
+</div>
+</div>
+<p>Alongside process documentation, there is the issue of <strong>verifying the fairness of results</strong>. Algorithms are not just calculation tools, but devices that incorporate and convey specific hierarchies of relevance.<br>
+<strong>Fairness metrics</strong> have been developed precisely to make these dynamics “measurable”, translating dimensions often considered qualitative, such as <em>inclusion</em>, <em>representativeness</em> or <em>non-discrimination</em>, into numerical parameters.<br>
+Through <u>comparative indicators</u>, for example, it is possible to verify whether a model tends to favour certain categories of data or users over others, and whether these imbalances are statistically significant.</p>
+<p><mark>👉 The joint application of <u>audit logs</u> and <u>fairness metrics</u> is not limited to technical monitoring, but opens up the possibility of developing shared responsibility in AI management.</mark></p>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span style="font-size:1.1em; color: #ff0000ff;"> This means shifting the focus from isolated output to the <strong>production context</strong>, where methodological choices and evaluation criteria must be made <u>explicit</u> and subjected to <u>collective discussion</u>.<br>
+In this sense, the verifiability of algorithmic decisions becomes a <u>structural element of scientific governance</u>, a device aimed not only at ensuring greater transparency, but also at strengthening the <u>epistemic legitimacy</u> of the results obtained. </span></p>
+</div>
+</div>
+</div>
+<p>Finally, it is important to emphasise that <strong>traceability</strong> and <strong>fairness assessment</strong> cannot be understood as occasional or ancillary practices, but must become an integral part of research procedures.</p>
+<p><mark>The <u>systematic adoption</u> of these tools is a necessary condition for preserving the reliability of scientific knowledge in the age of automation, preventing the complexity of generative models from translating into a deficit of critical control.</mark></p>
+<section id="further-readings-1" class="level3" data-number="14.2.1">
+<h3 data-number="14.2.1" class="anchored" data-anchor-id="further-readings-1"><span class="header-section-number">14.2.1</span> Further Readings</h3>
+<blockquote class="blockquote">
+<p><em>See</em> <a href="https://www.acodis.io/blog/from-data-to-insight-why-traceability-is-crucial-for-ai-success">From Data to Insight: Why Traceability is Crucial for AI Success</a><br>
+<em>See</em> <a href="https://www.aptusdatalabs.com/thought-leadership/the-rise-of-ai-audit-trails-ensuring-traceability-in-decision-making?">The Rise of AI Audit Trails: Ensuring Traceability in Decision-Making</a><br>
+<em>See</em> <a href="https://data.world/blog/what-is-ai-traceability-benefits-tools-best-practices/">What is AI Traceability? Benefits, Tools &amp; Best Practices</a></p>
+</blockquote>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./3-20250908_intro.html" class="pagination-link" aria-label="Implications of the use of AI in research">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Implications of the use of AI in research</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./3-20250922_accountability.html" class="pagination-link" aria-label="Accountability in peer review and responsibility">
+        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Accountability in peer review and responsibility</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

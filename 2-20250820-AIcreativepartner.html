@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; AI as a Creative Partner – AI training</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./2-20250825-AIprogettazione.html" rel="next">
+<link href="./1-20250812-workflow.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-20250820-AIcreativepartner.html">Part 2: Advanced applications of AI in Research and Creativity</a></li><li class="breadcrumb-item"><a href="./2-20250820-AIcreativepartner.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI training</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 1: Fundamentals of Generative AI e Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250710-GAI-evolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Evolution of Generative Artificial Intelligence and its Application in Academic Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250718-GAItools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250719-promptengineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250726-ricercaSSH.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250803-writingAI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250812-workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 2: Advanced applications of AI in Research and Creativity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250820-AIcreativepartner.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250825-AIprogettazione.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">GAI as a Design support tool</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250830_GrantAutom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Writing calls, grants, abstracts, and intelligent automations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250903_Communic_Scient.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific and popular communication</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 3: Ethical aspects and responsibility in the use of AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_epistrasp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Epistemology and Transparency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Implications of the use of AI in research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250915_biasqualita.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_accountability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Accountability in peer review and responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_eticaselfaudit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Towards a renewed operational ethics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#advanced-brainstorming-1" id="toc-advanced-brainstorming-1" class="nav-link active" data-scroll-target="#advanced-brainstorming-1"><span class="header-section-number">8.1</span> 1. Advanced Brainstorming</a>
+  <ul class="collapse">
+  <li><a href="#definition-and-potential-of-advanced-prompting" id="toc-definition-and-potential-of-advanced-prompting" class="nav-link" data-scroll-target="#definition-and-potential-of-advanced-prompting"><span class="header-section-number">8.1.1</span> 1.1 Definition and Potential of Advanced Prompting</a></li>
+  <li><a href="#practical-application" id="toc-practical-application" class="nav-link" data-scroll-target="#practical-application"><span class="header-section-number">8.1.2</span> 1.2 Practical Application</a></li>
+  <li><a href="#construction-of-prompts-with-objective-method-and-expected-impact" id="toc-construction-of-prompts-with-objective-method-and-expected-impact" class="nav-link" data-scroll-target="#construction-of-prompts-with-objective-method-and-expected-impact"><span class="header-section-number">8.1.3</span> 1.3 Construction of prompts with objective, method and expected impact</a></li>
+  <li><a href="#types-of-prompts-for-generating-new-ideas" id="toc-types-of-prompts-for-generating-new-ideas" class="nav-link" data-scroll-target="#types-of-prompts-for-generating-new-ideas"><span class="header-section-number">8.1.4</span> 1.4 Types of prompts for generating new ideas</a></li>
+  <li><a href="#practical-applications-advanced-research-interdisciplinary-design-academic-innovation" id="toc-practical-applications-advanced-research-interdisciplinary-design-academic-innovation" class="nav-link" data-scroll-target="#practical-applications-advanced-research-interdisciplinary-design-academic-innovation"><span class="header-section-number">8.1.5</span> 1.5 Practical applications: advanced research, interdisciplinary design, academic innovation</a></li>
+  </ul></li>
+  <li><a href="#multi-level-argumentative-schemes" id="toc-multi-level-argumentative-schemes" class="nav-link" data-scroll-target="#multi-level-argumentative-schemes"><span class="header-section-number">8.2</span> 2. Multi-Level Argumentative Schemes</a>
+  <ul class="collapse">
+  <li><a href="#text-mapping-concepts-relationships-and-hierarchies" id="toc-text-mapping-concepts-relationships-and-hierarchies" class="nav-link" data-scroll-target="#text-mapping-concepts-relationships-and-hierarchies"><span class="header-section-number">8.2.1</span> 2.1 Text mapping: concepts, relationships and hierarchies</a></li>
+  <li><a href="#instructional-strategies-for-developing-text-maps" id="toc-instructional-strategies-for-developing-text-maps" class="nav-link" data-scroll-target="#instructional-strategies-for-developing-text-maps"><span class="header-section-number">8.2.2</span> 2.2 Instructional strategies for developing text maps</a></li>
+  <li><a href="#iteration-and-dialogue-with-the-model-refinement-of-patterns" id="toc-iteration-and-dialogue-with-the-model-refinement-of-patterns" class="nav-link" data-scroll-target="#iteration-and-dialogue-with-the-model-refinement-of-patterns"><span class="header-section-number">8.2.3</span> 2.3 Iteration and dialogue with the model: refinement of patterns</a></li>
+  <li><a href="#argumentative-structures-causes-effects-implications-limitations" id="toc-argumentative-structures-causes-effects-implications-limitations" class="nav-link" data-scroll-target="#argumentative-structures-causes-effects-implications-limitations"><span class="header-section-number">8.2.4</span> 2.4 Argumentative structures: causes, effects, implications, limitations</a></li>
+  </ul></li>
+  <li><a href="#self-feedback-on-generated-content" id="toc-self-feedback-on-generated-content" class="nav-link" data-scroll-target="#self-feedback-on-generated-content"><span class="header-section-number">8.3</span> 3. Self-feedback on generated content</a>
+  <ul class="collapse">
+  <li><a href="#main-techniques-and-evidence" id="toc-main-techniques-and-evidence" class="nav-link" data-scroll-target="#main-techniques-and-evidence"><span class="header-section-number">8.3.1</span> 3.1 Main techniques and evidence</a></li>
+  <li><a href="#advantages-in-the-ssh-context" id="toc-advantages-in-the-ssh-context" class="nav-link" data-scroll-target="#advantages-in-the-ssh-context"><span class="header-section-number">8.3.2</span> 3.2 Advantages in the SSH context</a></li>
+  <li><a href="#educational-and-academic-applications" id="toc-educational-and-academic-applications" class="nav-link" data-scroll-target="#educational-and-academic-applications"><span class="header-section-number">8.3.3</span> 3.3 Educational and Academic applications</a></li>
+  </ul></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">8.4</span> Further reading</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2-20250820-AIcreativepartner.html">Part 2: Advanced applications of AI in Research and Creativity</a></li><li class="breadcrumb-item"><a href="./2-20250820-AIcreativepartner.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span style="font-size:1.2em; color: #133869ff;">Content</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<section id="advanced-brainstorming" class="level5" data-number="8.0.0.0.1">
+<h5 data-number="8.0.0.0.1" class="anchored" data-anchor-id="advanced-brainstorming"><span class="header-section-number">8.0.0.0.1</span> Advanced Brainstorming</h5>
+</section>
+<section id="multi-level-argumentative-frameworks" class="level5" data-number="8.0.0.0.2">
+<h5 data-number="8.0.0.0.2" class="anchored" data-anchor-id="multi-level-argumentative-frameworks"><span class="header-section-number">8.0.0.0.2</span> Multi-Level Argumentative Frameworks</h5>
+</section>
+<section id="step-by-step-case-studies-practical-ai-applications-in-the-editorial-workflow" class="level5" data-number="8.0.0.0.3">
+<h5 data-number="8.0.0.0.3" class="anchored" data-anchor-id="step-by-step-case-studies-practical-ai-applications-in-the-editorial-workflow"><span class="header-section-number">8.0.0.0.3</span> Step-by-step case studies: practical AI applications in the editorial workflow</h5>
+</section>
+</div>
+</div>
+<hr>
+<section id="advanced-brainstorming-1" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="advanced-brainstorming-1"><span class="header-section-number">8.1</span> 1. Advanced Brainstorming</h2>
+<section id="definition-and-potential-of-advanced-prompting" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="definition-and-potential-of-advanced-prompting"><span class="header-section-number">8.1.1</span> 1.1 Definition and Potential of Advanced Prompting</h3>
+<p>The <strong>brainstorming</strong> stage is a strategic moment in <u>research design and development processes</u>, permitting the initial exploration and comparison of a wide spectrum of conceptual and operational possibilities.<br>
+Generative AI (GAI) serves as a tool for <strong>cognitive amplification</strong> by offering researchers original proposals based on prompts composed in natural language.<br>
+The success of this procedure depends critically on the <u>quality of the prompt</u> that is, on the <em>precision and clarity of the textual instructions provided to the model</em>.</p>
+<p>We refer to <strong>advanced prompting</strong> when the input text incorporates structural elements that guide the model towards a <u>targeted and relevant output</u>.<br>
+Specifically, a meticulously constructed prompt details:<br>
+- The <strong>objective</strong> of the proposal<br>
+- The <strong>method</strong> envisaged for its implementation<br>
+- The <strong>expected impact</strong> within the application context.</p>
+<p>This methodological approach transcends generic or unguided brainstorming, steering the AI–researcher interaction towards a <u>structured co-design process</u> rooted in clear aims and explicit methodological criteria.</p>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Advanced prompting thus functions as an epistemic instrument, orienting the model to produce conceptually rigorous and operationally viable outcomes.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="practical-application" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="practical-application"><span class="header-section-number">8.1.2</span> 1.2 Practical Application</h3>
+<p>Structured advanced brainstorming involves directing the AI (e.g.&nbsp;<em>ChatGPT</em>) to <u>generate ideas within strategic parameters</u>, using precise instructions that channel its creative capacities.<br>
+This is not free-form or arbitrary ideation but a focused and purposeful exercise.</p>
+<p><strong>a.</strong> An advanced prompt does not simply request “ideas” but it <em>formulates a composite query</em> specifying:<br>
+- The <strong>theme or problem</strong> (e.g.&nbsp;<em>the central concept under investigation</em>)<br>
+- The <strong>constraints</strong> (e.g.&nbsp;<em>budgetary limits, available tools, contextual boundaries</em>)<br>
+- The <strong>role</strong> (e.g.&nbsp;<em>“respond as a researcher specialising in social pedagogy”</em>).</p>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>This compels the AI to <em>produce pertinent and inventive proposals</em> within a defined framework, akin to a genuine design workshop.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p><strong>b.</strong> Upon submission of the <em>carefully crafted prompt</em>, the AI returns a series of proposals, which may include:<br>
+- An original research question<br>
+- A feasible pilot project - A novel theoretical hypothesis<br>
+- A hybrid methodological approach.</p>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>In effect, this mirrors <em>traditional brainstorming</em> but is enhanced by the model’s capacity to synthesise vast sources, registers, and logical structures.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p><strong>c.</strong> As part of an <em>iterative dialogue</em>, the researcher can then:<br>
+- Select and elaborate on particular ideas<br>
+- Request alternative proposals<br>
+- Impose new constraints (e.g.&nbsp;<em>“Exclude approaches already detailed in the literature”, “Focus only on qualitative-visual methods”</em>)<br>
+- Combine multiple suggestions.</p>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Thus a dynamic, generative conversation unfolds between researcher and AI—reminiscent of peer brainstorming but conducted at high speed with great diversity.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>In this way, AI becomes a co-designer, generating hypotheses, scenarios, and strategies that enrich the researcher’s repertoire and stimulate critical reflection</em>.</p>
+</div>
+</div>
+</section>
+<section id="construction-of-prompts-with-objective-method-and-expected-impact" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="construction-of-prompts-with-objective-method-and-expected-impact"><span class="header-section-number">8.1.3</span> 1.3 Construction of prompts with objective, method and expected impact</h3>
+<p>When using GAI to generate project ideas or research questions, the <strong>formulation of the prompt</strong> is a crucial step.</p>
+<p>A prompt is not a simple question, but a strategic linguistic artefact, whose effectiveness depends on the user’s ability to translate a project intention into understandable and stimulating textual instructions for the model.</p>
+<p>A particularly <strong>effective structure</strong> for generating relevant and coherent content involves articulating the prompt into three fundamental components:</p>
+<p>1️⃣ <strong>Objective</strong><br>
+<em>Definition of the purpose of the proposal to be generated</em>.</p>
+<p>It can be <u>educational</u> (e.g.&nbsp;<em>promoting critical thinking in primary school</em>), <u>social</u> (e.g.&nbsp;<em>promoting the inclusion of students with special educational needs</em>), <u>technological</u> (e.g.&nbsp;<em>experimenting with immersive environments for subject teaching</em>) or <u>scientific</u> (e.g.&nbsp;<em>exploring new variables in qualitative research</em>).</p>
+<p>👉🏻 The objective clarifies the general purpose towards which the generation of ideas should be directed, semantically delimiting the model’s field of action.</p>
+<p>2️⃣ <strong>Method</strong><br>
+<em>Illustration of the operational process or methodology to be used to achieve the objective.</em></p>
+<p>This may refer to <u>pedagogical strategies</u> (e.g.&nbsp;<em>project-based learning, flipped classroom, gamification</em>), <u>research approaches</u> (e.g.&nbsp;<em>case study, participant observation, controlled experimentation</em>) or <u>theoretical models</u> (e.g.&nbsp;<em>situated learning theory, socio-constructivist approach</em>).</p>
+<p>👉🏻 Including the method in the prompt allows the model to structure proposals according to a consistent procedural logic, facilitating executive design.</p>
+<p>3️⃣ <strong>Expected impact</strong><br>
+<em>Define the desired effects of the proposal in educational, cognitive, social or scientific terms.</em></p>
+<p>This may refer, for example, to improving engagement, developing cross-cutting skills, generating new empirical data or validating theoretical hypotheses.</p>
+<p>👉🏻 Specifying the impact encourages the model to generate proposals that are not only formally consistent but also geared towards an explicit transformative goal.</p>
+<p><mark>The integration of these three elements within the prompt results in a more precise semantic definition, allowing the model <em>to produce higher quality outputs</em> that are better aligned with specific contexts of use. This structure also facilitates the <em>replicability of the process</em>, paving the way for a systematisation of human-machine interaction in the design field.</mark></p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>For example, a prompt structured according to this logic could be as follows:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>👉🏻 <em>“Generate three project ideas for lower secondary school with the aim of developing digital citizenship skills, using the debate methodology, with the expected impact of improving critical thinking and peer argumentation.”</em><br>
+<strong>Through a prompt of this type, the model is able to propose solutions that integrate educational objectives, operational tools and training goals, transforming automatic generation into a guided and dialogical process.</strong></p>
+</div>
+</div>
+</section>
+<section id="types-of-prompts-for-generating-new-ideas" class="level3" data-number="8.1.4">
+<h3 data-number="8.1.4" class="anchored" data-anchor-id="types-of-prompts-for-generating-new-ideas"><span class="header-section-number">8.1.4</span> 1.4 Types of prompts for generating new ideas</h3>
+<p>Once they have acquired expertise in formulating structured prompts, users are able to consciously select from different types of prompts, each designed to stimulate specific forms of creative generation by the GAI.<br>
+The choice of prompt type <u>must be calibrated</u> in relation to the design requirements, the cognitive processes involved and the exploratory nature of the task.<br>
+The targeted adoption of these different modes of interaction allows the automatic generation to be directed towards specific goals, <u>activating a dialogical process between AI and human design thinking</u>.</p>
+<p><mark>The ability to select the most appropriate type of prompt for the context is, in this sense, an indicator of methodological maturity in the strategic use of artificial intelligence as a creative partner.</mark></p>
+<p>Among the <u>main types of prompts</u>:</p>
+<p>🔍 <strong>Exploratory prompts</strong><br>
+Exploratory prompts are designed to increase the conceptual possibilities on a given topic.<br>
+They are used in the initial phase of a project or when you want to gain a broad, flexible and unconventional overview of the options available.<br>
+These prompts stimulate AI to generate divergent ideas, going beyond habitual cognitive paths.</p>
+<p>✏️ Example:<br>
+<em>“Identify and describe five unconventional theoretical frameworks or methodological approaches through which to explore the relationship between environmental education and social justice in school contexts. Explicitly exclude standard curricular approaches and favour critical, decolonial or situated paradigms.”</em></p>
+<p>🧬 <strong>Transformative prompts</strong><br>
+This category of prompts aims to reformulate established practices in an innovative way.<br>
+AI is guided towards reconfiguring existing models in order to produce original solutions based on already known elements.<br>
+Transformative prompts are particularly useful in contexts of pedagogical innovation.</p>
+<p>✏️ Example:<br>
+<em>“Critically rethink the flipped classroom model in light of educational inequalities linked to the digital divide, with particular reference to marginalised or fragile school contexts. Develop a theoretical-methodological proposal that, while maintaining the dialogical and participatory structure of the original model, transforms its operating methods to make it culturally sensitive, accessible and applicable in the absence of stable digital infrastructure.”</em></p>
+<p>⁉️ <strong>Hypothetical or conditional prompts</strong><br>
+Hypothetical prompts invite the model to explore imaginary scenarios or contexts that do not yet exist, which are useful for building conceptual prototypes or anticipating emerging problems.<br>
+Their strength lies in their ability to activate lateral thinking and mental simulation.</p>
+<p>✏️ Example:<br>
+<em>“Imagine a completely decentralised university system, with no physical locations and based exclusively on immersive environments and artificial intelligence technologies. What pedagogical models, evaluation criteria and social interaction devices should be developed to ensure the fairness, quality and sustainability of the educational path?”</em></p>
+<p>⚖️ <strong>Comparative prompts</strong><br>
+Comparative prompts require the model to compare approaches, tools or strategies, highlighting their advantages, limitations and possible hybridisations.<br>
+This type of instruction is useful for stimulating analytical thinking and identifying areas for improvement in existing models.</p>
+<p>✏️ Example:<br>
+<em>“Compare the effectiveness of the phenomenological and experimental approaches in studying the subjective experience of learning in digital contexts. Highlight strengths, methodological limitations, and possibilities for integration into a mixed research design.”</em></p>
+<p>⛓ <strong>Restrictive prompts</strong><br>
+In some cases, the originality of proposals emerges despite – or thanks to – a series of imposed constraints.<br>
+Restrictive prompts limit the scope of AI, imposing strict conditions that force it to come up with novel solutions.<br>
+This mode is useful for testing creativity under pressure or in contexts with limited resources.</p>
+<p>✏️ Example:<br>
+<em>“Design an interdisciplinary research project on the theme of energy transition, to be carried out in a context with low technological access, no connectivity and extremely limited economic resources (maximum budget: £100). Indicate objectives, method, data collection tools and potential impacts.”</em></p>
+</section>
+<section id="practical-applications-advanced-research-interdisciplinary-design-academic-innovation" class="level3" data-number="8.1.5">
+<h3 data-number="8.1.5" class="anchored" data-anchor-id="practical-applications-advanced-research-interdisciplinary-design-academic-innovation"><span class="header-section-number">8.1.5</span> 1.5 Practical applications: advanced research, interdisciplinary design, academic innovation</h3>
+<p>The use of advanced prompting in research is not a theoretical exercise for its own sake, but a strategic tool for stimulating the generation of hypotheses, tracing design paths and anticipating theoretical and methodological choices.<br>
+LLMs, in particular, can support the exploratory phase by expanding the possibilities for investigation and promoting a critical reorganisation of the initial paradigms.</p>
+<p>In the Academic and Post-Doctoral context, GAI can be used to:</p>
+<ul>
+<li><strong>explore</strong> new interdisciplinary configurations, for example by formulating hypotheses of contamination between sociological, pedagogical and critical technology studies approaches;<br>
+</li>
+<li><strong>generate</strong> original research questions based on emerging and ambiguous themes that are difficult to address using traditional disciplinary logic;<br>
+</li>
+<li><strong>simulate</strong> a preliminary mapping of the state of the art, highlighting gaps, theoretical overlaps and areas that have not yet been systematically addressed;<br>
+</li>
+<li><strong>produce</strong> methodological design proposals compatible with field constraints, ethnographic contexts, marginal populations or fluid digital environments;<br>
+</li>
+<li><strong>generate</strong> impact scenarios or speculative hypotheses useful for the design of interdisciplinary grants, including in a foresight or anticipatory key.</li>
+</ul>
+<p>The conscious use of prompting also allows the conceptual soundness of a project proposal to be tested, encouraging comparison between alternative options and stimulating the reformulation of weak or implicit passages.</p>
+<p><mark>In this context, AI does not produce knowledge, but organises raw materials, theoretical languages and hypotheses of connection between domains of knowledge, acting as a dialogical and generative tool.</mark></p>
+<div class="callout callout-style-default callout-warning no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>The effectiveness of the interaction depends on the epistemological maturity of the researcher, who remains responsible for selecting, validating and transforming the proposals generated. In this sense, advanced prompting is a cross-cutting skill of high strategic value, destined to become established in contemporary research as a reflective, project-based and productive practice.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<section id="examples-of-disciplinary-use-of-prompting" class="level4" data-number="8.1.5.1">
+<h4 data-number="8.1.5.1" class="anchored" data-anchor-id="examples-of-disciplinary-use-of-prompting"><span class="header-section-number">8.1.5.1</span> Examples of disciplinary use of prompting</h4>
+<p>• <span class="smallcaps">Sociology</span><br>
+Generation of alternative scenarios based on complex qualitative datasets (interviews, ethnographic observations), or exploration of hypotheses of correlation between emerging social phenomena (e.g.&nbsp;<em>technologies and inequalities</em>) from an intersectional perspective.</p>
+<p>• <span class="smallcaps">History</span>.<br>
+Simulation of divergent interpretations of controversial events; hypotheses for reinterpreting sources according to alternative theoretical paradigms (e.g.&nbsp;<em>environmental history, history from below</em>); exploration of the methodological implications of microhistory in the digital age.</p>
+<p>• <span class="smallcaps">Education sciences</span><br>
+Design of innovative training devices for marginal contexts; exploration of the educational implications of AI in non-school environments; hybridisation between critical pedagogies and transformative approaches.</p>
+<p>• <span class="smallcaps">Philosophy</span><br>
+Generation of questions based on contemporary ethical dilemmas related to artificial intelligence, the posthuman, or deep ecology; comparison between schools of thought on notions such as autonomy, intelligence, responsibility.</p>
+<p>• <span class="smallcaps">Cultural studies and media studies</span><br>
+Critical reformulation of key concepts (<em>identity, agency, representation</em>) in the context of digital cultures and algorithms; simulation of discursive analyses based on multimodal media corpora.</p>
+</section>
+</section>
+</section>
+<section id="multi-level-argumentative-schemes" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="multi-level-argumentative-schemes"><span class="header-section-number">8.2</span> 2. Multi-Level Argumentative Schemes</h2>
+<section id="text-mapping-concepts-relationships-and-hierarchies" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="text-mapping-concepts-relationships-and-hierarchies"><span class="header-section-number">8.2.1</span> 2.1 Text mapping: concepts, relationships and hierarchies</h3>
+<p>The <em>representation</em> and <em>organisation</em> of ideas are a fundamental component in the processes of design, academic writing and critical thinking. In this context, GAI can be used to <strong>create textual concept maps</strong> that can convey the semantic complexity of a topic or research question in a structured form.</p>
+<p>Unlike traditional graphic maps, <strong>multi-level textual mapping</strong> is organised into a hierarchical structure of nodes, expressed through natural language and organised according to levels of depth.</p>
+<p><img src="images/exmap.png" class="img-fluid" style="width:100.0%"></p>
+<p style="text-align:center; font-size:1.rem; color:black; font-weight:500; font-style: italic; margin-top: 0.3em;">
+Example of a multilevel text mapping scheme
+</p>
+<p>The <u>main node</u> represents the generative idea or central theme; <u>sub-nodes</u> derive from it, explaining thematic articulations, implications, related variables, counter-arguments or application examples. The entire map is configured as an orderly network of logical and semantic relationships, useful for both theoretical reflection and operational planning.</p>
+<p><mark>GAI is capable of generating this structure from a simple prompt, provided that the instruction accurately indicates the mapping objective and the desired level of articulation.</mark></p>
+<div class="callout callout-style-default callout-tip callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The result can be used in a variety of contexts: designing teaching units, structuring scientific articles, defining project proposals, analysing complex issues.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>✏️ Prompt example to generate a multi-level text map:<br>
+<em>“As a model language, your main task is to generate a multi-level text map on the following topic: ’[Insert topic]”. Organise the map according to this structure: the first node is the central topic; the first-level nodes represent the main categories; the second-level nodes contain insights, examples or implications. If necessary, you can add additional levels.”</em></p>
+</section>
+<section id="instructional-strategies-for-developing-text-maps" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="instructional-strategies-for-developing-text-maps"><span class="header-section-number">8.2.2</span> 2.2 Instructional strategies for developing text maps</h3>
+<p>In order for GAI to generate effective mapping, the user must provide a prompt with clear, structured, and conscious instructions.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The quality of the prompt plays a decisive role in guiding the model’s output towards a coherent, organised form that is functional for its intended use.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>In particular, it is useful to specify:</p>
+<ol type="a">
+<li>the <strong>central theme</strong> to be developed</li>
+<li>the <strong>type of conceptual relationships</strong> to be highlighted (<em>causes, effects, implications, alternatives, etc.</em>)</li>
+<li>the <strong>level of depth</strong> required for each conceptual node.</li>
+</ol>
+<p>✏️ Prompt examples:</p>
+<p><em>“Develop a multi-level textual map from the concept of [topic], detailing objectives, pedagogical strategies, digital tools, and potential challenges.”</em>.</p>
+<p><em>“Organise the topic of digital citizenship education into a multi-level textual structure, distinguishing between theoretical principles, practical applications in schools and ethical implications.”</em></p>
+<p>This type of instruction allows the model to generate a map organised according to logical criteria, reflecting systemic thinking patterns.<br>
+Furthermore, the flexibility of natural language allows elements typical of concept maps, such as hierarchies and relationships, to be combined with elements typical of academic outlines (argumentative sequences, levels of detail, examples).<br>
+The request for textual mapping can be repeated iteratively, prompting the model to refine the structure, add nodes, propose counter-arguments or make explicit any interconnections between concepts.<br>
+In this way, the map is not a static product, but an evolving artefact, generated through a cyclical interaction between human and machine. Furthermore, automatic text mapping serves a dual function: on the one hand, it allows for rapid exploration of the possible articulations of a concept; on the other, it promotes the consolidation of knowledge through the reformulation and systematisation of the generated content.</p>
+</section>
+<section id="iteration-and-dialogue-with-the-model-refinement-of-patterns" class="level3" data-number="8.2.3">
+<h3 data-number="8.2.3" class="anchored" data-anchor-id="iteration-and-dialogue-with-the-model-refinement-of-patterns"><span class="header-section-number">8.2.3</span> 2.3 Iteration and dialogue with the model: refinement of patterns</h3>
+<p>The construction of multi-level argumentative schemes through the use of GAI is not limited to a single automatic generation, but is configured – as is often the case with other requests – as an <strong>iterative</strong> and <strong>dialogical process</strong>.<br>
+The user does not simply passively receive the generated map, but can (and must) actively interact with the model, prompting it to rework, deepen, clarify or restructure the content produced.<br>
+This interaction <u>develops through a sequence of successive prompts</u> that progressively improve the quality of the initial request.</p>
+<p>Requests can usually be:</p>
+<p>• <span class="smallcaps"><strong>Expansion</strong></span>: the user can ask the model to elaborate on a specific sub-node:</p>
+<p>✏️ <em>“Elaborate on the “digital tools” node within the multi-level text map on formative assessment. Include concrete examples, emerging methodologies, and comparative application contexts.”</em></p>
+<p>• <span class="smallcaps"><strong>Clarification</strong></span>: the user can detect conceptual ambiguities or generic formulations, asking the model to rephrase or specify:</p>
+<p>✏️ <em>“Rephrase the explanation regarding the distinction between “teaching strategies” and “assessment methods”, improving terminological precision and internal consistency.”</em></p>
+<p>• <span class="smallcaps"><strong>Reorganisation</strong></span>: if the structure is weak from a logical or hierarchical point of view, it is possible to request a new articulation of the nodes:</p>
+<p>✏️ <em>“Restructure the hierarchical map by assigning three main conceptual axes: theoretical, operational and critical, and redistribute the second-level nodes according to this logic.”</em></p>
+<p>• <span class="smallcaps"><strong>Comparison</strong></span>: to enrich the map, the user can prompt the model to integrate alternative points of view or competing approaches:</p>
+<p>✏️ <em>“Integrate sections dedicated to critical perspectives, emerging alternative approaches and hybrid models with respect to dominant digital skills into the map on digital citizenship.”</em></p>
+<p><mark>Through these successive interactions, the textual map becomes progressively more robust, coherent and articulated, transforming itself from a simple thematic list into a true argumentative structure.</mark></p>
+<section id="iterative-prompt-engineering-epistemic-cycle" class="level4" data-number="8.2.3.1">
+<h4 data-number="8.2.3.1" class="anchored" data-anchor-id="iterative-prompt-engineering-epistemic-cycle"><span class="header-section-number">8.2.3.1</span> Iterative prompt engineering: epistemic cycle</h4>
+<p>The coordinated sequence of prompts aimed at expansion, clarification, reorganisation and comparative analysis transforms interaction with AI into an <strong>advanced epistemic process</strong>.<br>
+It is a model in which the user does not simply receive output, but iteratively designs, tests and refines content according to criteria of academic rigour.</p>
+<p><strong>The cyclical flow</strong></p>
+<ol type="1">
+<li><p><u>Thematic expansion</u><br>
+The user asks the model to detail specific conceptual nodes, enriching them with concrete examples, comparative contexts or disciplinary references.</p></li>
+<li><p><u>Semantic clarification</u><br>
+Potential ambiguities, reformulations or terminologically weak concepts are addressed, increasing precision and internal consistency.</p></li>
+<li><p><u>Logical-structural reorganisation</u><br>
+If hierarchical weaknesses emerge, a conceptual redistribution consistent with new thematic axes or narrative levels is required.</p></li>
+<li><p><u>Comparison and plurality of perspectives</u><br>
+The model is invited to integrate alternative perspectives, critical approaches or emerging voices, enriching the map with plurality of arguments.</p></li>
+</ol>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>This prompt-driven mode allows an initial draft to be transformed into a robust argumentative structure, which progressively evolves in terms of consistency, completeness and depth.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+</section>
+<section id="argumentative-structures-causes-effects-implications-limitations" class="level3" data-number="8.2.4">
+<h3 data-number="8.2.4" class="anchored" data-anchor-id="argumentative-structures-causes-effects-implications-limitations"><span class="header-section-number">8.2.4</span> 2.4 Argumentative structures: causes, effects, implications, limitations</h3>
+<p>One of the most significant uses of GAI in the construction of multi-level textual schemas is the possibility of <u>developing actual argumentative structures</u>, organised according to logical and relational categories.</p>
+<p>In this case, the textual map is not limited to representing a conceptual taxonomy, but takes the form of an <strong>articulated discursive organisation</strong>, useful for supporting a thesis, exploring a problem or structuring a critical analysis.</p>
+<p>It is possible to <u>orient</u> the model from the outset towards a defined argumentative grid, for example:</p>
+<ul>
+<li><u>Causes</u>: structural factors that generate the phenomenon under study<br>
+</li>
+<li><u>Effects</u>: observed or predicted consequences<br>
+</li>
+<li><u>Implications</u>: ethical, social, political, pedagogical or technological repercussions<br>
+</li>
+<li><u>Limitations</u>: critical issues, constraints, potential grey areas.</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>This structure is particularly useful in the design of academic texts, scientific articles, research plans, educational interventions or strategic documents.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>The user can specify the desired argumentative framework from the outset, e.g.&nbsp;in a prompt such as this:</p>
+<p>✏️ <em>“As an SSH researcher, generate a multi-level textual map on a topic such as “Environmental education and urban justice”. Articulate the map according to structural causes, educational effects, social implications and limitations. Respond in Markdown with a heavily indented list and key points. Include references to critical paradigms (e.g.&nbsp;eco-pedagogy, postcolonialism).”</em></p>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>The model will return a coherent representation, capable of supporting complex reasoning and serving as a basis for written or oral elaboration.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>This mode promotes the development of critical thinking and awareness of the problematic dimensions of the phenomenon analysed.<br>
+This approach generates a coherent and solid map, capable of supporting complex discourse, that becomes both an argumentative support and a basis for written constructions or oral presentations.<br>
+Multi-level mapping is inspired by established practices in Social Science and Humanities (SSH) research, reflecting formal approaches to academic writing (APA, MHRA, Turabian) and <a href="https://odannyboy.medium.com/notes-on-donald-sh%C3%B6ns-the-reflective-practitioner-e67f753879d8">Donald Schön</a>’s models of reflective practice.</p>
+<blockquote class="blockquote">
+<p>See <a href="https://doi.org/10.4324/9781315237473">Schön, D. A. (2017). The reflective practitioner: How professionals think in action</a></p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The critical treatment of logical structures through the textual map activates a deep metacognitive process.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p><span class="smallcaps"><strong>For Researchers</strong></span></p>
+<p>The multi-level textual map allows you to systematically explain complex relationships between causes, effects, implications and future prospects.<br>
+This structure is particularly useful for:<br>
+- <em>systematically explaining complex relationships between causes, effects and implications</em><br>
+- <em>designing chapters of theses and academic articles</em><br>
+- <em>building funding proposals (grants)</em><br>
+- <em>organising complex theoretical and methodological structures</em>.</p>
+<p><span class="smallcaps"><strong>For Metacognitive Activities</strong></span> (<em>Students and Doctoral Candidates</em>)</p>
+<p>Incorporating argumentative maps into training exercises promotes:<br>
+- <em>the critical reformulation of existing maps</em><br>
+- <em>the production of interdisciplinary counter-maps</em><br>
+- <em>the comparison of competing theoretical positions</em>.</p>
+<p>👉🏻 <strong>These activities promote genuine reflection on the process of thinking and planning, which is essential in advanced SSH courses</strong>.</p>
+</section>
+</section>
+<section id="self-feedback-on-generated-content" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="self-feedback-on-generated-content"><span class="header-section-number">8.3</span> 3. Self-feedback on generated content</h2>
+<p>One of the most promising developments in GAI is the possibility of using language models not only for content production, but also for <u>internal and iterative critical evaluation</u>.<br>
+<strong>Self-feedback</strong>, also known as <em>self-evaluation</em>, is a way of using LLMs that goes beyond mere text generation, involving them in the systematic critique of their own output.<br>
+Given clearly defined inputs, the model <em>performs a self-referential evaluation of previous outputs and suggests improvements</em>.</p>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>In computational terms, LLMs do not possess metacognitive awareness, but they can simulate evaluative processes through the generation of texts that take the form of critical commentary, review or reasoned comparison.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>Self-feedback activates a <strong>reflective chain</strong>: the model analyses its own output against specific criteria (e.g.&nbsp;<em>consistency, clarity, originality</em>), generates an internal review, and proposes an improved version.<br>
+This cycle of judging–reformulating–judging transforms initial content into more robust outputs, without the need for <a href="https://platform.openai.com/docs/guides/model-optimization">fine-tuning</a>. This type of output, if well trained, can constitute a first level of analysis useful for improving the communicative effectiveness, internal consistency, and originality of the materials generated.</p>
+<p><mark>From an educational and scientific point of view, self-feedback represents a significant innovation: it introduces an evaluative instance within the generative interaction itself, enabling a virtuous cycle of production-reflection-reformulation.</mark></p>
+<section id="main-techniques-and-evidence" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="main-techniques-and-evidence"><span class="header-section-number">8.3.1</span> 3.1 Main techniques and evidence</h3>
+<p><br> <strong>a. Self Refine (Iterative Refinement with Self Feedback)</strong></p>
+<p>The <em>Self Refine</em> technique involves a LLM generating an initial output, critically evaluating it against defined criteria, and then reformulating it in an <strong>iterative cycle</strong>: <em>generate → feedback → refine</em>.<br>
+All this is done with the same model, without the need for supervised data or a fine-tuning phase.<br>
+Each iteration keeps <em>track of the output + feedback history</em>, which the model draws on to avoid repetition and constantly improve.</p>
+<div class="callout callout-style-default callout-tip callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Experimental evaluations on GPT 3.5 and GPT 4 show an average improvement of about 20% over one-step generation on over seven types of tasks (reasoning, responses, rewriting) <a href="https://arxiv.org/abs/2303.17651?utm_source=chatgpt.com">See article</a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>✏️ Prompt example:<br>
+<em>“Review the following paragraph according to academic criteria of terminological accuracy and argumentative rigour. Propose a reworded sentence that is clearer and more coherent.”</em></p>
+<p><strong>b. Self-Critique Guided Reasoning</strong></p>
+<p>In this strategy, the model guides its own reasoning with <strong>chain of thought</strong> steps followed by <em>critical self-evaluation</em>.<br>
+This promotes conceptual consistency, logical precision, and the reduction of significant omissions.<br>
+It is useful in complex contexts where internal consistency is crucial. <a href="https://promptengineering.org/llms-learn-humility-how-self-critique-improves-logic-and-reasoning-in-llms-like-chatgpt/?utm_source=chatgpt.com">See article</a></p>
+<p>✏️ Prompt example:<br>
+<em>“You have just generated a text/project. Now analyse it critically. Indicate at least three points of possible improvement in terms of logical consistency and original content.”</em></p>
+<p><strong>c.&nbsp;Auto-evaluation (LLM-as-a-Judge)</strong></p>
+<p>Here, the model takes on the <strong>role of an impartial authority</strong>: it evaluates output according to explicit disciplinary criteria (<em>logical consistency, relevance, accuracy, originality, clarity</em>), assigning a score and generating structured feedback.</p>
+<div class="callout callout-style-default callout-tip callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Studies applied in customer service scenarios show that the LLM-as-a-Judge approach improves the quality of responses by over 8%, with a correlation 3–5 times higher than standard prompts. <a href="https://www.evidentlyai.com/llm-guide/llm-as-a-judge">See Article 1</a> and <a href="https://cameronrwolfe.substack.com/p/llm-as-a-judge?utm_source=chatgpt.com">Article 2</a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>✏️ Prompt example:<br>
+This prompt can be used to monitor and standardise the reliability of automatic interaction in SSH writing contexts.<br>
+<em>“You are an expert academic evaluator. Your task is to judge the quality of the following output produced by an AI model in response to a research question. Base your assessment on the following criteria: logical consistency, relevance to the question, accuracy of data, originality of reasoning, and clarity of presentation. Provide a score from 1 to 5 (where 1 = very poor, 5 = excellent) followed by a bullet-point summary of strengths and weaknesses.</em>. <em>Research question:</em><br>
+<em>{input}</em><br>
+<em>Model output:</em><br>
+<em>{output}</em><br>
+<em>Respond with:</em><br>
+*Score: __*<br>
+<em>Bullet-point feedback:</em><br>
+• …“*</p>
+<p><strong>d.&nbsp;Self Restraint (ReSearch)</strong></p>
+<p>The <strong>ReSearch technique</strong>, or <em>self-restraint</em>, teaches the model to independently detect its own uncertainty. Through a utility function and an iterative self-prompting process, the model learns to refrain from acting when it perceives low confidence.</p>
+<p>👉🏻 This significantly reduces hallucinations on complex topics, without additional inference costs.<br>
+<a href="https://arxiv.org/abs/2405.13022?utm_source=chatgpt.com">See article</a></p>
+<p>✏️ Prompt example:<br>
+This prompt <u>activates the ReSearch strategy</u>: the model assesses its own uncertainty and, if necessary, refrains from making predictions or signals caution. In literature, this approach has been shown to significantly reduce hallucinations without additional inference costs. <a href="https://arxiv.org/abs/2405.13022?utm_source=chatgpt.com">See article</a></p>
+<p>“<em>You have just generated a section of theoretical analysis on a complex interdisciplinary topic. Now critically analyse the text and reflect on your level of confidence: if there are any uncertain or potentially incorrect parts, abstract them (‘I am not sure’; ‘I will not answer’). Report:</em><br>
+<em>1. Areas where your knowledge is limited or uncertain.</em><br>
+<em>2. Parts that may be ambiguous or incorrect.</em><br>
+<em>3. Decision whether to continue or withdraw.</em><br>
+<em>Generated text:</em><br>
+<em>{text}</em><br>
+<em>Respond with a bulleted list:</em><br>
+<em>- Section …</em><br>
+<em>- Confidence: high/medium/low</em><br>
+<em>- Notes on any errors or missing data</em>”</p>
+</section>
+<section id="advantages-in-the-ssh-context" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="advantages-in-the-ssh-context"><span class="header-section-number">8.3.2</span> 3.2 Advantages in the SSH context</h3>
+<p><br> <strong>a. Strengthening internal consistency and originality</strong></p>
+<p>Prompts geared towards internal verification of argumentative sequences help identify logical gaps, hidden contradictions and misalignments between objectives and expected results.<br>
+One of the most important aspects in evaluating a text, whether it is a project, theoretical or argumentative, concerns its <strong>internal consistency</strong>.<br>
+This term refers to the <em>logical adherence between the parts of the text</em>, the <em>absence of obvious contradictions</em>, the <em>linearity of reasoning</em> and the <em>congruence between stated objectives, methods used and expected results</em>.</p>
+<p>👉🏻 <em>Through specific prompts, it is possible to ask the AI to simulate an internal review of the text itself</em>.</p>
+<p>✏️ Prompt examples:</p>
+<p><em>“Analyse the following educational project and report any inconsistencies between objectives, methodology and assessment tools.”</em></p>
+<p><em>“Check whether the following paragraphs are consistent with each other from a logical and semantic point of view.”</em></p>
+<p>The model is able to detect structural misalignments, significant omissions, redundant or ambiguous passages. Although it cannot guarantee an infallible assessment, its pattern recognition capability allows it to quickly identify the main formal critical issues, providing a starting point for manual review.<br>
+In addition to consistency, a second fundamental evaluation axis concerns the degree of <strong>originality</strong> of a proposal or content.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Although AI does not have direct access to up-to-date bibliographic databases or an autonomous critical sense, it can be trained to compare a proposal with common approaches, highlighting similarities, repetitions or possible innovations*.</p>
+</div>
+</div>
+<p>✏️ Prompt examples:</p>
+<p><em>“Assess how much the following project deviates from traditional teaching models and indicate any innovative elements.”</em></p>
+<p><em>“Compare the proposed strategy with established educational practices and point out how it differs.”</em></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In response, the model can produce a <u>structured analysis</u>, highlighting elements of originality (unprecedented combinations, emerging applications, new contexts) or, conversely, pointing out excessive similarity with pre-existing models.</p>
+</div>
+</div>
+<p><strong>b. Encouraging epistemic reflection</strong></p>
+<p>Designing cycles in which AI suggests revisions involves reflecting on one’s own critical thinking: this is essential in SSH contexts in order to develop robust methodological awareness.</p>
+<p>✏️ Prompt Example 1: <u>Critically review the output</u></p>
+<p>This approach allows the model to assemble a true <em>metacognitive cycle</em>: it identifies gaps, implicit assumptions, reasons at the epistemic level, and then proposes changes.<br>
+“<em>You have just generated a paragraph (or section) on a research topic. Reread it critically and answer these questions:</em><br>
+<em>- What implicit assumptions appear and need to be argued or verified?</em><br>
+<em>- Which logical steps were unclear or ambiguous?</em><br>
+<em>- What alternative perspectives or theoretical approaches are missing?</em><br>
+<em>- Suggest at least two methodological revisions or additions to make the text more epistemically robust.</em>”</p>
+<p>✏️ Prompt Example 2: <u>Structured reflection for disciplinary and comparative purposes</u></p>
+<p>This framework is inspired by frameworks such as <a href="https://www.promptingguide.ai/techniques/reflexion">Reflexion</a>, which structure verbalised feedback to reinforce critical skills in LLM models, including in the epistemic-social context.<br>
+“<em>Act as a reflective expert in the field of SSH. Analyse the text provided in the following points:</em><br>
+<em>- What underlying theoretical paradigms emerge (explicitly or implicitly)?</em><br>
+<em>- Are there any disciplinary biases or implicit ideological orientations? Where?</em><br>
+<em>- How consistent is the argumentative position with known theoretical sources?</em><br>
+<em>- Indicate two passages where an interdisciplinary or critical approach could be useful and suggest additions.</em>”</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Why use these prompts?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Both templates:<br>
+- guide the model to take an epistemic stance, not just a technical-informative one;<br>
+- promote self-assessment that induces critical awareness of the generated text;<br>
+- encourage interdisciplinary integration and the detection of implicit biases.<br>
+👉🏻 <em>You can use them in sequence (first A, then B) for a cycle of progressive reflection: from logical gaps to disciplinary biases to structured critical intervention</em>.</p>
+</div>
+</div>
+<p><strong>c.&nbsp;Scalability and timeliness of feedback</strong></p>
+<p>In collaborative learning or writing processes, AI can provide <u>personalised feedback in real time</u>, overcoming limitations associated with limited human resources <a href="https://doi.org/10.1016/j.caeai.2025.100450">See article</a></p>
+<p>✏️ Prompt Example 1: <u>Real-time feedback on text drafts</u>.</p>
+<p>Ideal for collaborative writing cycles: provides immediate feedback on paragraphs or drafts, facilitating quick and effective revisions.<br>
+“<em>Access the following text immediately and provide structured feedback on:</em> <em>- strengths</em><br>
+<em>- areas for improvement</em><br>
+<em>- practical suggestions for revision</em><br>
+<em>- any methodological or theoretical gaps</em><br>
+<em>Limit your response to approximately 300 words.</em><br>
+<em>Text to be evaluated: {text}</em>”</p>
+<p>✏️ Prompt Example 2: <u>Rapid assessment with disciplinary criteria</u></p>
+<p>This approach is ideal for collaborative writing cycles in academia: it allows for immediate feedback on drafts or paragraphs, facilitating rapid and detailed revisions.<br>
+It is particularly useful for thesis sections, abstracts or funding proposals in SSH disciplines, as it offers accurate and replicable assessments with scientifically rigorous criteria.<br>
+“<em>Analyse this paragraph/draft relating to [abstract/grant title/thesis section title] according to the following criteria:</em><br>
+<em>- Consistency between objectives, content and conclusions.</em><br>
+<em>- Clarity of expression according to disciplinary vocabulary.</em><br>
+<em>- Originality compared to common writing in the field.</em><br>
+<em>- Conceptual relevance to the specified SSH context.</em><br>
+<em>- Respond in bullet points, indicating practical suggestions for a quick revision</em>”</p>
+<p>✏️ Prompt Example 3: <u>Automated incremental improvement cycle</u></p>
+<p>Great for SSH teaching based on iterative writing: immediate alternation between feedback and rewriting to refine content.<br>
+“<em>For the text provided</em>:<br>
+<em>- Indicate 3 structural or conceptual issues</em><br>
+<em>- Suggest 3 specific rewrites to resolve them</em><br>
+<em>- Release a revised version (max 250 words)</em><br>
+<em>Format:</em><br>
+<em>- Pointed feedback</em><br>
+<em>- Revision proposals</em><br>
+<em>- New summary version</em><br>
+<em>Text to be revised: {text}</em>”</p>
+<p><strong>d.&nbsp;Critical support for reformulation</strong></p>
+<p><em>‘Self-Refine’</em> or <em>‘Self-Critique’</em> prompts help to reorganise texts while keeping their content intact, but improving their clarity and argumentative rigour.</p>
+<p>✏️ Prompt Example 1 – <u>Self-Refine (Iterative Refinement with Self Feedback</u>)</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Studies indicate that this mode increases output quality by about 20%, without any external fine-tuning.</p>
+</div>
+</div>
+<p>“<em>Examine the following paragraph and report any critical issues from an argumentative, structural or stylistic point of view. Then rewrite it incorporating the revisions:</em><br>
+<em>- Critical feedback</em><br>
+<em>- Reformulated, clearer and more coherent version</em><br>
+<em>Original paragraph:</em><br>
+<em>{text</em>}</p>
+<p>✏️ Prompt Example 2 – <u>Self Critique Guided Reasoning</u></p>
+<p>This mode reinforces conceptual consistency and reduces logical errors through <em>guided self-criticism</em>, in line with recognised practices in advanced prompting.<br>
+“<em>You have generated the following text on a complex academic topic.</em><br>
+<em>Now: i)Indicate at least three possible weaknesses or ambiguities (e.g., unclear reasoning, implicit assumptions, risky logical leaps). ii)Suggest concrete revisions for each. iii) Finally, rephrase the paragraph incorporating the suggested improvements.</em> <em>Text:</em><br>
+<em>{text}”</em></p>
+<div class="callout callout-style-default callout-tip callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Both strategies can be used sequentially or independently, if the goal is to review draft chapters, abstracts, articles, or research papers.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="educational-and-academic-applications" class="level3" data-number="8.3.3">
+<h3 data-number="8.3.3" class="anchored" data-anchor-id="educational-and-academic-applications"><span class="header-section-number">8.3.3</span> 3.3 Educational and Academic applications</h3>
+<p>In the field of advanced educational and academic applications, the strategic integration of GAI effectively supports both teachers and doctoral students in the SSH. Thanks to the use of asymmetric prompts between production and internal evaluation, it is possible to design <em>multi-level argumentative maps, pedagogical analysis structures and complex thesis chapters</em>, benefiting from automatic feedback support that can assist the human author with methodological rigour and epistemic continuity.<br>
+Similarly, the paradigm of automated self-evaluation proves to be fundamental during learning and educational research: students and doctoral candidates can submit individual sections, drafts or papers to the AI.<br>
+The latter, guided by defined evaluation rubrics, identifies critical issues, proposes structured revisions and transforms the simple production of text into an active metacognitive experience, reinforcing critical reflection and epistemic awareness.<br>
+Furthermore, the <strong>synergistic combination of prompts</strong> for production and prompts dedicated to feedback generates an iterative flow of qualitative improvement in outputs.</p>
+<p><mark>In this configuration, academic writing is no longer a solitary act, but a continuous dialogue in which AI takes on the role of a semi-autonomous interlocutor: it generates, evaluates, reformulates and enriches content in close dialogue with the user. This mechanism is similar to robust research methodologies, where scientific argumentation is constructed through successive approximations, revisions, and structural refinements.</mark></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>The integration of automatic generation prompts and feedback allows for an increase in the epistemic quality of written and design production in the SSH field.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The systematic application of this approach supports:<br>
+<em>- reflective design (argumentative maps, articles, thesis chapters) with automatic validation</em><br>
+<em>- a reflective and formative teaching practice, in which students become autonomous in reviewing their own work</em><br>
+<em>- the strengthening of coherence, originality and rigour, thanks to explicit cognitive cycles of generation, evaluation and progressive reformulation</em>.<br>
+This model of interaction with AI respects and values the role of the human researcher, acting as a true epistemic partner in the construction of knowledge.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="further-reading" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">8.4</span> Further reading</h2>
+<blockquote class="blockquote">
+<p>“<em>In educational settings, self-generated feedback from LLM has been shown to improve student writing performance and motivation compared to static feedback</em>”.<br>
+<a href="https://%20learnprompting.org/docs/advanced/self_criticism/introduction?srsltid=AfmBOoryJ_qWnv1n-JgMDwS4MAnHyPgKHgyF5F0bHXmzA6ycc_8g-r6q&amp;utm_source=chatgpt.com">See Article</a><br>
+“<em>A study has shown that LLM-driven feedback, when guided by well-designed prompts, outperforms that of beginners and, in some categories, even that of experts in the context of teacher training education, offering faster and more specific feedback</em>”<br>
+<a href="https://doi.org/10.3390/ai6020035">See Article</a><br>
+“<em>The self-contrast paradigm has shown positive effects in comparing divergent solutions generated by the same model, improving stability and accuracy</em>”<br>
+<a href="https://doi.org/10.48550/arXiv.2401.02009">See Article</a><br>
+“<em>An analysis of over 2,600 users in tutor/student lessons shows that LLM-on-demand explanatory feedback improves performance with significant standardised effects (0.28–0.33), with equivalent response times and high user satisfaction</em>”<br>
+<a href="https://arxiv.org/pdf/2506.17006v1">See Article</a><br>
+“<em>A systematic review highlights how automated GenAI feedback systems reduce the teacher’s workload, enabling effective cognitive and emotional interventions, and improve educational interaction with students in large-scale contexts</em>”<br>
+<a href="https://doi.org/10.24059/olj.v28i3.4593">See Article</a></p>
+</blockquote>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./1-20250812-workflow.html" class="pagination-link" aria-label="Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./2-20250825-AIprogettazione.html" class="pagination-link" aria-label="GAI as a Design support tool">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">GAI as a Design support tool</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

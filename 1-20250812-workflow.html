@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage – AI training</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./2-20250820-AIcreativepartner.html" rel="next">
+<link href="./1-20250803-writingAI.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-20250710-GAI-evolution.html">Part 1: Fundamentals of Generative AI e Tools</a></li><li class="breadcrumb-item"><a href="./1-20250812-workflow.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI training</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 1: Fundamentals of Generative AI e Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250710-GAI-evolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Evolution of Generative Artificial Intelligence and its Application in Academic Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250718-GAItools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250719-promptengineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250726-ricercaSSH.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250803-writingAI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250812-workflow.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 2: Advanced applications of AI in Research and Creativity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250820-AIcreativepartner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250825-AIprogettazione.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">GAI as a Design support tool</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250830_GrantAutom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Writing calls, grants, abstracts, and intelligent automations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250903_Communic_Scient.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific and popular communication</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 3: Ethical aspects and responsibility in the use of AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_epistrasp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Epistemology and Transparency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Implications of the use of AI in research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250915_biasqualita.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_accountability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Accountability in peer review and responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_eticaselfaudit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Towards a renewed operational ethics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction-why-a-systemic-approach-to-ai-use-1" id="toc-introduction-why-a-systemic-approach-to-ai-use-1" class="nav-link active" data-scroll-target="#introduction-why-a-systemic-approach-to-ai-use-1"><span class="header-section-number">7.1</span> 1. Introduction: why a systemic approach to AI use</a></li>
+  <li><a href="#stages-of-academic-writing-and-ai-touchpoints" id="toc-stages-of-academic-writing-and-ai-touchpoints" class="nav-link" data-scroll-target="#stages-of-academic-writing-and-ai-touchpoints"><span class="header-section-number">7.2</span> 2. Stages of academic writing and AI “Touchpoints”</a>
+  <ul class="collapse">
+  <li><a href="#a.-defining-scope-and-formulating-the-research-question" id="toc-a.-defining-scope-and-formulating-the-research-question" class="nav-link" data-scroll-target="#a.-defining-scope-and-formulating-the-research-question"><span class="header-section-number">7.2.1</span> a. Defining scope and formulating the research question</a></li>
+  <li><a href="#b.-finding-selecting-and-summarising-scientific-literature" id="toc-b.-finding-selecting-and-summarising-scientific-literature" class="nav-link" data-scroll-target="#b.-finding-selecting-and-summarising-scientific-literature"><span class="header-section-number">7.2.2</span> b. Finding, selecting and summarising scientific literature</a></li>
+  <li><a href="#c.-planning-the-argumentative-structure-outline" id="toc-c.-planning-the-argumentative-structure-outline" class="nav-link" data-scroll-target="#c.-planning-the-argumentative-structure-outline"><span class="header-section-number">7.2.3</span> c.&nbsp;Planning the argumentative structure (outline)</a></li>
+  <li><a href="#d.-composition-of-the-first-draft" id="toc-d.-composition-of-the-first-draft" class="nav-link" data-scroll-target="#d.-composition-of-the-first-draft"><span class="header-section-number">7.2.4</span> d.&nbsp;Composition of the <em>first draft</em></a></li>
+  <li><a href="#e.-content-review-and-stylistic-refinement" id="toc-e.-content-review-and-stylistic-refinement" class="nav-link" data-scroll-target="#e.-content-review-and-stylistic-refinement"><span class="header-section-number">7.2.5</span> e. Content review and stylistic refinement</a></li>
+  <li><a href="#f.-final-check-and-preparation-for-submission" id="toc-f.-final-check-and-preparation-for-submission" class="nav-link" data-scroll-target="#f.-final-check-and-preparation-for-submission"><span class="header-section-number">7.2.6</span> f.&nbsp;Final check and preparation for submission</a></li>
+  </ul></li>
+  <li><a href="#step-by-step-case-studies-practical-applications-of-ai-in-the-editorial-workflow" id="toc-step-by-step-case-studies-practical-applications-of-ai-in-the-editorial-workflow" class="nav-link" data-scroll-target="#step-by-step-case-studies-practical-applications-of-ai-in-the-editorial-workflow"><span class="header-section-number">7.3</span> 3. Step-by-step case studies: practical applications of AI in the editorial workflow</a></li>
+  <li><a href="#from-map-to-method-recommendations-for-researcher-autonomy-1" id="toc-from-map-to-method-recommendations-for-researcher-autonomy-1" class="nav-link" data-scroll-target="#from-map-to-method-recommendations-for-researcher-autonomy-1"><span class="header-section-number">7.4</span> 4. From map to method: recommendations for researcher autonomy</a>
+  <ul class="collapse">
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations"><span class="header-section-number">7.4.1</span> Recommendations</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.5</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-20250710-GAI-evolution.html">Part 1: Fundamentals of Generative AI e Tools</a></li><li class="breadcrumb-item"><a href="./1-20250812-workflow.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span style="font-size:1.2em; color: #133869ff;">Content</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<section id="introduction-why-a-systemic-approach-to-ai-use" class="level5" data-number="7.0.0.0.1">
+<h5 data-number="7.0.0.0.1" class="anchored" data-anchor-id="introduction-why-a-systemic-approach-to-ai-use"><span class="header-section-number">7.0.0.0.1</span> Introduction: why a systemic approach to AI use</h5>
+</section>
+<section id="stages-of-academic-writing-and-corresponding-ai-touchpoints" class="level5" data-number="7.0.0.0.2">
+<h5 data-number="7.0.0.0.2" class="anchored" data-anchor-id="stages-of-academic-writing-and-corresponding-ai-touchpoints"><span class="header-section-number">7.0.0.0.2</span> Stages of academic writing and corresponding AI “touchpoints”</h5>
+</section>
+<section id="step-by-step-case-studies-practical-ai-applications-in-the-editorial-workflow" class="level5" data-number="7.0.0.0.3">
+<h5 data-number="7.0.0.0.3" class="anchored" data-anchor-id="step-by-step-case-studies-practical-ai-applications-in-the-editorial-workflow"><span class="header-section-number">7.0.0.0.3</span> Step-by-step case studies: practical AI applications in the editorial workflow</h5>
+</section>
+<section id="from-map-to-method-recommendations-for-researcher-autonomy" class="level5" data-number="7.0.0.0.4">
+<h5 data-number="7.0.0.0.4" class="anchored" data-anchor-id="from-map-to-method-recommendations-for-researcher-autonomy"><span class="header-section-number">7.0.0.0.4</span> From map to method: recommendations for researcher autonomy</h5>
+</section>
+</div>
+</div>
+<section id="introduction-why-a-systemic-approach-to-ai-use-1" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="introduction-why-a-systemic-approach-to-ai-use-1"><span class="header-section-number">7.1</span> 1. Introduction: why a systemic approach to AI use</h2>
+<p>Integrating GAI into scholarly writing — given its capabilities, limitations, and constraints — cannot be reduced to the occasional use of stand-alone tools.<br>
+The proliferation of applications that <em>automate</em>, <em>assist</em> or <em>augment</em> various phases of scientific production demands a <strong>comprehensive methodological reflection</strong> on the overall structure of intellectual work. In research, especially within the Social Sciences and Humanities (SSH), writing is not merely a final step but a <u>cognitive device</u> through which analytical results are consolidated, articulated, and debated.<br>
+Accordingly, adopting LLM-based technologies capable of <em>generating text, reformulating concepts, synthesizing sources or suggesting alternative phrasings</em> can fundamentally <strong>reshape the editorial process</strong>.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Systematically mapping AI–writing interactions is essential to ensure transparency, epistemological control, and effective valorization of the human contribution.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>A <u>systemic approach</u> enables researchers to:</p>
+<ul>
+<li>Pinpoint where AI can be employed both effectively and responsibly<br>
+</li>
+<li>Avoid inappropriate delegation that risks originality or theoretical coherence<br>
+</li>
+<li>Develop a sustainable, replicable strategy guiding scholars from project design to final publication.</li>
+</ul>
+</section>
+<section id="stages-of-academic-writing-and-ai-touchpoints" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="stages-of-academic-writing-and-ai-touchpoints"><span class="header-section-number">7.2</span> 2. Stages of academic writing and AI “Touchpoints”</h2>
+<p>Academic writing unfolds as a multi-stage process rather than a single, linear task. Each stage entails distinct <em>cognitive, linguistic</em>, and <em>organizational demands</em>, which can be supported — if methodologically integrated — by AI tools.</p>
+<p>A structured map of principal AI <strong>“touchpoints”</strong> across the editorial workflow is given.<br>
+This section aims to provide a <u>structured mapping of the main points of interaction</u> (‘<strong>touchpoints</strong>’) between GAI-based technologies and the various stages of the academic writing process.</p>
+<div class="callout callout-style-default callout-note no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>When used critically and in context, these tools can support, optimise, or strengthen scientific writing activities, while preserving the irreplaceable role of theoretical reflection and epistemological control by the researcher.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>The GAI should be integrated at <em>specific points in the editorial process</em>, with differentiated functions — from suggestions to assistance, partial automation or validation — <strong>avoiding a totalising</strong> or <strong>automatic approach</strong>. Its value lies in its ability to intervene at targeted stages of the process, acting as a methodological ally in the most critical or time-consuming steps, without <u>compromising scientific rigour</u>.</p>
+<p>The proposed structure adopts a <strong>logical-procedural approach</strong> and is developed through 6 <u>operational segments</u> (<em>editorial workflow</em>), corresponding to <em>six strategic junctures in the cycle of elaboration and formalisation of the academic text</em>. It is a composite process, and each step involves conceptual, operational and stylistic choices.</p>
+<p>Although these phases do not necessarily follow a strictly linear order (as they may involve returns, revisions or restructuring), it is possible to identify a <strong>shared procedural grid</strong> that allows the writing cycle to be mapped from initial design to publication.</p>
+<section id="a.-defining-scope-and-formulating-the-research-question" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="a.-defining-scope-and-formulating-the-research-question"><span class="header-section-number">7.2.1</span> a. Defining scope and formulating the research question</h3>
+<div style="margin-left: 1.4em;">
+<p>The first phase involves <u>identifying the relevant subject area</u>, defining the <em>research problem</em> and <em>preliminarily structuring the objectives</em>.<br>
+👉🏻 <em>In this phase, AI can be useful as an exploratory tool for generating provisional titles, summarising areas of interest that emerge from the literature or comparing alternative formulations of the same hypothesis</em>.</p>
+<div class="callout callout-style-default callout-warning callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>LLM-based tools can help refine search queries, provided that human intervention is geared towards verifying their epistemological consistency, originality and disciplinary relevance.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</section>
+<section id="b.-finding-selecting-and-summarising-scientific-literature" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="b.-finding-selecting-and-summarising-scientific-literature"><span class="header-section-number">7.2.2</span> b. Finding, selecting and summarising scientific literature</h3>
+<div style="margin-left: 1.4em;">
+<p>One of the fundamental components of academic writing is the <u>construction of a theoretical framework</u>.</p>
+<p>👉🏻 Recent applications of AI in the field of bibliography allow for the automation, at least in part, of certain operations: <em>searching for primary and secondary sources, automatic extraction of abstracts and keywords, construction of concept maps, identification of related or contrasting studies</em>.</p>
+<div class="callout callout-style-default callout-warning callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>However, the critical selection of sources, the analysis of references and the assessment of relevance to one’s project remain highly cognitive activities that cannot be delegated.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</section>
+<section id="c.-planning-the-argumentative-structure-outline" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="c.-planning-the-argumentative-structure-outline"><span class="header-section-number">7.2.3</span> c.&nbsp;Planning the argumentative structure (outline)</h3>
+<div style="margin-left: 1.4em;">
+<p>Once the field of investigation has been defined and the bibliographic material acquired, the text is <u>structured by defining an outline</u>.<br>
+This step requires the <em>ability to logically organise the sections</em> (e.g.&nbsp;IMRaD or narrative structure), <em>assign argumentative functions to each paragraph</em> and <em>anticipate consistency between passages</em>.<br>
+👉🏻 <em>AI can assist in generating outlines from a summary description of the project, suggesting coherent internal structures</em>.</p>
+<div class="callout callout-style-default callout-warning callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>It is the researcher’s responsibility to adapt the generated proposal to the specifics of their theoretical and methodological framework.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</section>
+<section id="d.-composition-of-the-first-draft" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="d.-composition-of-the-first-draft"><span class="header-section-number">7.2.4</span> d.&nbsp;Composition of the <em>first draft</em></h3>
+<div style="margin-left: 1.4em;">
+<p>The drafting of the <em>first draft</em> is the <u>moment when analyses, references and hypotheses are consolidated</u>. Starting from refined prompts, GAI allows you to obtain preliminary versions of text sections, with a certain adherence to formal and structural criteria.</p>
+<div class="callout callout-style-default callout-warning callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>However, it is essential to emphasise that the quality of the content produced depends largely on the clarity of the input and the researcher’s ability to integrate, modify or reject what is proposed. In this perspective, AI takes on the role of editorial assistant, not author.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</section>
+<section id="e.-content-review-and-stylistic-refinement" class="level3" data-number="7.2.5">
+<h3 data-number="7.2.5" class="anchored" data-anchor-id="e.-content-review-and-stylistic-refinement"><span class="header-section-number">7.2.5</span> e. Content review and stylistic refinement</h3>
+<div style="margin-left: 1.4em;">
+<p>This fifth phase involves <u>editing, rephrasing and improving readability</u>.<br>
+AI can be used to <em>rephrase complex sentences, harmonise the linguistic register, suggest logical transitions</em> or <em>optimise information density</em>.<br>
+Some tools also allow you to set specific parameters such as level of formality, tone, length or type of audience.</p>
+<div class="callout callout-style-default callout-warning callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>However, any proposed stylistic or syntactic changes must be evaluated in relation to the function that the text performs within the scientific discourse.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</section>
+<section id="f.-final-check-and-preparation-for-submission" class="level3" data-number="7.2.6">
+<h3 data-number="7.2.6" class="anchored" data-anchor-id="f.-final-check-and-preparation-for-submission"><span class="header-section-number">7.2.6</span> f.&nbsp;Final check and preparation for submission</h3>
+<div style="margin-left: 1.4em;">
+<p>The final stage includes activities such as <u>checking the accuracy of citations, consistency between the text and bibliography, adaptation to specific editorial styles</u> (APA, MLA, Chicago, etc.), <u>final linguistic verification</u> and, where applicable, <u>adaptation of the text to the standards required for submission</u>.<br>
+GAI can also provide support to facilitate <em>formal standardisation, suggest target journals based on the content covered, and generate short accompanying texts</em> (cover letters, abstracts for online submission).</p>
+<div class="callout callout-style-default callout-warning callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Even at this stage, there is still a need for accurate human checking, especially in highly formalised contexts.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="step-by-step-case-studies-practical-applications-of-ai-in-the-editorial-workflow" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="step-by-step-case-studies-practical-applications-of-ai-in-the-editorial-workflow"><span class="header-section-number">7.3</span> 3. Step-by-step case studies: practical applications of AI in the editorial workflow</h2>
+<p>To encourage the informed adoption of GAI in the academic context, it is useful to propose a <strong>series of case studies</strong>, each focusing on a <em>strategic moment in the writing cycle</em>.<br>
+These examples are not prescriptive models, but rather <em>operational scenarios that illustrate the potential applications of AI tools</em>, highlighting their advantages, limitations and optimal conditions of use.<br>
+👉 Each case is presented as a sequence of operations with an indication of the <u>type of tool</u> that can be used, the <u>type of prompt or input required</u>, and the <u>expected contribution to the production or revision of the content</u>.</p>
+<section id="case-studies" class="level4" data-number="7.3.0.1">
+<h4 data-number="7.3.0.1" class="anchored" data-anchor-id="case-studies"><span class="header-section-number">7.3.0.1</span> Case studies</h4>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>1️⃣ – <strong>Automatic Extraction of Key SSH Articles</strong><br>
+<strong>Objective</strong>: Quickly identify an initial selection of relevant sources to define the state of the art.<br>
+<strong>Procedure</strong>:<br>
+1. Query a semantic AI engine (e.g., <em>Elicit, Scite Assistant</em>) with a natural-language prompt (e.g.,<em>“Key debates on digital inclusion in education”</em>)<br>
+2. Evaluate returned items—titles, abstracts, reliability metrics<br>
+3. Manually confirm relevance; archive full texts.<br>
+<strong>Output</strong>: An initial systematic map of key sources, useful for building the theoretical background.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>2️⃣ – <strong>Guided generation of structured outlines</strong><br>
+<strong>Objective</strong>: Build a coherent argumentative structure for the scientific article, following the IMRaD format or equivalent.<br>
+<strong>Procedure</strong>:<br>
+1. Provide a prompt containing a provisional title, research objectives and expected output type (e.g.&nbsp;<em>“Create an outline for an empirical social science paper on X”</em>).<br>
+2. Request a division into sections (Introduction, Methods, Results, Discussion) with brief descriptions of the contents of each.<br>
+3. Verify that the proposals are consistent with the research design and adapt the structure according to the target (call for proposals, journal, conference).<br>
+<strong>Output</strong>: Flexible outline, consistent with the editorial standards of the discipline.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>3️⃣ – <strong>Draft introductory paragraph with critical review</strong><br>
+<strong>Objective</strong>: Produce a first draft of the introductory paragraph to be used as a working basis.<br>
+<strong>Procedure</strong>:<br>
+1. Enter the main research questions, theoretical references and empirical context into the prompt.<br>
+2. Request a controlled generation, indicating length, tone and level of formality (e.g.&nbsp;“Generate a formal academic introductory paragraph, max 150 words”).<br>
+3. Critically evaluate the text produced: relevance, quality of vocabulary, accuracy of statements.<br>
+4. Modify, rewrite or integrate according to your own style and theoretical framework.<br>
+<strong>Output</strong>: A text that is consistent in form, to be refined in content to ensure originality and rigour.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>4️⃣ – <strong>Automatic verification of logical consistency between sections</strong><br>
+<strong>Objective</strong>: Check the consistency between the introduction, objectives and conclusions, highlighting any logical discrepancies or redundancies.<br>
+<strong>Procedure</strong>:<br>
+1. Upload the partial or complete text to an AI environment (e.g.&nbsp;Claude or ChatGPT with document upload mode).<br>
+2. Enter a prompt such as: ’Assess whether the conclusions are consistent with the objectives stated in the introductory section. Indicate any omissions or inconsistencies.<br>
+3. Analyse the feedback provided and verify the validity of the observations, adapting the relevant sections.<br>
+<strong>Output</strong>: Suggestions for strengthening the linearity of argumentation and logical clarity of scientific texts.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>5️⃣ – <strong>Generation of a cover letter for submission to an academic journal</strong>.<br>
+<strong>Objective</strong>: Write a formal cover letter, in accordance with editorial standards, to be sent together with the manuscript.<br>
+<strong>Procedure</strong>:<br>
+1. Enter the main data (article title, journal name, summary of the contribution, authors’ affiliations).<br>
+2. Request a formal cover letter, using a prompt such as: <em>“Create a cover letter for the submission of a scientific article in the field of sociology, addressed to the editorial board of [journal name]</em>.”<br>
+3. Review the proposed text, customising it according to the specifics of the manuscript and the target journal.<br>
+<strong>Output</strong>: A concise, professional letter, consistent with academic editorial practices.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>6️⃣ – <strong>Stylistic adaptation of the text to an international target audience</strong><br>
+<strong>Objective</strong>: Rewrite an article written in Italian into standardised scientific English, suitable for international publication.<br>
+<strong>Procedure</strong>:<br>
+1. Translate the text into English using specialised tools (e.g.&nbsp;DeepL Write, Papercup, Paperpal).<br>
+2. Enter selected sections of the text into the AI platform and indicate the desired stylistic parameters: level of formality, length, disciplinary terminology.<br>
+3. Review the proposals, checking for terminological accuracy, adherence to international standards and syntactic fluency.<br>
+<strong>Output</strong>: A coherent and readable version in English, ready for human proofreading or editorial review.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="from-map-to-method-recommendations-for-researcher-autonomy-1" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="from-map-to-method-recommendations-for-researcher-autonomy-1"><span class="header-section-number">7.4</span> 4. From map to method: recommendations for researcher autonomy</h2>
+<p>The representation of touchpoints between AI and the editorial process should not be understood as a simple descriptive diagram.<br>
+On the contrary, it represents the <u>start of a methodological reflection that needs to be translated into conscious and intentional operational practices</u>.<br>
+A map is useful insofar as it becomes a <strong>method</strong>: <em>a structured set of choices, procedures and checks that allow the researcher to interact with AI tools in a manner consistent with the principles of scientific research</em>.<br>
+From this perspective, the adoption of GAI cannot be interpreted as an automatic delegation of editorial skills, but as an opportunity to develop a new form of <strong>epistemic agency</strong>.<br>
+This agency refers to the <em>ability of the research subject to consciously, reflectively and responsibly guide the process of knowledge production, selecting tools, interpreting data and evaluating content</em> in light of explicit theoretical and methodological goals.<br>
+It implies critical autonomy in governing technical mediations, without relinquishing conceptual and ethical control over one’s scientific work.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Epistemic agency is a form of cognitive responsibility that distinguishes the producer of knowledge (the researcher) from a passive executor of technical automatisms.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It involves:<br>
+• <em>not delegating the construction of scientific argumentation entirely to AI or other external tools</em><br>
+• <em>knowing how to interpret and filter the information and suggestions generated independently</em><br>
+• <em>preserving theoretical intentionality, i.e.&nbsp;consistency between operational choices and the cognitive objectives of the research</em>.</p>
+</div>
+</div>
+<p>This results in an <u>active and reflective approach</u>, based on a balance between technical automation and theoretical control.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>GAI can play an advanced supporting role in scientific production only if it is part of a solid methodological framework capable of preserving the integrity, authorship and originality of scientific contributions.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The challenge, therefore, is to transform the use of AI into a cognitive alliance guided by methodological awareness, rather than a standardised, opaque or disempowering process.<br>
+Only in this way will it be possible to integrate technological innovation without compromising the critical and design value of academic writing.</p>
+</div>
+</div>
+<section id="recommendations" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="recommendations"><span class="header-section-number">7.4.1</span> Recommendations</h3>
+<p>❗️ <strong>Esplicitare il ruolo dell’AI nel flusso di lavoro</strong><br>
+👉🏻 Annotare in quali fasi e per quali scopi si è ricorso a strumenti generativi, contribuendo alla trasparenza metodologica.<br>
+<em>Tale documentazione, integrata nel protocollo metodologico, contribuisce a garantire la riproducibilità, la trasparenza e l’integrità scientifica dell’elaborato, in linea con le raccomandazioni dei principali enti di finanziamento e riviste peer-reviewed.</em></p>
+<p>❗️ <strong>Valutare criticamente ogni output prodotto</strong><br>
+👉🏻 Nessun contenuto generato dall’AI dovrebbe essere accettato in modo automatico, ma analizzato in termini di coerenza con il progetto, adeguatezza scientifica e rigore formale.<br>
+<em>L’adozione acritica di contenuti sintetici o stilisticamente corretti, ma privi di profondità teorica o coerenza argomentativa, può compromettere la qualità complessiva del testo e alterarne il valore scientifico</em>.</p>
+<p>❗️ <strong>Coltivare l’ibridazione tra competenze tecniche e conoscenze disciplinari</strong><br>
+👉🏻 Un uso efficace dell’AI nella scrittura accademica richiede una doppia alfabetizzazione: da un lato, la familiarità con le logiche di funzionamento dei modelli generativi (es. prompt design, temperature, contesto), dall’altro, la padronanza delle convenzioni linguistiche e argomentative della propria area di studio.<br>
+<em>Solo attraverso questa integrazione il ricercatore può operare scelte consapevoli, selezionare strumenti appropriati e orientare l’AI verso risultati epistemicamente validi</em>.</p>
+<p>❗️ <strong>Garantire la tracciabilità delle revisioni</strong><br>
+👉🏻 È buona prassi mantenere un archivio delle modifiche apportate ai contenuti generati dall’AI, indicando quali porzioni sono state riscritte, adattate o validate.<br>
+<em>Ciò consente non solo di conservare il controllo autoriale sul testo, ma anche di ricostruire a posteriori il processo redazionale in caso di valutazioni, revisioni o verifiche etiche. La tracciabilità si configura, in questo senso, come un criterio fondamentale di responsabilità scientifica e integrità editoriale</em>.</p>
+<hr>
+</section>
+</section>
+<section id="references" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="references"><span class="header-section-number">7.5</span> References</h2>
+<blockquote class="blockquote">
+<p>See: <a href="https://doi.org/10.1001/jama.2023.12500">Flanagin, A., Kendall-Taylor, J., &amp; Bibbins-Domingo, K. (2023). Guidance for Authors, Peer Reviewers, and Editors on Use of AI, Language Models, and Chatbots.</a><br>
+See: <a href="https://doi.org/10.37256/ser.6220256517">Rodafinos, A. (2025). The Integration of Generative AI Tools in Academic Writing: Implications for Student Research.</a><br>
+See: <a href="https://doi.org/10.21608/ijeasou.2025.349520.1041">Hanafi, A. M., Al-mansi, M. M., &amp; Al-Sharif, O. A. (2025). Generative AI in Academia: A Comprehensive Review of Applications and Implications for the Research Process.</a><br>
+See: <a href="https://doi.org/10.46743/2160-3715/2024.7634">Johnson, C. W., &amp; Paulus, T. (2024). Generating a Reflexive AI-Assisted Workflow for Academic Writing.</a><br>
+See: <a href="https://doi.org/10.2991/978-94-6463-712-0_6">Bairagi, M., &amp; Lihitkar, S. R. (2025). Empowering Research Workflows and Information Retrieval in Academic Libraries through AI Tools.</a></p>
+</blockquote>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./1-20250803-writingAI.html" class="pagination-link" aria-label="Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./2-20250820-AIcreativepartner.html" class="pagination-link" aria-label="AI as a Creative Partner">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

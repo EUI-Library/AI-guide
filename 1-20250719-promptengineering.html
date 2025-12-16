@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Prompt Engineering for Research: Techniques, Workflows, and Evaluation – AI training</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./1-20250726-ricercaSSH.html" rel="next">
+<link href="./1-20250718-GAItools.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-20250710-GAI-evolution.html">Part 1: Fundamentals of Generative AI e Tools</a></li><li class="breadcrumb-item"><a href="./1-20250719-promptengineering.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI training</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 1: Fundamentals of Generative AI e Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250710-GAI-evolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Evolution of Generative Artificial Intelligence and its Application in Academic Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250718-GAItools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250719-promptengineering.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250726-ricercaSSH.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250803-writingAI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250812-workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 2: Advanced applications of AI in Research and Creativity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250820-AIcreativepartner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250825-AIprogettazione.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">GAI as a Design support tool</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250830_GrantAutom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Writing calls, grants, abstracts, and intelligent automations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250903_Communic_Scient.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific and popular communication</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 3: Ethical aspects and responsibility in the use of AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_epistrasp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Epistemology and Transparency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Implications of the use of AI in research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250915_biasqualita.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_accountability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Accountability in peer review and responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_eticaselfaudit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Towards a renewed operational ethics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-prompt-engineering-1" id="toc-introduction-to-prompt-engineering-1" class="nav-link active" data-scroll-target="#introduction-to-prompt-engineering-1"><span class="header-section-number">4.1</span> 1 Introduction to Prompt Engineering</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-prompt" id="toc-what-is-a-prompt" class="nav-link" data-scroll-target="#what-is-a-prompt"><span class="header-section-number">4.1.1</span> 1.1 What is a prompt?</a></li>
+  <li><a href="#the-prompt-engineering" id="toc-the-prompt-engineering" class="nav-link" data-scroll-target="#the-prompt-engineering"><span class="header-section-number">4.1.2</span> 1.2 The Prompt Engineering</a></li>
+  <li><a href="#hallucinations-and-how-to-prevent-them" id="toc-hallucinations-and-how-to-prevent-them" class="nav-link" data-scroll-target="#hallucinations-and-how-to-prevent-them"><span class="header-section-number">4.1.3</span> 1.3 Hallucinations and how to prevent them</a></li>
+  <li><a href="#foundational-principles-for-effective-and-reliable-prompts" id="toc-foundational-principles-for-effective-and-reliable-prompts" class="nav-link" data-scroll-target="#foundational-principles-for-effective-and-reliable-prompts"><span class="header-section-number">4.1.4</span> 1.4. Foundational principles for effective and reliable prompts</a></li>
+  </ul></li>
+  <li><a href="#few-shot-and-zero-shot-prompting-inline-examples-and-template-selection-1" id="toc-few-shot-and-zero-shot-prompting-inline-examples-and-template-selection-1" class="nav-link" data-scroll-target="#few-shot-and-zero-shot-prompting-inline-examples-and-template-selection-1"><span class="header-section-number">4.2</span> 2. “Few-shot” and “Zero-shot” prompting: inline examples and template selection</a></li>
+  <li><a href="#prompt-chaining-and-complex-pipelines-a-modular-approach-to-output-construction" id="toc-prompt-chaining-and-complex-pipelines-a-modular-approach-to-output-construction" class="nav-link" data-scroll-target="#prompt-chaining-and-complex-pipelines-a-modular-approach-to-output-construction"><span class="header-section-number">4.3</span> 3. Prompt chaining and complex pipelines: a modular approach to output construction</a></li>
+  <li><a href="#advanced-prompts-metadata-extraction-outline-generation-stylistic-paraphrasing-1" id="toc-advanced-prompts-metadata-extraction-outline-generation-stylistic-paraphrasing-1" class="nav-link" data-scroll-target="#advanced-prompts-metadata-extraction-outline-generation-stylistic-paraphrasing-1"><span class="header-section-number">4.4</span> 4. Advanced prompts: metadata extraction, outline generation, stylistic paraphrasing</a></li>
+  <li><a href="#iteration-and-evaluation-of-output-quality" id="toc-iteration-and-evaluation-of-output-quality" class="nav-link" data-scroll-target="#iteration-and-evaluation-of-output-quality"><span class="header-section-number">4.5</span> 5. Iteration and Evaluation of output quality</a></li>
+  <li><a href="#guidelines-for-creating-academic-prompts-1" id="toc-guidelines-for-creating-academic-prompts-1" class="nav-link" data-scroll-target="#guidelines-for-creating-academic-prompts-1"><span class="header-section-number">4.6</span> 6. Guidelines for creating academic prompts</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-20250710-GAI-evolution.html">Part 1: Fundamentals of Generative AI e Tools</a></li><li class="breadcrumb-item"><a href="./1-20250719-promptengineering.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span style="font-size:1.2em; color: #133869ff;">Content</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<section id="introduction-to-prompt-engineering" class="level6" data-number="4.0.0.0.0.1">
+<h6 data-number="4.0.0.0.0.1" class="anchored" data-anchor-id="introduction-to-prompt-engineering"><span class="header-section-number">4.0.0.0.0.1</span> Introduction to Prompt Engineering</h6>
+</section>
+<section id="few-shot-and-zero-shot-prompting-inline-examples-and-template-selection" class="level6" data-number="4.0.0.0.0.2">
+<h6 data-number="4.0.0.0.0.2" class="anchored" data-anchor-id="few-shot-and-zero-shot-prompting-inline-examples-and-template-selection"><span class="header-section-number">4.0.0.0.0.2</span> Few-shot and zero-shot prompting: inline examples and template selection</h6>
+</section>
+<section id="complex-and-reproducible-prompt-chaining-and-pipelines-e.g.-bibliography-topic-modeling-synthesis" class="level6" data-number="4.0.0.0.0.3">
+<h6 data-number="4.0.0.0.0.3" class="anchored" data-anchor-id="complex-and-reproducible-prompt-chaining-and-pipelines-e.g.-bibliography-topic-modeling-synthesis"><span class="header-section-number">4.0.0.0.0.3</span> Complex and reproducible prompt chaining and pipelines (e.g.&nbsp;bibliography → topic modeling → synthesis)</h6>
+</section>
+<section id="advanced-prompts-metadata-extraction-outline-generation-stylistic-paraphrasing" class="level6" data-number="4.0.0.0.0.4">
+<h6 data-number="4.0.0.0.0.4" class="anchored" data-anchor-id="advanced-prompts-metadata-extraction-outline-generation-stylistic-paraphrasing"><span class="header-section-number">4.0.0.0.0.4</span> Advanced prompts: metadata extraction, outline generation, stylistic paraphrasing</h6>
+</section>
+<section id="iterating-and-assessing-the-quality-of-responses" class="level6" data-number="4.0.0.0.0.5">
+<h6 data-number="4.0.0.0.0.5" class="anchored" data-anchor-id="iterating-and-assessing-the-quality-of-responses"><span class="header-section-number">4.0.0.0.0.5</span> Iterating and assessing the quality of responses</h6>
+</section>
+<section id="guidelines-for-creating-academic-prompts" class="level6" data-number="4.0.0.0.0.6">
+<h6 data-number="4.0.0.0.0.6" class="anchored" data-anchor-id="guidelines-for-creating-academic-prompts"><span class="header-section-number">4.0.0.0.0.6</span> Guidelines for Creating Academic Prompts</h6>
+</section>
+</div>
+</div>
+<section id="introduction-to-prompt-engineering-1" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="introduction-to-prompt-engineering-1"><span class="header-section-number">4.1</span> 1 Introduction to Prompt Engineering</h2>
+<section id="what-is-a-prompt" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="what-is-a-prompt"><span class="header-section-number">4.1.1</span> 1.1 What is a prompt?</h3>
+<p>In the context of Generative Artificial Intelligence (GAI), a prompt is a <u>textual instruction given to the model to generate an output</u>. It is not simply a question, but a <strong>structured linguistic command</strong> that defines <em>objectives, constraints, register, and output format</em>.<br>
+In academic research, prompt design is a crucial methodological moment, as the quality of the generated content largely depends on it.</p>
+<div class="callout callout-style-default callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In SSH research (Social Sciences and Humanities), a well-crafted prompt typically:<br>
+- Clearly defines the task objective (<em>e.g.”Analyze the sentiment of…“<em>)<br>
+- Specifies the desired output format (</em>e.g.”Return a bullet list of…“<em>)<br>
+- Provides examples or constraints, when needed (</em>e.g.”Use formal Italian register”</em>)</p>
+</div>
+</div>
+</section>
+<section id="the-prompt-engineering" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="the-prompt-engineering"><span class="header-section-number">4.1.2</span> 1.2 The Prompt Engineering</h3>
+<p>Large Language Models (LLMs) respond to textual input with <u>variable linguistic articulation</u> depending on <em>training</em>, <em>context</em>, and <em>prompt structure</em>. The way the request is formulated directly influences the type of output. The same question can produce very different results depending on form, specificity, or presence of examples.</p>
+<p>Prompt Engineering is the <u>discipline of designing and optimizing prompts to guide AI models—particularly LLMs—toward the desired output</u>. It involves <strong>methodological principles</strong> such as <em>clarity</em>, <em>relevance</em>, <em>structure</em>, <em>logical progression</em> and <em>iteration</em>.</p>
+</section>
+<section id="hallucinations-and-how-to-prevent-them" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="hallucinations-and-how-to-prevent-them"><span class="header-section-number">4.1.3</span> 1.3 Hallucinations and how to prevent them</h3>
+<p>“Hallucinations” occur when <u>the model generates unverified or entirely fabricated statements, often attributing fictitious details to nonexistent sources</u>.<br>
+These errors stem from the statistical nature of Machine Learning and <strong>require strategies of cross-validation and guided reinforcement</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="<span style='font-size:1.2em; color: #12b13cff;'>Anti-hallucination strategies</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><span style="font-size:1.2em; color: #12b13cff;">Anti-hallucination strategies</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><mark>- <strong>Cross-source validation</strong>: ask the model for references, citations, or URLs and manually verify them.<br>
+- <strong>Confirmation queries</strong>: include a verification clause such as: *“Are you sure?* <em>Please briefly validate this data.</em>”<br>
+- <strong>Few-shot learning</strong>: provide 2–3 examples distinguishing between accurate and incorrect responses in order to guide its behavior and improve its accuracy.<br>
+- <strong>Iterative refinement</strong>: generate a first draft and request successive revisions to address inaccuracies, documenting each iteration.</mark></p>
+</div>
+</div>
+</section>
+<section id="foundational-principles-for-effective-and-reliable-prompts" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="foundational-principles-for-effective-and-reliable-prompts"><span class="header-section-number">4.1.4</span> 1.4. Foundational principles for effective and reliable prompts</h3>
+<section id="clarity-and-specificity" class="level4" data-number="4.1.4.1">
+<h4 data-number="4.1.4.1" class="anchored" data-anchor-id="clarity-and-specificity"><span class="header-section-number">4.1.4.1</span> Clarity and Specificity</h4>
+<ul>
+<li>Frame the task unambiguously. Avoid vague requests like <em>“write something about…”</em>. Always indicate the desired result (e.g.,<em>“return a table with columns X, Y, and Z”</em>).</li>
+<li>Explicitly define the output format (e.g., <em>bullet list, 100-word paragraph, numbered list</em>).</li>
+</ul>
+</section>
+<section id="full-context" class="level4" data-number="4.1.4.2">
+<h4 data-number="4.1.4.2" class="anchored" data-anchor-id="full-context"><span class="header-section-number">4.1.4.2</span> Full Context</h4>
+<ul>
+<li>Provide all relevant information, such as text excerpts, definitions of technical terms, methodological constraints, or the target audience (e.g., <em>“text aimed at SSH researchers”</em>).</li>
+<li>Specify tone and register (<em>formal, didactic, expository</em>) to ensure stylistic consistency.</li>
+</ul>
+</section>
+<section id="guided-iteration" class="level4" data-number="4.1.4.3">
+<h4 data-number="4.1.4.3" class="anchored" data-anchor-id="guided-iteration"><span class="header-section-number">4.1.4.3</span> Guided Iteration</h4>
+<ul>
+<li>Do not settle for the first draft. Test small variations to observe how each affects the output.</li>
+<li>Test A/B versions, saving each version for comparative analysis and preserve the various iterations for later benchmarking.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="few-shot-and-zero-shot-prompting-inline-examples-and-template-selection-1" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="few-shot-and-zero-shot-prompting-inline-examples-and-template-selection-1"><span class="header-section-number">4.2</span> 2. “Few-shot” and “Zero-shot” prompting: inline examples and template selection</h2>
+<p>Prompt design plays a crucial role in output quality when using LLMs for academic purposes.<br>
+In particular, <strong>zero-shot</strong> and <strong>few-shot</strong> prompting strategies represent two distinct but <em>complementary approaches</em>, aimed at orienting the behavior of the model in the absence or presence of explicit examples.<br>
+The choice between zero-shot and few-shot prompting must be guided by the nature of the task, the degree of formalization expected and the need to control the variability of the output.<br>
+Both modes can be adopted within more complex pipelines, integrated with validation, review and iterative refinement tools.</p>
+<section id="zero-shot-prompting" class="level4" data-number="4.2.0.1">
+<h4 data-number="4.2.0.1" class="anchored" data-anchor-id="zero-shot-prompting"><span class="header-section-number">4.2.0.1</span> <u>Zero-shot Prompting</u></h4>
+<p>Zero-shot prompting uses explicit instructions without concrete examples. It assumes the model can infer the task solely from a clear command. This is useful for standard or generic tasks but more prone to ambiguity or result variability.</p>
+</section>
+<section id="few-shot-prompting" class="level4" data-number="4.2.0.2">
+<h4 data-number="4.2.0.2" class="anchored" data-anchor-id="few-shot-prompting"><span class="header-section-number">4.2.0.2</span> <u>Few-shot Prompting</u></h4>
+<p>Few-shot prompting embeds one or more examples within the prompt, guiding the model to replicate a demonstrated pattern. In academic contexts, it is especially effective for standardizing formats (e.g., <em>abstracts, bibliographic entries, methodological summaries</em>) and maintaining stylistic coherence.</p>
+</section>
+<section id="template-use" class="level4" data-number="4.2.0.3">
+<h4 data-number="4.2.0.3" class="anchored" data-anchor-id="template-use"><span class="header-section-number">4.2.0.3</span> <u>Template Use</u></h4>
+<p>Template selection and adaptation are central to this strategy. Recurring structures — e.g., <em>“Question → Extract → Summary” or “Title → Objective → Methodology → Results”</em> —facilitate comparable outputs and enhance compatibility with archival and analytical systems.</p>
+</section>
+</section>
+<section id="prompt-chaining-and-complex-pipelines-a-modular-approach-to-output-construction" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="prompt-chaining-and-complex-pipelines-a-modular-approach-to-output-construction"><span class="header-section-number">4.3</span> 3. Prompt chaining and complex pipelines: a modular approach to output construction</h2>
+<p>Academic tasks involving progressive information processing — such as <em>literature reviews</em>, <em>thematic analysis</em> or <em>argument construction</em> — benefit significantly from complex pipelines based on prompt chaining.<br>
+This approach entails sequential execution of multiple prompts, each serving a specific function within a structured workflow.<br>
+The output from each stage becomes the input for the next, following a modular, cumulative logic.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="<u>Complex pipelines</u>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><u>Complex pipelines</u>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Complex pipelines differ markedly from the isolated use of LLMs, as they aim to <em>structure a distributed cognitive process</em>, in which each step contributes to the construction of a coherent, documentable and verifiable final result.<br>
+Their adoption makes it possible not only to divide cognitively dense tasks into more manageable units, but also <em>to improve methodological control and transparency of automatic processing processes</em>.</p>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Application example</strong></th>
+<th>“Systematic review of the literature”</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Retrieving relevant sources</strong></td>
+<td><em>Using a prompt to query databases or tools such as Elicit or Perplexity AI, in order to identify relevant articles on a given topic.</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Structured metadata extraction</strong></td>
+<td><em>Prompts aimed at extracting and organizing information such as title, authors, date, methodology, type of study, subject area.</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Theme recognition and clustering</strong></td>
+<td><em>Application of prompts aimed at identifying recurring concepts, semantic classification and building thematic maps.</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Comparative synthesis of results</strong></td>
+<td><em>Synthesis command to produce an integrated view of the evidence, with comparison between approaches, results and theoretical positions.</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Generation of the final output</strong></td>
+<td><em>Last prompt to transform the collected material into a finished product, such as a thematic overview, a bibliographic annotation or an articulated abstract.</em></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Complex pipelines differ from isolated prompt use: they aim to construct a distributed cognitive process.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Benefits include: <em>Modularity</em> - <em>Reproducibility</em> - <em>Methodological transparency</em> - <em>Output traceability</em>.</p>
+</div>
+</div>
+</section>
+<section id="advanced-prompts-metadata-extraction-outline-generation-stylistic-paraphrasing-1" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="advanced-prompts-metadata-extraction-outline-generation-stylistic-paraphrasing-1"><span class="header-section-number">4.4</span> 4. Advanced prompts: metadata extraction, outline generation, stylistic paraphrasing</h2>
+<p>The use of LLMs in Academia is not limited to the simple production of texts, but can be extended to more sophisticated functions through the use of <strong>advanced prompts</strong>.<br>
+These allow you to guide the model in carrying out structured, analytical or transformative tasks, which <u>require a more precise configuration of the prompt and a greater awareness of the semantic capabilities of the model</u>.</p>
+Among the most relevant applications are:<br>
+- The <u>automatic extraction of metadata from scientific articles or other structured documents</u>.<br>
+
+<div style="margin-left: 0.5em;">
+<em>Through targeted prompts, it is possible to isolate information such as author, year of publication, methodological context, reference discipline or type of study. This type of operation is particularly useful for the construction of bibliographic datasets, the compilation of structured repertoires and the automated analysis of literature.</em><br>
+- The <u>generation of outlines</u>.<br>
+<em>During the planning or drafting of scientific contributions, it is possible to ask the model to build logical schemes, argumentative structures or section plans consistent with disciplinary standards. These outlines can then be integrated, modified or expanded by the researcher, acting as a support for the design of articles, reports, project proposals or theses.</em><br>
+- Targeted <u>stylistic paraphrases</u>.<br>
+<em>These are reformulations of existing content according to a specific style: formal, technical, popular, or compliant with certain disciplinary registers. This functionality is used in the revision of texts, in the linguistic adaptation for international publications or in the production of multiple versions of the same content for teaching, editorial or communication purposes</em>.
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Applications include:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Structured metadata from PDFs (author, date, methods).<br>
+</li>
+<li>Academic outlines following disciplinary logic.<br>
+</li>
+<li>Stylistic rewriting (formal → plain, Italian → English, etc.).<br>
+</li>
+</ul>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 53%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Obiettivo:</strong></th>
+<th><em>Scrivere una sintesi tematica a partire da un corpus bibliografico</em></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td><strong>Funzione</strong></td>
+<td><strong>Tecnica</strong></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Inserimento articoli</td>
+<td>prompt + upload PDF / DOI</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Estrazione metadati (autore, anno, metodo)</td>
+<td>prompt strutturato</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Riconoscimento dei temi ricorrenti</td>
+<td>prompt di classificazione</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Sintesi comparativa dei risultati</td>
+<td>prompt di sintesi con vincolo stilistico</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Output finale in formato accademico</td>
+<td>template APA o report Markdown</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Effective use of advanced prompts <strong>requires a fine understanding of the model’s capabilities and limitations</strong>, as well as a design ability geared toward controlling the output.<br>
+This is a particularly promising area of experimentation for the world of research, in which AI is used not to replace writing, but to enhance its preparatory, analytical and stylistic phases.</p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p>See: <a href="https://doi.org/10.1007/s10439-023-03272-4"><strong>Giray,L.”Prompt Engineering with ChatGPT: A Guide for Academic Writers”</strong>.</a>.<br>
+See: <a href="https://intranet.icar.cnr.it/wp-content/uploads/2025/01/RT-ICAR-NA-2024-05.pdf"><strong>Generative Artificial Intelligence Prompt Engineering Overview</strong></a>.</p>
+</blockquote>
+</section>
+<section id="iteration-and-evaluation-of-output-quality" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="iteration-and-evaluation-of-output-quality"><span class="header-section-number">4.5</span> 5. Iteration and Evaluation of output quality</h2>
+<p>The effectiveness of a prompt cannot be considered a <em>static datum</em>, but the result of an <u>iterative optimization process</u>.<br>
+The interaction with the model requires an <em>experimental and progressive logic, in which the answers obtained must be constantly subjected to verification, reformulation and comparison</em>.<br>
+<strong>Iteration</strong> consists of the targeted repetition of the prompting with incremental changes as variations in the vocabulary, in the instructions order, in the level of specificity or in the structure of the expected format.<br>
+This process refines the quality of the output, <em>reducing the interpretative ambiguities of the model and improving consistency with the researcher’s objectives</em>.<br>
+More than a simple linguistic refinement, it is a <em>methodological mechanism that allows you to explore the sensitivity of the model to the different input parameters</em>.</p>
+<p>The <strong>evaluation of the quality of the answers</strong> requires clear and shared criteria.<br>
+In the academic field, the analysis includes not only formal and grammatical correctness, but also other aspects such as:<br>
+- <em>conceptual accuracy (absence of factual errors or unjustified inferences)</em><br>
+- <em>relevance to the demand</em><br>
+- <em>argumentative cohesion</em><br>
+- <em>adherence to stylistic or disciplinary standards</em><br>
+- <em>transparency of sources and implicit assumptions (where relevant)</em>.</p>
+<p>Evaluation cannot be entrusted to generic indicators or intuitive judgments, but <u>must be based on grids or reference models compatible with scientific research and communication practices</u>.<br>
+<em>In particular, when the results are used as preliminary materials for publications, systematic reviews or teaching support, it is advisable to document the choices made, justify any reformulations and point out the limits of the output generated.</em></p>
+<div class="callout callout-style-simple callout-warning no-icon callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>In summary, employing LLMs in the academic field means applying reflective and responsible logic to ensure the reliability and relevance of the content produced.Prompt Engineering in research must be treated as a methodological discipline, not a casual interaction. It supports transparency, reproducibility, and epistemic control in AI-assisted scholarship.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="guidelines-for-creating-academic-prompts-1" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="guidelines-for-creating-academic-prompts-1"><span class="header-section-number">4.6</span> 6. Guidelines for creating academic prompts</h2>
+<p>Below a structured in 6 steps useful for obtaining maximum results in academic research.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="1 - Precise definition of the purpose of the research">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>1 - Precise definition of the purpose of the research
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You need to be transparent about what you want to achieve. A vague prompt leads to vague answers, and you have to turn the search questions into direct instructions for the AI model.<br>
+The goal must be clear:<br>
+(incorrect) <em>“Give me an overview of X.”</em><br>
+(corrected) <em>“Identify the most recent peer-reviewed articles on topic X.”</em><br>
+The question must be transformed into an instruction.<br>
+To the question <em>“What is the role of AI in qualitative research?”</em>, the prompt should be:<br>
+<em>“List the 5 peer-reviewed articles published from 2022 to 2024 on the role of AI in qualitative research, indicating title, authors, journal, and DOI.”</em></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="2 - Provide context and selection criteria">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>2 - Provide context and selection criteria
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Artificial intelligence needs the necessary context to focus the search and provide relevant results.<br>
+It is important to include the following parameters:<br>
+- <em>Disciplinary scope</em>: <em>e.g., “in the context of social sciences” or “with a focus on bioinformatics”.</em><br>
+- <em>Time range</em>: <em>e.g., “from the last three years” or “before 2020”.</em><br>
+- <em>Type of output desired</em>: <em>“Return a CSV table with columns: Title, Authors, Year, DOI.”</em><br>
+- <em>“Generate a bulleted list.”</em><br>
+- <em>“Provide a detailed explanation.”</em></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="3 - Provide examples (Few-Shot prompting)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>3 - Provide examples (Few-Shot prompting)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Showing the AI one or two examples of the desired output, as if it were a model to follow, allows for a more accurate and coherent response.<br>
+Examples must be clear, promptly including a few pre-filled rows in the desired format: <em>Title, Authors, Year, DOI</em><br>
+“AI in Social Sciences: A Review”, Rossi et al., 2023, 10.1234/ai.socsci.2023.01<br>
+“Qualitative Artificial Intelligence Methods”, Smith &amp; Lee, 2022, 10.5678/qual.ai.2022.02<br>
+Then ask:<br>
+<em>“Now continue with three more articles following the same format.”</em></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="4 -  Break the task into multiple steps (Chain of Thought)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>4 - Break the task into multiple steps (Chain of Thought)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For complex or multidisciplinary tasks, break the workflow into sequential steps to help the model reason and reduce hallucinations.<br>
+How to guide AI reasoning:<br>
+<em>step 1) “Search for articles using keywords X, Y, Z.”</em><br>
+<em>step 2) “Filter for high-impact journals (Q1/Q2).”</em><br>
+<em>step 3) “Sort results in reverse chronological order.”</em><br>
+<em>step 4) “Summarize the main findings of each article in 50 words.”</em></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="5 - Implement subsequent consistency checks">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>5 - Implement subsequent consistency checks
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is advised not to blindly trust the outputs received from AI. You can ask the model to verify its own results or justify its choices.<br>
+You may proceed as follows:<br>
+- <em>Request for justification</em>: <em>“Briefly explain why each article is relevant to my research on X.”</em><br>
+- <em>Fact-Check</em>: <em>“For each DOI, confirm its existence and validity on CrossRef.”</em><br>
+- <em>Cross-Review</em>: <em>“Review the table and flag any inconsistencies or potential hallucinations.”</em></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="6 - Iterate and document">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>6 - Iterate and document
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Building effective prompts can be considered an iterative process, as it is unlikely to achieve the desired result on the first try.<br>
+- <em>Track versions</em>: record each prompt variant with date and changes to identify best practices.<br>
+- <em>Compare results</em>: keep only the prompts that produce the most accurate and complete outputs.<br>
+- <em>Analyze errors</em>: when hallucinations occur (<em>e.g., non-existent articles, incorrect DOIs</em>), refine your prompt by adding specific constraints (<em>e.g., “use only Scopus or PubMed databases” or “exclude predatory journals”</em>).</p>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./1-20250718-GAItools.html" class="pagination-link" aria-label="Updated Overview of Generative AI Tools">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./1-20250726-ricercaSSH.html" class="pagination-link" aria-label="Use Cases in Social Sciences and Humanities (SSH) Research">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

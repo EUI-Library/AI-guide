@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Use Cases in Social Sciences and Humanities (SSH) Research – AI training</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./1-20250803-writingAI.html" rel="next">
+<link href="./1-20250719-promptengineering.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-20250710-GAI-evolution.html">Part 1: Fundamentals of Generative AI e Tools</a></li><li class="breadcrumb-item"><a href="./1-20250726-ricercaSSH.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI training</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 1: Fundamentals of Generative AI e Tools</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250710-GAI-evolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The Evolution of Generative Artificial Intelligence and its Application in Academic Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250718-GAItools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Updated Overview of Generative AI Tools</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250719-promptengineering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250726-ricercaSSH.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250803-writingAI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1-20250812-workflow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 2: Advanced applications of AI in Research and Creativity</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250820-AIcreativepartner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">AI as a Creative Partner</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250825-AIprogettazione.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">GAI as a Design support tool</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250830_GrantAutom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Writing calls, grants, abstracts, and intelligent automations</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2-20250903_Communic_Scient.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Scientific and popular communication</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part 3: Ethical aspects and responsibility in the use of AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_epistrasp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Epistemology and Transparency</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250908_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Implications of the use of AI in research</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250915_biasqualita.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Bias and source quality</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_accountability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Accountability in peer review and responsibility</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3-20250922_eticaselfaudit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Towards a renewed operational ethics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#text-mining-and-topic-modeling-applied-to-textual-corpora-in-ssh-1" id="toc-text-mining-and-topic-modeling-applied-to-textual-corpora-in-ssh-1" class="nav-link active" data-scroll-target="#text-mining-and-topic-modeling-applied-to-textual-corpora-in-ssh-1"><span class="header-section-number">5.1</span> 1. Text Mining and Topic Modeling applied to textual corpora in SSH</a>
+  <ul class="collapse">
+  <li><a href="#text-mining-structured-extraction-from-textual-data" id="toc-text-mining-structured-extraction-from-textual-data" class="nav-link" data-scroll-target="#text-mining-structured-extraction-from-textual-data"><span class="header-section-number">5.1.1</span> 1.1 Text Mining: structured extraction from textual data</a></li>
+  <li><a href="#topic-modeling-identifying-latent-structures" id="toc-topic-modeling-identifying-latent-structures" class="nav-link" data-scroll-target="#topic-modeling-identifying-latent-structures"><span class="header-section-number">5.1.2</span> 1.2 Topic Modeling: identifying latent structures</a></li>
+  <li><a href="#methodological-considerations-and-limitations" id="toc-methodological-considerations-and-limitations" class="nav-link" data-scroll-target="#methodological-considerations-and-limitations"><span class="header-section-number">5.1.3</span> 1.3 Methodological Considerations and Limitations</a></li>
+  <li><a href="#practical-applications-in-ssh-research" id="toc-practical-applications-in-ssh-research" class="nav-link" data-scroll-target="#practical-applications-in-ssh-research"><span class="header-section-number">5.1.4</span> 1.4 Practical Applications in SSH Research</a></li>
+  <li><a href="#guidelines-for-use-in-ssh-projects" id="toc-guidelines-for-use-in-ssh-projects" class="nav-link" data-scroll-target="#guidelines-for-use-in-ssh-projects"><span class="header-section-number">5.1.5</span> 1.5 Guidelines for use in SSH Projects</a></li>
+  </ul></li>
+  <li><a href="#assisted-qualitative-analysis-automatic-coding-and-sentiment-analysis-1" id="toc-assisted-qualitative-analysis-automatic-coding-and-sentiment-analysis-1" class="nav-link" data-scroll-target="#assisted-qualitative-analysis-automatic-coding-and-sentiment-analysis-1"><span class="header-section-number">5.2</span> 2. Assisted Qualitative Analysis: Automatic Coding and Sentiment Analysis</a>
+  <ul class="collapse">
+  <li><a href="#automatic-coding" id="toc-automatic-coding" class="nav-link" data-scroll-target="#automatic-coding"><span class="header-section-number">5.2.1</span> 2.1 Automatic Coding</a></li>
+  <li><a href="#sentiment-analysis" id="toc-sentiment-analysis" class="nav-link" data-scroll-target="#sentiment-analysis"><span class="header-section-number">5.2.2</span> 2.2 Sentiment Analysis</a></li>
+  </ul></li>
+  <li><a href="#multilevel-translation-and-linguistic-adaptation-for-academic-environments-1" id="toc-multilevel-translation-and-linguistic-adaptation-for-academic-environments-1" class="nav-link" data-scroll-target="#multilevel-translation-and-linguistic-adaptation-for-academic-environments-1"><span class="header-section-number">6</span> 3. Multilevel translation and linguistic adaptation for academic environments</a></li>
+  <li><a href="#practical-examples-and-implementation-scenarios." id="toc-practical-examples-and-implementation-scenarios." class="nav-link" data-scroll-target="#practical-examples-and-implementation-scenarios."><span class="header-section-number">7</span> 4. Practical Examples and Implementation Scenarios.</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1-20250710-GAI-evolution.html">Part 1: Fundamentals of Generative AI e Tools</a></li><li class="breadcrumb-item"><a href="./1-20250726-ricercaSSH.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Use Cases in Social Sciences and Humanities (SSH) Research</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-note no-icon callout-titled" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><span style="font-size:1.2em; color: #133869ff;">Content</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<section id="text-mining-and-topic-modeling-applied-to-textual-corpora-in-ssh" class="level6" data-number="5.0.0.0.0.1">
+<h6 data-number="5.0.0.0.0.1" class="anchored" data-anchor-id="text-mining-and-topic-modeling-applied-to-textual-corpora-in-ssh"><span class="header-section-number">5.0.0.0.0.1</span> Text Mining and Topic Modeling applied to textual corpora in SSH</h6>
+</section>
+<section id="assisted-qualitative-analysis-automatic-coding-and-sentiment-analysis" class="level6" data-number="5.0.0.0.0.2">
+<h6 data-number="5.0.0.0.0.2" class="anchored" data-anchor-id="assisted-qualitative-analysis-automatic-coding-and-sentiment-analysis"><span class="header-section-number">5.0.0.0.0.2</span> Assisted Qualitative Analysis: Automatic Coding and Sentiment Analysis</h6>
+</section>
+<section id="multilevel-translation-and-linguistic-adaptation-for-academic-environments" class="level6" data-number="5.0.0.0.0.3">
+<h6 data-number="5.0.0.0.0.3" class="anchored" data-anchor-id="multilevel-translation-and-linguistic-adaptation-for-academic-environments"><span class="header-section-number">5.0.0.0.0.3</span> Multilevel Translation and Linguistic Adaptation for Academic Environments</h6>
+</section>
+<section id="practical-examples-and-implementation-scenarios" class="level6" data-number="5.0.0.0.0.4">
+<h6 data-number="5.0.0.0.0.4" class="anchored" data-anchor-id="practical-examples-and-implementation-scenarios"><span class="header-section-number">5.0.0.0.0.4</span> Practical Examples and Implementation Scenarios</h6>
+</section>
+</div>
+</div>
+<hr>
+<section id="text-mining-and-topic-modeling-applied-to-textual-corpora-in-ssh-1" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="text-mining-and-topic-modeling-applied-to-textual-corpora-in-ssh-1"><span class="header-section-number">5.1</span> 1. Text Mining and Topic Modeling applied to textual corpora in SSH</h2>
+<p>The application of AI-based tools — particularly language models and automated language processing techniques — has opened new perspectives for textual analysis within the social sciences and humanities.<br>
+Unlike STEM disciplines, where computational tools are well established, <strong>integrating AI into SSH</strong> research processes requires <em>careful and contextualized methodological reflection</em>.<br>
+A primary area of application concerns <strong>text mining</strong> and <strong>topic modeling</strong> on textual corpora.<br>
+These techniques <em>enable the automatic identification of latent thematic structures within large volumes of text</em>, allowing researchers to explore <em>discursive patterns, lexical frequencies, and semantic co-occurrences</em>.<br>
+Automatic text analysis through computational methods is increasingly relevant in SSH research, especially when dealing with <em>large, unstructured, and heterogeneous textual sources</em>.<br>
+In this context, text mining and topic modeling emerge as <u>two distinct but complementary tools</u> for the systematic exploration of linguistic corpora.<br>
+The analysis can be conducted on <u>different sources</u> (<em>interviews, newspaper articles, administrative documents, parliamentary proceedings</em>) and <u>yields interpretable visual outputs</u> (<em>thematic maps, dendrograms, conceptual networks</em>).<br>
+<strong>However, it is essential that these tools be employed not as substitutes but as complements to theoretically grounded analysis</strong>.</p>
+<section id="text-mining-structured-extraction-from-textual-data" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="text-mining-structured-extraction-from-textual-data"><span class="header-section-number">5.1.1</span> 1.1 Text Mining: structured extraction from textual data</h3>
+<p><strong>Text mining</strong> refers to the set of computational techniques aimed at the automatic extraction of structured information from natural language text.<br>
+In <strong>SSH contexts</strong>, the goal of text mining is to <u>transform textual documents into quantitative, interpretable representations that can feed <em>exploratory, descriptive, or inferential analyses</em></u>.</p>
+<p>Typical <strong>applications</strong> include:<br>
+- Analysis of political language in parliamentary speeches.<br>
+- Study of rhetoric in media or institutional communication.<br>
+- Exploration of collective narratives in historical, memorial, or literary sources.<br>
+- Thematic mapping of open-ended interview datasets.</p>
+<p>This approach relies on <a href="https://www.ibm.com/think/topics/natural-language-processing"><strong>Natural Language Processing (NLP)</strong></a> tools such as:<br>
+- <em>Tokenization</em><br>
+- <em>Lemmatization</em><br>
+- <em>Part-of-speech (POS) tagging</em><br>
+- <em>Named Entity Recognition (NER)</em><br>
+- <em>Lexical co-occurrence analysis</em><br>
+- <em>Construction of Document-Term Matrices (DTM)</em></p>
+<blockquote class="blockquote">
+<p>See: <a href="https://web.stanford.edu/~jurafsky/slp3/old_oct19/8.pdf"><em>“Part-of-speech (POS) tagging” - Stanford University</em></a>.<br>
+See: <a href="https://www.ibm.com/it-it/think/topics/named-entity-recognition"><em>“Named Entity Recognition (NER)” - IBM</em></a>.</p>
+</blockquote>
+</section>
+<section id="topic-modeling-identifying-latent-structures" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="topic-modeling-identifying-latent-structures"><span class="header-section-number">5.1.2</span> 1.2 Topic Modeling: identifying latent structures</h3>
+<p><strong>Topic modeling</strong> encompasses statistical methods that automatically uncover the principal themes within a large collection of documents without prior specification.<br>
+It operates by <u>identifying groups of words that frequently co-occur, presumed to represent a common topic</u>. <em>Each document is viewed as a mixture of topics, and each topic is represented by a distribution of semantically related terms</em>. In practice, the model does not “understand” meaning as a human would but computes word co-occurrence patterns and infers thematic presence accordingly. The researcher then interprets each word cluster and assigns a label or meaning.</p>
+<p>The most widely adopted model is <a href="https://dl.acm.org/doi/pdf/10.5555/944919.944937"><strong>“Latent Dirichlet Allocation (LDA)</strong></a>, which assumes each document to be a mixture of topics and each topic a distribution over terms.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>In <strong>SSH</strong> topic modeling allows to:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Highlight primary themes in a corpus without a priori coding.<br>
+</li>
+<li>Track thematic evolution over time (e.g., <em>temporal topic modeling</em>).<br>
+</li>
+<li>Compare thematic emphasis across document groups (e.g., <em>governmental vs.&nbsp;civic sources</em>).<br>
+</li>
+<li>Support category identification in qualitative studies with large datasets.<br>
+</li>
+</ul>
+</div>
+</div>
+<p>Interpretation of topics remains a fundamentally qualitative operation, requiring theoretical expertise and domain knowledge.<br>
+<strong>Topic modeling does not replace interpretive analysis but extends its scope and reproducibility</strong>.</p>
+<section id="example-schema-topic-modeling-on-a-news-article-corpus" class="level4" data-number="5.1.2.1">
+<h4 data-number="5.1.2.1" class="anchored" data-anchor-id="example-schema-topic-modeling-on-a-news-article-corpus"><span class="header-section-number">5.1.2.1</span> Example Schema: Topic Modeling on a News Article Corpus</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Context</th>
+<th>Corpus of 1,000 articles from national newspapers, published between 2020 and 2024, related to the topic of environment and climate policies.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Objective</td>
+<td>To identify the main themes present in the articles,/ without defining them from the start.</td>
+</tr>
+<tr class="even">
+<td>(1) Text pre-processing</td>
+<td>Text cleanup (removal of punctuation, stopwords, etc.) / Reduction of words to the basic form (lemmatization) / Construction of the document-term matrix (which words appear in which articles, and how often)</td>
+</tr>
+<tr class="odd">
+<td>(2) Application of the model (e.g.&nbsp;<em>LDA – Latent Dirichlet Allocation</em>)</td>
+<td>The model statistically processes co-occurrences and returns a series of “topics”, each consisting of a list of frequent words.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="example-of-synthetic-output" class="level4" data-number="5.1.2.2">
+<h4 data-number="5.1.2.2" class="anchored" data-anchor-id="example-of-synthetic-output"><span class="header-section-number">5.1.2.2</span> <u>Example of synthetic output:</u></h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 45%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Topic</strong></th>
+<th style="text-align: center;"><strong>Most Representative Words</strong></th>
+<th style="text-align: center;"><strong>Interpretation (by the Researcher)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">emissions, CO₂, fuels, industry, coal</td>
+<td style="text-align: center;">Energy transition and decarbonization</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">drought, extreme events, flooding, heatwave, damage</td>
+<td style="text-align: center;">Impacts of climate change</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">COP26, agreements, UN, targets, Paris</td>
+<td style="text-align: center;">International climate policy and conferences</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">mobility, transportation, electric vehicles, incentives, public transit</td>
+<td style="text-align: center;">Urban sustainability policies</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 76%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>(3) Analysis and visualization</td>
+<td>Distribution of topics by year → which themes increase or decrease over time / Comparison by newspaper → which newspapers emphasize certain themes / Mapping of topics within political discourse → e.g.&nbsp;overlapping with parliamentary discourses</td>
+</tr>
+<tr class="even">
+<td>(4) Limitations and Critical Use</td>
+<td>The model suggests groups of words, not “meanings”: the interpretation of the themes is the responsibility of the researcher. The results depend a lot on the quality of the corpus and the technical choices (number of topics, filter parameters, etc.)</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="methodological-considerations-and-limitations" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="methodological-considerations-and-limitations"><span class="header-section-number">5.1.3</span> 1.3 Methodological Considerations and Limitations</h3>
+<p>Both techniques present critical constraints. We have to pay attention to:<br>
+- <strong>Preprocessing quality</strong> (cleaning, normalization) significantly affects results<br>
+- <strong>Topic interpretation</strong> demands careful, theory-informed human mediation<br>
+- <strong>Parameter choices</strong> (number of topics, filtering thresholds) are inherently arbitrary and must be transparently justified</p>
+<div class="callout callout-style-default callout-important callout-empty-content callout-titled" title="<span style='font-size:1.1em; color: #133869ff;'>**Methodological Tip**: Document all preprocessing decisions, triangulate with other data sources, and reflect epistemologically on the limits of automated social inference.</span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span><span style="font-size:1.1em; color: #133869ff;"><strong>Methodological Tip</strong>: Document all preprocessing decisions, triangulate with other data sources, and reflect epistemologically on the limits of automated social inference.</span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="practical-applications-in-ssh-research" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="practical-applications-in-ssh-research"><span class="header-section-number">5.1.4</span> 1.4 Practical Applications in SSH Research</h3>
+<p>To better understand its use, some concrete areas of application are suggested, by way of example:<br>
+- <strong>Cultural History</strong>: applying topic modeling to 19th-century correspondence to identify recurring themes among European intellectuals.<br>
+- <strong>Sociology of Communication</strong>: analyzing digital platform comments to detect discursive patterns and thematic polarization.<br>
+- <strong>Political Science</strong>: studying parliamentary speeches to trace party lexicon evolution and contrast with media framing.<br>
+- <strong>Digital Anthropology</strong>: text mining on thematic forums to extract native categories and semantic maps related to care, consumption, and identity.</p>
+<section id="recommended-open-source-tools-for-ssh" class="level4" data-number="5.1.4.1">
+<h4 data-number="5.1.4.1" class="anchored" data-anchor-id="recommended-open-source-tools-for-ssh"><span class="header-section-number">5.1.4.1</span> <u>Recommended Open Source Tools for SSH</u></h4>
+<ul>
+<li><a href="https://tmtoolkit.readthedocs.io">tmtoolkit</a> (Python &amp; R): The most comprehensive for SSH researchers, with direct support for text mining and topic modeling workflows, R/Python interoperability, consistency measures, and visualizations tmtoolkit.</li>
+<li><a href="https://github.com/MaartenGr/BERTopic">BERTopic</a>: Semantic embedding + clustering for advanced thematic discovery. Ideal when corpora require advanced semantic processing and non-trivial topic detection.</li>
+<li><a href="http://mallet.cs.umass.edu">MALLET</a>: High-scale LDA implementations in Java.</li>
+<li><a href="https://scikit-learn.org">scikit-learn</a> + <a href="https://radimrehurek.com/gensim">Gensim</a>: Effective combination for educational or grassroots projects, with large community and established workflows.</li>
+<li><a href="https://infranodus.com">InfraNodus</a>: Recommended if you want exploratory visualizations, semantic maps, and narrative analysis.</li>
+<li><a href="https://github.com/ddangelov/Top2Vec">Top2Vec</a>: Combine document embedding and topic modeling, automatically detect the number of topics. Useful in exploratory phases where the thematic structure is not known a priori.</li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-empty-content callout-titled" title="<span style='font-size:1.1em; color: #133869ff;'>Some tools (e.g. Top2Vec, InfraNodus) are less well-established in mainstream SSH methodology, but are valuable when used critically.Tools such as BERTopic are based on newer technologies (semantic embedding), therefore they require more attention in the interpretation phase.Performance varies based on pre-processing quality and corpus type. </span>">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span><span style="font-size:1.1em; color: #133869ff;">Some tools (e.g.&nbsp;Top2Vec, InfraNodus) are less well-established in mainstream SSH methodology, but are valuable when used critically.Tools such as BERTopic are based on newer technologies (semantic embedding), therefore they require more attention in the interpretation phase.Performance varies based on pre-processing quality and corpus type. </span>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 26%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Tool / Model</strong></th>
+<th style="text-align: center;"><strong>Type</strong></th>
+<th><strong>Recommended usage context</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">LDA (via Gensim / scikit-learn)</td>
+<td style="text-align: center;">Probabilistic topic modeling</td>
+<td>Structured corpora, homogeneous language, standard thematic analysis</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">BERTopic</td>
+<td style="text-align: center;">Semantic topic modeling</td>
+<td>Complex corpora with semantic variation, specialized or multidisciplinary discourse</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Top2Vec</td>
+<td style="text-align: center;">Unsupervised embedding-based topic modeling</td>
+<td>Preliminary exploration of large text corpora, automatic topic count detection</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">MALLET</td>
+<td style="text-align: center;">Gibbs sampling topic modeling</td>
+<td>Large-scale datasets requiring high computational efficiency</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">InfraNodus</td>
+<td style="text-align: center;">Network visualization and analysis</td>
+<td>Exploratory phase, narrative or cultural analysis, conceptual mapping</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">tmtoolkit</td>
+<td style="text-align: center;">Integrated analytical toolkit</td>
+<td>Pre-processing, coherence evaluation, end-to-end Python workflow</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">spaCy</td>
+<td style="text-align: center;">NLP library</td>
+<td>Tokenization, lemmatization, syntactic parsing</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="guidelines-for-use-in-ssh-projects" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="guidelines-for-use-in-ssh-projects"><span class="header-section-number">5.1.5</span> 1.5 Guidelines for use in SSH Projects</h3>
+<p>The use of topic modeling and text mining techniques in the contexts of SSH requires the <em>adoption of a series of methodological measures that guarantee the quality, transparency and reproducibility of the analyses</em>.<br>
+The main aspects to consider include:</p>
+<ol type="a">
+<li><p><u>Textual pre-processing phase</u>.<br>
+The preliminary processing of textual data is a necessary condition for the reliability of the results. Operations such as <em>tokenization, elimination of stopwords, lemmatization and lexical normalization</em> must be carried out rigorously and explicitly documented. Tools such as <a href="https://spacy.io/">spaCy</a> (for language processing) and tmtoolkit (for integrated management of analytical pipelines) allow you to automate these steps, reducing the variability introduced by manual interventions.</p></li>
+<li><p><u>Model selection and appropriateness with respect to the corpus</u>.<br>
+The choice of the topic modeling algorithm must be consistent with the <em>nature of the corpus</em> and with the <em>analytical objectives of the project</em>. Traditional probabilistic models such as LDA, available through libraries such as Gensim or scikit-learn, are appropriate for well-structured and linguistically homogeneous corpus analyses. Models based on semantic embeddings (e.g.&nbsp;BERTopic, Top2Vec) offer greater sensitivity to lexical nuances and are suitable for complex corpora or corpora characterized by high discursive variability. In computationally intensive scenarios, tools such as MALLET stand out for their efficiency and scalability. For research oriented towards the networked visualization of emerging topics, InfraNodus provides an innovative interface useful for the exploratory phase.</p></li>
+<li><p><u>Evaluation of the quality of the model</u>.<br>
+The quality of the results cannot be taken for granted and requires a multi-level evaluation. From a quantitative point of view, it is advisable to use thematic consistency metrics <a href="https://aclanthology.org/D11-1024.pdf">Mimno, Wallach et al.,2011</a>, many of which are implemented directly in tmtoolkit. However, these metrics must always be accompanied by <strong>qualitative validation by the researcher, based on the critical reading of the topics and their interpretability with respect to the theoretical context and the empirical field of reference</strong>.</p></li>
+</ol>
+<section id="references" class="level4" data-number="5.1.5.1">
+<h4 data-number="5.1.5.1" class="anchored" data-anchor-id="references"><span class="header-section-number">5.1.5.1</span> References</h4>
+<p><u><em>General references on topic modeling and text mining</em></u><br>
+&gt; See: <a href="https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf">Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003). Latent dirichlet allocation. Journal of machine Learning research, 3(Jan), 993-1022.</a><br>
+➤ <em>The foundational paper on the LDA model, the theoretical basis for most of the current topic modeling</em>.<br>
+&gt; See: <a href="https://doi.org/10.1093/pan/mps028">Grimmer, J., &amp; Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. Political analysis, 21(3), 267-297.</a><br>
+➤ <em>Excellent methodological overview of the use of text mining in political and social sciences</em>.<br>
+&gt; See: <a href="https://proceedings.neurips.cc/paper_files/paper/2009/hash/f92586a25bb3145facd64ab20fd554ff-Abstract.html">Chang, J., Gerrish, S., Wang, C., Boyd-Graber, J., &amp; Blei, D. (2009). Reading tea leaves: How humans interpret topic models. Advances in neural information processing systems, 22.</a><br>
+➤ <em>The paper introduces new quantitative methods, validated by large studies with users, to measure the semantic significance of topics extracted from probabilistic topic models</em>.</p>
+<p><u><em>Technical references and specific tools</em></u><br>
+&gt; See: <a href="https://is.muni.cz/repo/884893/lrec2010-rehurek-sojka.pdf">Řehůřek, R., &amp; Sojka, P. (2010). Software framework for topic modelling with large corpora.</a><br>
+&gt; See: <a href="https://doi.org/10.48550/arXiv.2008.09470">Angelov, D. (2020). Top2vec: Distributed representations of topics. arXiv preprint arXiv:2008.09470.</a><br>
+&gt; See: <a href="https://doi.org/10.48550/arXiv.2203.05794">Grootendorst, M. (2022). BERTopic: Neural topic modeling with a class-based TF-IDF procedure. arXiv preprint arXiv:2203.05794.</a></p>
+<p><u><em>Recommended for courses or self-training</em></u><br>
+&gt; See: <a href="https://doi.org/10.1007/s10439-023-03272-4">Jockers, M. L. (2013). Macroanalysis: Digital methods and literary history. University of Illinois Press.</a><br>
+➤ <em>Application of topic modeling and other digital techniques in the humanities</em>.<br>
+&gt; See: <a href="http://dx.doi.org/10.18637/jss.v083.b01">Silge, J., Robinson, D., &amp; Robinson, D. (2017). Text mining with R: A tidy approach (p.&nbsp;194). Boston (MA): O’reilly</a><br>
+➤ <em>Introductory but comprehensive, widely used for teaching in digital humanities courses</em>.</p>
+</section>
+</section>
+</section>
+<section id="assisted-qualitative-analysis-automatic-coding-and-sentiment-analysis-1" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="assisted-qualitative-analysis-automatic-coding-and-sentiment-analysis-1"><span class="header-section-number">5.2</span> 2. Assisted Qualitative Analysis: Automatic Coding and Sentiment Analysis</h2>
+<p>The use of AI tools in <u>qualitative analysis</u> is progressively changing the way textual material is processed and interpreted in the SSH context. Qualitative analysis assisted by NLP tools can <em>expand the scale and efficiency of analytical work</em>, but requires a <strong>high level of methodological control, transparency in operational choices and critical reflection on the results produced</strong>. Two relevant applications in this area are automatic <strong>content coding</strong> and <strong>sentiment analysis</strong>, both intended as forms of support, and <u>not a replacement, for the researcher’s interpretative activity</u>.</p>
+<section id="automatic-coding" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="automatic-coding"><span class="header-section-number">5.2.1</span> 2.1 Automatic Coding</h3>
+<p>It consists of <u>assigning labels or thematic categories to segments of text based on learned rules</u> (through supervised training) or <u>lexical correspondences</u> (unsupervised approaches).<br>
+This is particularly useful in projects based on <em>interviews, focus groups, testimonials, or open-ended responses</em>, where the analyst has to handle large volumes of data.<br>
+Tools such as <em>spaCy, tmtoolkit</em> or <em>Transformers by HuggingFace</em> allow you to automate the semantic annotation phase, facilitating the construction of replicable and systematic encodings. However, analytical validity depends on the precision of the models and the consistency between the categories produced and the theoretical framework of reference.</p>
+<p><strong>References</strong>:<br>
+&gt; See: Saldana, J. (2025). The Coding Manual for Qualitative Researchers. SAGE Publications Limited<br>
+➤ <em>Theoretical-methodological manual for qualitative coding, with reflections on automatic integration</em>.<br>
+&gt; See: <a href="https://doi.org/10.21105/joss.00774">Benoit, K., Watanabe, K., Wang, H., Nulty, P., Obeng, A., Müller, S., &amp; Matsuo, A. (2018). quanteda: An R package for the quantitative analysis of textual data. Journal of Open Source Software, 3(30), 774-774. 8</a><br>
+➤ <em>R tool that supports complete workflows for text encoding and classification</em>.</p>
+</section>
+<section id="sentiment-analysis" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="sentiment-analysis"><span class="header-section-number">5.2.2</span> 2.2 Sentiment Analysis</h3>
+<p>Traditionally more widespread in commercial fields, it now also finds <u>relevant applications in social research</u>. It makes it possible to <u>identify the emotional or evaluative polarity expressed in the texts</u> (positive, negative, neutral), or to <u>detect more complex emotions</u> (anger, trust, anxiety, etc.).<br>
+Classical sentiment analysis methods are based on predefined dictionaries of words marked with polarity (e.g.&nbsp;<em>“happy” → +1, “disappointed” → -1</em>).<br>
+More recently, models based on neural networks (e.g.&nbsp;<em>BERT, <a href="https://doi.org/10.48550/arXiv.1907.11692">RoBERTa</a></em>) are able to grasp polarity by considering the semantic context of the sentence, with greater robustness on long or ambiguous texts.<br>
+Tools such as <a href="https://doi.org/10.4224/21270984">NRC Emotion Lexicon</a> or <a href="https://hal.univ-grenoble-alpes.fr/hal-02526412v1/document">EmoLex</a> allow you to detect complex emotions (joy, fear, anger, trust…), not just positive or negative feelings.<br>
+This approach is useful for the analysis of narratives, testimonies or political speeches, in which the affective dimension is articulated in a more nuanced way. In <em>qualitative research</em>, it can be used to <u>analyze attitudes towards social phenomena, public policies, institutions or public figures, in contexts such as social media, interviews or historical archives</u>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>However, it should be emphasized that sentiment analysis, in particular, suffers from linguistic ambiguities, irony, and dependence on the textual domain. For this reason, many studies recommend its triangulated use: as a support for manual analysis, as a preliminary exploratory filter or as an integrated technique in mixed designs.</p>
+</div>
+</div>
+<p><strong>References</strong>:<br>
+&gt; See: <a href="https://doi.org/10.1111/j.1467-8640.2012.00460.x">Mohammad, S. M., &amp; Turney, P. D. (2013). Crowdsourcing a word–emotion association lexicon. Computational intelligence, 29(3), 436-465. 8</a><br>
+&gt; See: <a href="http://dx.doi.org/10.1561/1500000011">Pang, B., &amp; Lee, L. (2008). Opinion mining and sentiment analysis. Foundations and Trends® in information retrieval, 2(1–2), 1-135.</a></p>
+</section>
+</section>
+<section id="multilevel-translation-and-linguistic-adaptation-for-academic-environments-1" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 3. Multilevel translation and linguistic adaptation for academic environments</h1>
+<p>The use of advanced language models in the academic field is not limited to the generation of original content, but finds increasing application in the <u>multi-level reformulation and translation of texts</u> intended for scie<em>ntific publications, calls for papers, project proposals or specialized dissemination materials</em>.<br>
+The concept of multilevel translation here refers to the ability to transform content on multiple levels: <em>linguistic, stylistic, cultural and rhetorical</em>.<br>
+In the <strong>SSH context</strong>, this translates into the possibility of adapting a text for different audiences (<em>editorial boards, funding bodies, general public</em>) while maintaining the conceptual integrity of the content.<br>
+Unlike traditional machine translation, which is limited to word-for-word linguistic transfer,<u>GAI enables adaptive interventions on the text—modulating register, tone, and argumentative cohesion</u>.<br>
+This makes it possible to transform an informal draft into a version that complies with the rhetorical and stylistic standards expected in international settings, for example when preparing <em>abstracts, letters of intent, scholarly articles, or competitive grant proposals</em>. In <u>multilingual and collaborative contexts</u>, the use of LLMs can support non-native English authors by providing lexical suggestions, stylistic reformulations, and terminology-consistent translations aligned with the discipline’s specialized vocabulary. Some tools, such as <em>DeepL Write</em>, <em>ChatGPT-4</em>, or <em>Claude</em>, allow you to handle progressive rewrites with control over tone (<em>formal/informal, concise/explanatory</em>) and level of specificity.</p>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>From an operational standpoint, the most effective approach combines <strong>generative AI with the researcher’s critical review</strong>, following a co-authoring model that ensures both efficiency and epistemological oversight. It is also advisable to document any substantial AI-assisted interventions—particularly during editorial revision or peer review—to maintain scientific transparency.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="practical-examples-and-implementation-scenarios." class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 4. Practical Examples and Implementation Scenarios.</h1>
+<p>The adoption of <strong>GAI tools in SSH research</strong> does not end in the exploratory or writing support phase, but finds concrete application in a variety of methodological and design contexts.<br>
+Below are some emblematic use scenarios, taken from documented research experiences or in the experimental phase.</p>
+<p><strong>a) Automated Qualitative Analysis</strong><br>
+- <em>Interview transcription and summarisation</em>: automatic transcription of audio and video interview recordings, producing text organized according to themes that emerge during the conversation.<br>
+- <em>Thematic coding</em>: use of AI to identify and organize predominant themes across large collections of qualitative texts (e.g., <em>diaries, memoirs, interviews</em>).</p>
+<p><strong>b) Source exploration and correlation</strong><br>
+- <em>Historiographical or literary research</em>: use of AI to analyze digitized archives, suggesting linkages among historical sources, annotations, and alternative document interpretations.<br>
+- <em>Pattern detection in sources</em>: us of AI to highlight trends or anomalies in collected data (e.g., <em>temporal clusters, recurring themes), thereby facilitating the formulation of new research questions</em>.</p>
+<p><strong>c) Survey instrument design</strong><br>
+- <em>Questionnaire generation</em>: assist in drafting survey items and questionnaire questions by proposing inclusive wording and plausible response options tailored to the target population.<br>
+- <em>Dynamic survey personalization</em>: adapt question order, phrasing, and layout in real time based on participants’ previous responses.</p>
+<p><strong>d) Social Media Analysis</strong><br>
+- <em>Online discussion summarization</em>: use of AI to condense large volumes of social media conversations into concise overviews, isolating prevailing opinions and emergent topics.<br>
+- <em>Sentiment Analysis</em>: automatically detect emotions and polarity in public debates on social or political issues.</p>
+<p><strong>e) Automated content production</strong><br>
+- <em>Scientific article summaries</em>: generate abstracts or automated reviews from collections of publications on a given topic.<br>
+- <em>Educational materials</em>: create tailored lecture notes, quiz items, or interactive simulations designed for student learning or broader public outreach.</p>
+<p><strong>f) Research dissemination and public engagement</strong><br>
+- <em>Custom case-study creation</em>: produce practical examples or role-play scenarios that reflect real or hypothetical situations to explore social, psychological, or educational dynamics.<br>
+- <em>Data simplification and accessibility</em>: translate complex data into accessible outputs for non-specialist audiences, thereby enhancing comprehension and dissemination of research findings.</p>
+<hr>
+<p><strong>Bibliographic references</strong></p>
+<blockquote class="blockquote">
+<p>See: <a href="http://dx.doi.org/10.1016/j.isci.2024.110192">Ho, E., Schneider, M., Somanath, S. et al (2024). Sentiment and semantic analysis: Urban quality inference using machine learning algorithms. iScience, 27(7).</a><br>
+See: <a href="https://aclanthology.org/2021.nlp4dh-1.pdf">Proceedings of the Workshop on Natural Language Processing for Digital Humanities (NLP4DH), December 16-19, 2021, Silchar, India. ©2021 NLP Association of India (NLPAI)</a><br>
+See: Jockers, M. L. (2013). Macroanalysis: Digital methods and literary history. University of Illinois Press.<br>
+&gt; See: <a href="https://doi.org/10.1371/journal.pone.0276367">Rozado D, Hughes R, Halberstadt J (2022) Longitudinal analysis of sentiment and emotion in news media headlines using automated labelling with Transformer language models. PLOS ONE 17(10): e0276367</a></p>
+</blockquote>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./1-20250719-promptengineering.html" class="pagination-link" aria-label="Prompt Engineering for Research: Techniques, Workflows, and Evaluation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prompt Engineering for Research: Techniques, Workflows, and Evaluation</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./1-20250803-writingAI.html" class="pagination-link" aria-label="Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
