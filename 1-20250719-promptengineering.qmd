@@ -160,7 +160,7 @@ Evaluation cannot be entrusted to generic indicators or intuitive judgments, but
 *In particular, when the results are used as preliminary materials for publications, systematic reviews or teaching support, it is advisable to document the choices made, justify any reformulations and point out the limits of the output generated.*  
 
 ::: {.callout-warning appearance="minimal"}
-### In summary, employing LLMs in the academic field means applying reflective and responsible logic to ensure the reliability and relevance of the content produced.Prompt Engineering in research must be treated as a methodological discipline, not a casual interaction. It supports transparency, reproducibility, and epistemic control in AI-assisted scholarship.:::
+### In summary, employing LLMs in the academic field means applying reflective and responsible logic to ensure the reliability and relevance of the content produced.Prompt Engineering in research must be treated as a methodological discipline, not a casual interaction. It supports transparency, reproducibility, and epistemic control in AI-assisted scholarship.
 ::: 
 
 ## 6. Guidelines for creating academic prompts
