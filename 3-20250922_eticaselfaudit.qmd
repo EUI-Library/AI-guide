@@ -1,0 +1,83 @@
+---
+title: "Towards a renewed operational ethics"
+format: html
+lang: en
+---
+
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+##### Tools and operational practices
+##### Ethical verification table
+:::
+
+The introduction of Artificial Intelligence systems into *peer review processes* requires the development of an **operational ethics** capable of translating abstract principles into *concrete protocols, verifiable practices* and *standardised procedures*.
+
+Unlike traditional “ethical frameworks”, which are predominantly *declarative* and *prescriptive* in nature, often limited to the enunciation of abstract values, **operational ethics** takes on a "*performative function*", as it binds the actors involved to daily practices that give effect to the principles of *transparency, traceability* and *accountability*.
+
+This perspective allows us to recognise that ethics is not an external or accessory constraint, but a "constitutive prerequisite" for the <u>epistemic and institutional legitimacy</u> of peer review.  
+
+It is clear that the use of algorithmic tools in evaluation processes introduces elements of *opacity*, *automation* and *potential disempowerment* which, if unregulated, risk compromising the regulatory function of peer review. 
+
+::: {.callout-important icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #000000ff;'>
+Only an ethical framework translated into <u>concrete practices</u> can ensure that technological innovation does not undermine but rather strengthens science's ability to subject its knowledge to intersubjective scrutiny based on shared criteria.
+</span>
+:::
+
+Operational ethics is inherently **dynamic** and **multi-layered**.   
+It is "*dynamic*" because it requires *continuous adaptation to technological changes* in AI tools and to transformations in the contexts in which they operate.  
+It is "*multi-layered*" because it does not end with the individual responsibility of reviewers, but *extends to the collective dimension of institutional governance*, which involves publishers, research institutions and academic communities.
+
+::: {.callout-important icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #ff0202ff;'>
+**Mandatory disclosure**, **supervisory mechanisms** and **audit systems** are the first operational manifestations of this requirement.  
+The aim is not only to prevent abuse or methodological opacity, but also to promote a <u>culture of shared responsibility</u>, capable of maintaining and strengthening collective trust in peer review as a fundamental device for <u>epistemic regulation</u>.
+</span>
+:::
+
+## 1. Tools and operational practices
+
+In order to define the **framework** for a *renewed operational ethics*, there are certain elements that are particularly important and deserve to be considered as <u>methodological</u> and <u>applicative</u> pillars.
+
+- **Mandatory disclosure procedures**: reviewers and publishers must clearly report the use of AI systems, specifying the stage of use and distinguishing between human and algorithmic contributions.  
+  
+- **Ethical compliance checklist**: before validating their judgement, reviewers must answer standardised questions that guide them in assessing bias, proportionality and responsibility.  
+
+- **Regular training for reviewers**: editorial committees must establish ongoing training programmes to ensure understanding of the limitations of AI systems and critical supervision techniques.  
+
+- **Editorial codes of conduct**: journals should include sections dedicated to the use of AI in their guidelines, defining limits, documentation requirements and accountability criteria.  
+
+- **Institutional audit and control systems**: supervisory committees should randomly check decisions supported by AI to ensure reliability and effective correction.  
+
+- **Multi-level documentation**: logs, methodological notes and metadata must be attached to reports to ensure the traceability of decisions and the replicability of processes.
+
+## 2. Ethical verification table
+
+Tables (*see example below*) can be used as an <u>operational self-audit tool</u> for reviewers and publishing institutions, translating *ethical principles* into *practical questions* and *mandatory actions*.  
+
+Each domain corresponds to a "critical point in the evaluation process", from initial transparency to final institutional control.    
+👉 In this way, ethics does not remain an abstract reference, but becomes an <u>integral part of daily review practice</u>, promoting a balance between *automation* and *human responsibility.*  
+
+
+|          **Domain**         |                                                    **Verification Questions**                                                   |                                   **Required Actions**                                  |
+|:---------------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------:|
+| **Transparency**            | _Has the use of AI been explicitly declared in the review report?_                                                              | Include a methodological note distinguishing human contribution from algorithmic input. |
+| **Bias and Limitations**    | _Have potential biases in the data or models used been considered?_                                                             | Document any critical issues and specify their impact on the evaluation.                |
+| **Proportionality**         | _Has the intervention of AI been limited to support tasks rather than replacing human judgment?_                                | Specify the role of AI and ensure that the final decision remains with the reviewer.    |
+| **Accountability**          | _Who assumes ultimate responsibility for the judgment (reviewer, editor, committee)?_                                           | Indicate in the report the figure responsible for the final opinion.                    |
+| **Documentation**           | _Have logs, methodological notes, and metadata related to the use of AI been produced?_                                         | Attach supporting materials to ensure traceability and replicability.                   |
+| **Training**                | _Does the reviewer possess the minimum competencies required to understand the functioning and limitations of the AI employed?_ | Participate in training courses or consult editorial guidelines.                        |
+| **Institutional Oversight** | _Is a random verification by the editorial board foreseen?_                                                                     | Include the review in a periodic compliance audit.                                      |
+
+::: {.callout-important icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #ff0101ff;'>
+A **renewed operating ethics** should not be seen as an "additional constraint", but as a <u>safeguard</u> that allows AI systems to be integrated into peer review in a sustainable manner.  
+</span>
+:::
+
+[Only the combination of **disclosure practices**, **continuous training**, **institutional audits** and multi-level documentation can transform AI from a potential risk into a resource for consolidating scientific quality.]{.mark}
+
+### Further Readings
+
+> *See* [Ethics Guidelines for Trustworthy](https://doi.org/10.1007/s43681-022-00200-5)   
+> *See* [An Overview of Artificial Intelligence Ethics](https://ieeexplore.ieee.org/document/9844014)   
+> *See* [Artificial Intelligence, Humanistic Ethics](https://doi.org/10.1162/daed_a_01912)   

@@ -1,0 +1,227 @@
+---
+title: GAI as a Design support tool
+format: html
+lang: en
+---
+
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+##### GAI in the construction of the Research Project
+##### Structuring calls and grants with the support of AI
+:::
+
+## Introduction
+
+In recent years, GAI has established itself in the world of research, in a position not only as an operational tool, but also as a support for **project planning**.   
+Its use goes far beyond automatic writing or text synthesis: it is at the heart of the Academic process, contributing to the most delicate and creative phase of **"planning"**.  
+
+In the Social Sciences and Humanities (SSH), where knowledge construction involves *language*, *interpretation* and *interdisciplinarity*, AI does not offer definitive answers, but it can:  
+- suggest **research directions** that are not immediately visible  
+- help **clarify nuanced** or **theoretical concepts**  
+- offer **stylistic** and **structural variations**   
+- stimulate **new associations** between authors, currents or approaches.  
+
+In these contexts, the value of AI moves away from technicalities and becomes <u>cognitive</u> and <u>dialogical</u>, acting as a **generative interlocutor** that *relaunches*, *expands* and *compares*. 
+
+Unlike STEM fields, where AI is often used to optimise quantitative processes, analyse structured data or automate complex calculations, in SSH its value is mainly evident in the **linguistic, exploratory** and **conceptual** dimensions.  
+In these contexts, AI is not so much a tool for “*solving*” as it is for "*stimulating*": it helps to generate ideas, formulate new questions, refine theoretical vocabulary and compare methodological approaches.   
+In the SSH, AI does not simplify a problem, but *enriches the thought process* surrounding it, becoming a **tool for amplifying the researcher's abilities**, supporting the exploratory, generative and compositional steps typical of Academic work in this area.
+
+👉🏻 A concrete example is the use of **structured prompts**, which allow for guided interaction with the linguistic model. Thanks to these, it is possible to obtain proposals for research questions, formulations of hypotheses, methodological alternatives, and even simulations of different argumentative styles. 
+
+::: {.callout-note icon="false"}
+## The output is never definitive, but must always be critically analysed, adapted, and refined.
+*GAI thus becomes a silent <u>**co-designer**</u>, accompanying the researcher in the initial phase of research, supporting thought without ever replacing it. When used consciously, it can *enhance creativity*, *accelerate the production of ideas* and promote greater *stylistic and methodological awareness*.
+:::
+
+## 1. GAI in the construction of the Research Project
+
+**Research design** is one of the most delicate and significant aspects of Academic activity, particularly in the SSH disciplines, where the construction of the object of study, theoretical elaboration and the definition of research methodologies take on a **highly reflective, linguistic** and **interpretative dimension**.
+
+GAI can provide valuable support in the <u>initial phase of Research Design</u>, particularly in this Academic context.  
+
+Using **structured prompts** GAi allows you to:
+
+**a.** Explore and refine research questions, stimulating alternative and more precise formulations  
+**b.** Construct coherent and verifiable hypotheses, consistent with the chosen theoretical and methodological approach   
+**c.** Outline a preliminary methodological framework, suggesting research designs, tools and techniques appropriate to the context.  
+
+The effectiveness of the interaction between researcher and GAI, depends largely on the *quality of the dialogue* established through the prompts.  
+This process becomes **iterative**, **critical** and **assisted**, where each output produced by the GAI is subjected to careful *evaluation*, *reinterpretation* and, if necessary, *reformulation*. 
+
+::: {.callout-note icon="false"}
+## In this context, GAI <u>never assumes the role of a substitute for scientific authorship</u>, but rather that of an "auxiliary tool" for reflection and project development.
+:::
+
+The use of GAI in the Research D***esign phase should not be seen as a shortcut, but rather as an opportunity to <u>strengthen the logical structure</u> and <u>internal consistency of the project</u>.   
+While leaving the researcher with *full theoretical and methodological responsibility*, AI is able to:  
+- facilitate the exploration of alternatives  
+- prompt new hypotheses  
+- identify conceptual inconsistencies or underdeveloped areas  
+- support the reformulation process in a dynamic and productive way.
+
+In order for this potential to be realised in a meaningful way, it is necessary to adopt an accurate and conscious **questioning strategy**.  
+In this sense, the development of structured prompts is an essential practice for <u>guiding linguistic generation</u> towards relevant, contextually grounded and scientifically useful answers.
+
+### 1.1 The research question as a fundamental node
+
+The **research question** represents the generative core of every scientific project: it is not only an operational starting point, but a <u>theoretical and conceptual act</u> that profoundly conditions the entire research framework. 
+
+[In the field of SSH, its formulation is not limited to identifying a theme or describing a phenomenon, but <u>involves an epistemological choice</u>, i.e. an implicit (or explicit) determination of the *criteria* by which it is defined what is knowable, how and with what interpretative tools.]{.mark}
+
+Formulating a research question therefore means positioning oneself in relation to a disciplinary field, recognising a gap in the literature or an open question, and *proposing a possible direction* for exploring it.  
+
+This question then leads to:  
+-    *the selection of sources*  
+-    *the construction of the theoretical framework*  
+-    *the choice of method*  
+-    *the form of scientific language used.*  
+
+::: {.callout-important icon="false"}
+## In this process, GAI can play a stimulating and supporting role, without replacing the researcher's epistemic responsibility. 
+:::
+
+When queried with appropriate prompts, GAI is able to:  
+- *propose alternative formulations to an initial intuition*  
+- *help to more precisely define an overly broad scope of investigation*  
+- *generate new angles from which to observe a familiar problem*.  
+  
+::: {.callout-important icon="false"}
+## These contributions should not be taken as definitive solutions, but as material for dialogue, to be critically evaluated within the individual elaboration process. 
+:::
+
+::: {.callout-tip icon="false"}
+## In the Academic context, and in particular in doctoral training, working on the quality of the research question is equivalent to strengthening the logical and conceptual foundations of the project.  
+Interaction with AI at this stage can take the form of <u>guided co-construction</u>, in which AI becomes an interlocutor in the exploratory phase, stimulating clarifications, precisions, and variations that enrich the depth and relevance of the question.
+:::
+
+### 1.2 From question to hypothesis: exploring relationships
+
+Once the research question has been formulated in a clear, outlined and theoretically grounded manner, the next step in the design process involves **constructing the hypothesis**, which is not merely a technical step, but a *conceptually strategic one*.   
+
+[The <u>hypothesis</u> represents a first provisional and reasoned answer to the question posed, which the researcher intends to test using an empirical or theoretical approach.]{.mark} 
+
+In the field of SSH, hypotheses do not necessarily follow the rigid structure of the hypothetical-deductive model, but can take more **flexible forms**, such as an *argumentative conjecture*, an *exploratory hypothesis* or an *interpretative construct*, depending on the epistemological and methodological framework of reference.  
+
+In all cases, however, it performs an **orientative function**, as it helps to define *what* is observed, *how* it is observed and *under what conditions* a given relationship can be considered significant.  
+
+GAI can be a useful support in this phase, especially if it starts from a well-formulated research question.  
+Thanks to **structured prompts**, AI is able to suggest:
+
+- hypotheses that are logically compatible with the question posed   
+- distinguish between causal, correlative or descriptive relationships  
+- help to clarify implicit assumptions that the researcher might overlook  
+- propose alternative formulations that highlight latent variables, contextual influences or mediating factors not immediately considered.  
+
+::: {.callout-important icon="false"}
+## It is essential, however, that such hypotheses are not accepted uncritically, but are subjected to theoretical and methodological scrutiny by the researcher.
+:::
+
+👉🏻 The role of GAI should be understood as a <u>cognitive stimulus</u> and a <u>tool for comparison</u>, not as a *substitute for the inferential process*.  
+Furthermore, the plurality of hypotheses obtainable through AI can itself become a **resource for exploration**: *comparing alternative hypotheses allows you to test the logical soundness* and *internal consistency of your project*.
+
+### 1.3 Methodology development: consistency and practicality  
+
+The definition of the **methodology** constitutes the operational translation of the theoretical assumptions and hypotheses formulated.  
+
+👉🏻 [It involves the conscious and reasoned choice of a set of strategies, techniques and tools that make the investigation possible, while ensuring its internal consistency, epistemic relevance and practicality on an empirical level.]{.mark}   
+
+::: {.callout-warning icon="false"}
+## Methodology is not a technical module to be applied retrospectively, but a logical and consistent extension of the Conceptual Design of the Research.
+:::
+
+In the SSH field, **methodological construction** often deals with complex, contextualised objects of study that are subject to multiple interpretations.   
+Therefore, the selection of qualitative, quantitative or mixed approaches, the identification of the sample, the timing of the investigation, and the tools for data collection and analysis must be <u>discussed and justified in relation to the theoretical framework adopted</u> and the <u>nature of the phenomenon under investigation</u>. 
+
+::: {.callout-tip}
+## The methodology does not therefore respond to criteria of mechanical standardisation, but rather to *criteria of epistemological relevance*, *logical rigour* and *operational sustainability*.
+:::
+
+When queried with *specific* and *detailed* prompts, GAI can provide **methodological design hypotheses** *consistent with the hypotheses formulated*, suggesting <u>sampling strategies</u>, <u>data collection techniques</u> (*interviews, questionnaires, document analysis, observation*), <u>validation tools</u> and <u>possible analytical approaches</u>.    
+
+GenAI also allows you to:  
+- simulate different configurations of the same survey  
+- anticipate implementation issues  
+- assess the impact of certain methodological choices on the expected results.  
+  
+👉🏻 [Through *iterative* and *critical use of prompting*, the researcher can progressively refine the methodological design, validating its consistency with the initial question and the hypotheses to be tested.]{.mark} 
+
+::: {.callout-warning icon="false"}
+## However, the methodology cannot ignore the relationship between means and ends, between tools and objects, between theoretical intention and empirical feasibility.  
+In this sense, collaboration with a generative system can become an *opportunity* to question one's own implicit assumptions, strengthen the argumentative transparency of the choices made, and increase the epistemological awareness of the design as a whole.
+:::
+
+## 2. Structuring calls and grants with the support of AI
+
+In contemporary research, the ability to draft **competitive project proposals** is a crucial skill for accessing funding, participating in international networks and consolidating one's academic profile.  
+Calls, grants and research tenders require not only high scientific quality in terms of "content", but also **formal mastery of project writing**: *effective summarisation*, *clarity of presentation*, *logical consistency* and *stylistic adaptation* to the expectations of the funding body.
+
+In this context, GAI can play an important role as a **linguistic assistant, rhetorical simulator** and **generator of textual variants**.   
+Starting from *concrete examples* or *structured guidelines*, AI can support researchers in <u>drafting abstracts</u>, <u>executive summaries</u>, <u>impact descriptions</u> and other elements typical of Academic applications.
+
+[There are *prompting techniques* (including those based on the ***few-shot paradigm***) that can be used strategically to generate preliminary or alternative versions of project texts.]{.mark} 
+
+[The issue of ***tone-matching*** is important, i.e. *adapting the communicative register to the type of call for proposals, the evaluating audience and the organisational culture of the funding body*.]{.mark}    
+
+
+### 2.1 Few-shot approach: learning from examples to generate design variants. 
+
+In the context of Academic writing and designing for competitive calls for proposals, the **production of short** and **highly strategic texts** – such as *abstracts* or *executive summaries* – is a crucial skill.  
+
+These texts require not only mastery of the content, but also the <u>ability to condense</u>, <u>highlight</u> and make the <u>originality and impact</u> of the proposal immediately readable.
+
+GAI can offer targeted support at this stage through the use of a technique known as **few-shot prompting**.
+
+The **few-shot paradigm** [See Article 1](https://www.promptingguide.ai/techniques/fewshot) and [Article 2](https://www.ibm.com/think/topics/few-shot-prompting) is based on [*presenting the language model with one or more well-formulated examples (abstracts or extracts from previously accepted project proposals), followed by a prompt asking the AI to generate a new version on a different content, while maintaining a consistent style, structure and tone*.]{.mark}  
+
+Unlike the *zero-shot approach*, in which the model is required to produce a text from scratch without explicit references, [the *few-shot mode provides a sample text model on which the AI can calibrate its generation.*]{.mark}
+
+This approach is particularly effective in supporting researchers who are less familiar with drafting international proposals or calls for proposals, where the **form of the text** is as important as the content.  
+
+Through guided imitation, GAI is able [to replicate not only the <u>discursive structure</u> of the abstract (*opening-problem-objective-method-expected results*), but also the <u>linguistic intonation</u> required by specific programmes]{.mark} (e.g. [Horizon Europe](https://horizoneurope.apre.it/), [Marie Skłodowska-Curie](https://marie-sklodowska-curie-actions.ec.europa.eu/), [ERC Starting Grant](https://erc.europa.eu/apply-grant/starting-grant)).  
+
+::: {.callout-tip}
+## It is essential to emphasise that the *quality* and *effectiveness* of the output depend largely on the <u>quality</u> and <u>relevance</u> of the examples provided. 
+The starting abstracts must be *carefully selected*, preferably relating to the same disciplinary field and *compatible in tone and purpose* with the new project to be developed.  
+:::
+
+[GAI should therefore be understood as a real tool for **authorial relaunch**, capable of proposing variations that the researcher will have to critically analyse, adapt and refine.]{.mark}
+
+Few-shot prompting can also be understood as a **training practice**.  
+Comparative analysis between the <u>example provided</u> and the <u>variant generated by GAI</u> can stimulate reflection on the *rhetorical structure* of the draft text, *effective lexical choice*s, and *argumentative coherence*.  
+
+👉🏻 *In this sense, the linguistic model functions as an **imitative interlocutor**, useful not only for writing but also for learning to write better*.
+
+### 2.2 Tone-matching: adapting style and register to the call for proposals or the funding body  
+
+One of the most underestimated aspects of project writing is the need to **adapt** *tone*, *register* and *communicative rhetoric* to the implicit expectations of the call for proposals and the identity of the funding body.   
+
+In addition to the quality of the "content", what often affects the outcome of the evaluation is the applicant's ability to express their project in a **linguistic form** that is consistent with the language, values and organisational culture of the institutional interlocutor.
+
+::: {.callout-important icon="false"}
+## [GAI becomes an important resource thanks to the conscious use of prompts geared towards so-called tone-matching, i.e. the ability to modulate the communicative style of the text to make it relevant to the specific context.]{.mark}   
+:::
+
+Unlike simple formal rephrasing, tone-matching implies a <u>deep understanding of the target audience</u>: an abstract addressed to a private Foundation with a Humanistic mission will require a different register than one intended for a European Agency focused on technological innovation.
+
+Through specific inputs, GAI can be guided to <u>rewrite</u> an existing text by varying its *tone*, *emphasis*, *technical density* and *argumentative structure*. 
+
+::: {.callout-important icon="false"}
+## For example:
+*AI can be asked to transform a highly specialised text into a more accessible and informative version for a call for proposals with social purposes, or to increase the formality and terminological precision in view of a presentation to an international scientific committee.*
+:::
+
+*Tone-matching* is also particularly useful in the <u>final stages of writing</u>, when the content is defined but needs to be *refined* according to *criteria of rhetorical effectiveness*.  
+In this process, GAI acts as a **simulated editor**, able to propose *stylistic alternatives*, *reduce ambiguity*, and *harmonise the register* between the various sections of a project document.
+
+::: {.callout-warning icon="false"}
+## However, the <u>effectiveness of tone-matching</u> depends on the researcher's ability to provide clear guidance on the type of audience, the identity of the institution and the objectives of the call. 
+Also in this case, interaction with AI must be understood as an **iterative dialogue**: it is the **quality of the prompt**, combined with the **critical awareness of the writer**, that determines the **relevance** of the output.
+:::
+
+Finally, tone-matching is not only about the *form of the text*, but also its ability to <u>communicate belonging to a scientific community</u>, sensitivity to the evaluation criteria adopted, and adherence to the strategic objectives of the funding body.   
+
+::: {.callout-note icon="false"}
+## In this respect, AI can promote impact-oriented stylistic refinement, helping to bridge the gap between scientific content and its persuasive presentation.
+:::
+
+

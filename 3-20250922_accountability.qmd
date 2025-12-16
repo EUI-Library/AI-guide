@@ -1,0 +1,179 @@
+---
+title: "Accountability in peer review and responsibility"
+format: html
+lang: en
+---
+
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+##### Accountability in peer review and responsibility  
+##### Risks of false positives/negatives and real cases 
+##### Roles, conflicts of interest and self-audit practices 
+##### Documentation methods 
+:::
+
+## 1. Accountability in peer review and responsibility (*theoretical framework*)
+
+The **peer review** process has always been one of the main mechanisms for epistemic regulation in science, ensuring that Academic contributions meet shared criteria of *rigour*, *transparency* and *reliability*.
+
+::: {.callout-warning icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #000000ff;'>
+Its function goes far beyond the mere evaluation of content: it represents an <u>exercise in collective responsibility</u> involving reviewers, scientific communities and publishing institutions.
+</span>
+:::
+
+Peer review is therefore an exercise in **responsibility**, both <u>individually</u>, on the part of the reviewers called upon to evaluate a contribution, and <u>collectively</u>, on the part of the Academic and editorial communities that establish *standards*, *procedures* and *codes of conduct*.
+
+The introduction of GAI in this context substantially changes the **traditional framework**.  
+Entrusting algorithmic tools with tasks that support content evaluation or selection, implies a <u>redistribution of responsibility</u>, which is no longer exclusively entrusted to human expertise, but depends on a technical infrastructure that lacks ethical autonomy but capable of having a concrete impact on evaluation outcomes.
+
+::: {.callout-warning icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #ff0000ff;'>
+[THIS RAISES A CRUCIAL QUESTION ABOUT WHO IS RESPONSIBLE FOR DECISIONS THAT RESULT, DIRECTLY OR INDIRECTLY, FROM AN AI TOOL.]{.smallcaps}
+</span>
+::: 
+
+The answer cannot be entrusted to the algorithm itself, but must fall on the <u>individuals</u> and <u>institutions</u> that allow its use, defining *clear rules of use*, *supervision protocols* and *operational limits*.
+
+This reconfiguration of the evaluation process highlights the risk of a **progressive dilution of responsibility**, with a consequent compromise of the "epistemic integrity" of peer review.  
+
+To avoid this drift, **accountability** must be conceived not as a mere attribution of individual blame, but as the <u>construction of a multi-level governance system</u>. 
+
+[ 👉 This implies that publishers, scientific committees, Universities and funding bodies share responsibility for the choices made through algorithmic tools, establishing binding editorial policies, codes of ethics and institutional guidelines.]{.mark} 
+
+::: {.callout-important icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #000000ff;'>
+In this sense, peer review is transformed from an <u>exclusively human device</u> into a <u>hybrid system</u>, in which the role of reviewers is not replaced but redistributed, in a dynamic balance between human control and technological support.
+</span>
+::: 
+
+A further element concerns **transparency**.   
+The use of GAI in peer review must be <u>explicitly stated</u> in order to ensure the *"methodological traceability*" of the process and to protect the "*autonomy of scientific judgement*".  
+Failure to explicitly state the use of generative intelligent systems risks undermining the <u>very legitimacy of editorial practices</u>, fuelling suspicions of *opacity* and *reducing the trust* of the Academic Community and the public.   
+Some journals and scientific societies have already begun to **define guidelines** that require the use of GAI to be made <u>explicit</u>, placing the human reviewer as the ultimate guarantor of the decision. Without <u>human oversight</u>, automation would result in a structural weakening of scientific responsibility.
+
+
+### Further Readings
+
+> *See* [Accountable Artificial Intelligence: Holding Algorithms to Account](https://doi.org/10.1111/puar.13293)  
+> *See* [Accountability in Artificial Intelligence: what it is and how it works](https://doi.org/10.1007/s00146-023-01635-y)  
+> *See* [Navigating and reviewing ethical dilemmas in AI development: Strategies for transparency, fairness, and accountability](https://doi.org/10.30574/gscarr.2024.18.3.0088)  
+> *See* [Ethical guidelines for the use of generative artificial intelligence and artificial intelligence-assisted tools in scholarly publishing: a thematic analysis](https://www.escienceediting.org/upload/pdf/kcse-352.pdf)  
+> *See* [Ensuring the Quality, Fairness, and Integrity of Journal Peer Review: A Possible Role of Editors](https://doi.org/10.1007/s11948-015-9625-5)  
+> *See* [Accountability in Computer Systems and Artificial Intelligence](https://dl.acm.org/doi/10.1145/3442188.3445937)  
+> *See* [Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing](https://doi.org/10.48550/arXiv.2001.00973)  
+
+
+## 2. Risks of false positives/negatives and real cases (**empirical problematisation**)
+
+The use of GAI in peer review processes raises a critical issue related to the **reliability of the assessments** produced.   
+Algorithms, as statistical systems trained on historical data, operate on the basis of probabilistic correlations and not according to *epistemic criteria*. 
+
+This approach entails a **structural risk of classification errors**, which can result in false positives and false negatives.
+
+- A <u>false positive</u> occurs when an algorithm attributes scientific value to a contribution that lacks real substance, legitimising the dissemination of work that does not meet minimum quality criteria.  
+    👉 This introduces *fallacious knowledge* into the scientific circuit which, once published, tends to take root and spread, compromising the credibility of the disciplines involved. 
+
+- A <u>false negative</u> occurs when a valid and innovative article is  unfairly penalised or excluded due to bias in the training data, overly standardised metrics or intrinsic limitations of the model.  
+    👉 These result in a *loss of knowledge opportunities*, as they exclude contributions that could have fuelled theoretical or practical advances.
+
+[In both cases, the systemic result is a <u>weakening of the regulatory function of peer review</u> and a <u>deterioration of the trust</u> that the Academic Community and civil society place in the scientific system.  
+These are not mere technical incidents, as they have **substantial consequences on an epistemological and institutional level.**]{.mark} 
+
+The **reliability of the review** depends not only on the technical sophistication of the algorithms, but also on the *quality of the training data*, the *transparency of the metrics adopted*, and the *ability of institutions* to put in place critical oversight mechanisms. 
+
+👉  An empirical approach is needed,  that considers specific cases not as *isolated anomalies* but as <u>indicators of systemic risk</u>, in order to enable the development of corrective mechanisms and safeguard the epistemic integrity of the assessment process.
+
+### Further Readings
+
+> *See* [Evaluating the efficacy of AI content detection tools in differentiating between human and AI-generated text](https://doi.org/10.1007/s40979-023-00140-5)  
+> *See* [AI is transforming peer review — and many scientists are worried.](https://www.nature.com/articles/d41586-025-00894-7)  
+> *See* [Artificial Intelligence to support publishing and peer review: A summary and review](https://doi.org/10.1002/leap.1570)  
+> *See* [Generative Artificial Intelligence is infiltrating peer review process](https://doi.org/10.1186/s13054-024-04933-z)  
+> *See* [Artificial Intelligence in Peer Review: Enhancing Efficiency While Preserving Integrity](https://synapse.koreamed.org/articles/1516090023)  
+
+
+## 3. Roles, conflicts of interest and self-audit practices (*ethical-institutional issue*)
+
+Reflection on the integration of GAI into peer review processes raises profound questions about the **roles, responsibilities** and **conflicts of interest** that arise when evaluation is no longer entrusted exclusively to human intervention. 
+
+Academic tradition has always assigned reviewers the task of ensuring, through their scientific and methodological expertise, the quality and soundness of the contributions submitted for evaluation.  
+
+::: {.callout-warning icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #000000ff;'>
+The introduction of algorithmic systems <u>alters this balance</u>, as a significant part of the decision-making process may depend on automated procedures, which are free from subjectivity but not exempt from biases implicit in the training data or operating models. 
+</span>
+:::
+
+[ 👉 In this scenario, there is a potential disconnect between the **formal responsibility of the reviewer**, who continues to sign the judgement, and the **substantive responsibility**, which is partly transferred to the technological infrastructure.]{.mark} 
+
+The risk of **conflict of interest** is amplified when auditors do not disclose the use of AI tools or use them in an opaque manner, without making the extent of their intervention transparent in relation to the final judgement.  
+Failure to disclose not only weakens the <u>reliability of the assessment</u>, but also raises questions of **legitimacy**, seeking to establish to what extent an auditor can be considered the author of a judgement when part of their argument derives from algorithmic processing. 
+
+[ 👉Clear and shared rules need to be defined that establish the limits of technology use and identify criteria for attributing authorship and scientific responsibility.]{.mark} 
+
+**Self-auditing**, understood as a practice of systematic self-assessment, becomes important. 
+This implies that reviewers <u>explicitly declare</u>:  
+- *how GAI is used*  
+- *the selection criteria applied*  
+- *the methodological limitations encountered*  
+- *any critical issues encountered.*   
+
+This should not be reduced to a formal or bureaucratic requirement, but rather represent a **practice of scientific reflection** capable of highlighting, at an early stage, possible *epistemic* or *ethical distortions* generated by the use of algorithmic tools.  
+
+**Self-monitoring** thus takes the form of **preventive responsibility**, aimed not only at protecting the individual integrity of the reviewer, but also at safeguarding the *overall credibility of the peer review process*.
+
+The **institutional dimension** emerges strongly alongside the individual one. Universities, Research institutions and Scientific publishers have the task of setting up <u>independent auditing mechanisms</u>, <u>certification tools</u> and binding <u>guidelines</u> to assist reviewers in the management of AI. 
+
+[👉 This **multi-level approach** allows ethical responsibility to be distributed fairly, avoiding it falling exclusively on the individual and instead building an ecosystem regulated by shared standards.]{.mark} 
+
+It thus becomes a <u>collective governance mechanism</u>:  
+- *reviewers contribute with their own self-audits*  
+- *institutions define regulatory and operational frameworks*  
+- *the scientific community exercises widespread epistemic control*.   
+
+::: {.callout-important icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #000000ff;'>
+Only through this **multi-level architecture** is it possible to reduce the risk of *technological irresponsibility* and transform the use of GAI into an opportunity to <u>strengthen the quality and reliability of scientific judgement</u>.  
+Technological innovation does not become a threat to the integrity of peer review, but an *opportunity to consolidate its epistemic function* and *strengthen the link between individual responsibility, institutional responsibility and collective responsibility*.
+</span>
+:::
+
+### Further Readings
+
+> *See* [Integrity of Authorship and Peer Review Practices: Challenges and Opportunities for Improvement](https://synapse.koreamed.org/upload/synapsedata/pdfdata/0063jkms/jkms-33-e287.pdf)  
+> *See* [The risks of Artificial Intelligence in research: ethical and methodological challenges in the peer review process](https://doi.org/10.1007/s43681-025-00775-9)  
+> *See* [Peer Review in the Artificial Intelligence Era: A Call for Developing Responsible Integration Guidelines](https://doi.org/10.2147/NSS.S513872)
+
+
+## 4. Documentation methods (*operational methodological solutions: logs, notes, metadata*)
+
+**Documentation** is crucial to ensuring the accountability of peer review in an AI-mediated context, since the legitimacy of the evaluation process depends not only on the quality of the judgements made, but also on the possibility of <u>reconstructing</u> and <u>verifying</u> the entire process leading to those outcomes. 
+
+Review cannot therefore be reduced to a final output, but must be accompanied by tools that ensure **traceability**, **transparency** and **methodological verifiability**. 
+
+The adoption of detailed **audit logs** becomes an indispensable "safeguard": they systematically record the interactions between reviewers and algorithmic systems, including both the *prompts* and *outputs* generated and the changes and interpretations subsequently introduced by the human reviewer.   
+
+👉  This distinction makes it possible to clearly isolate the human contribution from the algorithmic one, *preventing opacity* and *reducing the risk of individual or institutional irresponsibility*.
+
+In addition to the logs, **methodological notes** are also important, not merely as a formal disclosure tool, but as an <u>epistemic device</u> that explains the degree and methods of AI involvement in the evaluation, thus allowing the scientific community to measure the robustness, reliability and limitations of the judgements produced. 
+
+Added to this is the value of **structured metadata**, which associates contextual information with each algorithmic intervention, such as:  
+- *the model used*  
+- *the parameters adopted*   
+- *the software versions*   
+- *the reference datasets*.  
+
+Structured metadata, if standardised and made accessible, not only allows for the replicability of procedures, but also for the systematic comparison of different reviews, constituting an <u>additional quality control tool</u>. 
+
+::: {.callout-important icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #ff0000ff;'>
+The set of **logs, notes** and **metadata** does not perform a purely technical function, but takes on an <u>epistemological and institutional significance</u>, anchoring peer review to a regime of *shared responsibility* and strengthening the Academic Community's confidence in the *legitimacy of evaluation procedures*. 
+</span>
+::: 
+
+[ 👉 The development of common **traceability and verification** protocols is therefore an essential condition for the sustainable integration of AI into editorial processes, preventing it from becoming a factor of *opacity* or *risk* and instead transforming it into a resource capable of consolidating the <u>regulatory function</u> and <u>epistemic quality</u> of peer review.]{.mark} 
+
+### Further Readings
+
+> *See* [The landscape of data and AI documentation approaches in the European policy context](https://doi.org/10.1007/s10676-023-09725-7)  
+> *See* [The necessity of AI audit standards boards](https://doi.org/10.1007/s00146-025-02320-y)

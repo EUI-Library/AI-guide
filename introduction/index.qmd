@@ -1,0 +1,22 @@
+---
+title: "Introduction"
+format: html
+pagination:
+  previous: ../index.html
+  next:     ../Modulo-1/index.html
+---
+
+# Introduction
+
+**Welcome to “AI Content for Research”**  
+by EUI Library
+
+::: columns
+::: column
+### 🎥 Video introduttivo
+
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/INSERISCI_VIDEO_ID"
+  frameborder="0" allowfullscreen></iframe>
+:::
+:::

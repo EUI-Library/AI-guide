@@ -1,0 +1,222 @@
+---
+title: "Prompt Engineering for Research: Techniques, Workflows, and Evaluation"
+format: html
+---
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+
+###### Introduction to Prompt Engineering  
+###### Few-shot and zero-shot prompting: inline examples and template selection  
+###### Complex and reproducible prompt chaining and pipelines (e.g. bibliography → topic modeling → synthesis)  
+###### Advanced prompts: metadata extraction, outline generation, stylistic paraphrasing  
+###### Iterating and assessing the quality of responses  
+###### Guidelines for Creating Academic Prompts  
+:::
+
+## 1 Introduction to Prompt Engineering
+
+### 1.1 What is a prompt?
+
+In the context of Generative Artificial Intelligence (GAI), a prompt is a <u>textual instruction given to the model to generate an output</u>. It is not simply a question, but a **structured linguistic command** that defines *objectives, constraints, register, and output format*.  
+In academic research, prompt design is a crucial methodological moment, as the quality of the generated content largely depends on it.
+
+::: {.callout-important icon="false"}
+In SSH research (Social Sciences and Humanities), a well-crafted prompt typically:  
+- Clearly defines the task objective (*e.g."Analyze the sentiment of…"*)  
+- Specifies the desired output format (*e.g."Return a bullet list of…"*)  
+- Provides examples or constraints, when needed (*e.g."Use formal Italian register"*)  
+::: 
+
+### 1.2 The Prompt Engineering
+
+Large Language Models (LLMs) respond to textual input with <u>variable linguistic articulation</u> depending on *training*, *context*, and *prompt structure*. The way the request is formulated directly influences the type of output. The same question can produce very different results depending on form, specificity, or presence of examples.  
+
+Prompt Engineering is the <u>discipline of designing and optimizing prompts to guide AI models—particularly LLMs—toward the desired output</u>. It involves **methodological principles** such as *clarity*, *relevance*, *structure*, *logical progression* and *iteration*.
+
+### 1.3 Hallucinations and how to prevent them
+
+"Hallucinations" occur when <u>the model generates unverified or entirely fabricated statements, often attributing fictitious details to nonexistent sources</u>.   
+These errors stem from the statistical nature of Machine Learning and **require strategies of cross-validation and guided reinforcement**.
+
+::: {.callout-tip title="<span style='font-size:1.2em; color: #12b13cff;'>Anti-hallucination strategies</span>"}
+[
+- **Cross-source validation**: ask the model for references, citations, or URLs and manually verify them.  
+- **Confirmation queries**: include a verification clause such as: *“Are you sure?* *Please briefly validate this data.*”  
+- **Few-shot learning**: provide 2–3 examples distinguishing between accurate and incorrect responses in order to guide its behavior and improve its accuracy.  
+- **Iterative refinement**: generate a first draft and request successive revisions to address inaccuracies, documenting each iteration.]{.mark}
+:::
+
+### 1.4. Foundational principles for effective and reliable prompts
+
+#### Clarity and Specificity
+- Frame the task unambiguously. Avoid vague requests like *“write something about…”*. Always indicate the desired result (e.g.,*“return a table with columns X, Y, and Z”*).
+- Explicitly define the output format (e.g., *bullet list, 100-word paragraph, numbered list*).
+
+#### Full Context
+- Provide all relevant information, such as text excerpts, definitions of technical terms, methodological constraints, or the target audience (e.g., *“text aimed at SSH researchers”*).
+- Specify tone and register (*formal, didactic, expository*) to ensure stylistic consistency.
+
+#### Guided Iteration
+- Do not settle for the first draft. Test small variations to observe how each affects the output.
+- Test A/B versions, saving each version for comparative analysis and preserve the various iterations for later benchmarking.
+
+## 2. "Few-shot" and "Zero-shot" prompting: inline examples and template selection
+
+Prompt design plays a crucial role in output quality when using LLMs for academic purposes.   
+In particular, **zero-shot** and **few-shot** prompting strategies represent two distinct but *complementary approaches*, aimed at orienting the behavior of the model in the absence or presence of explicit examples.  
+The choice between zero-shot and few-shot prompting must be guided by the nature of the task, the degree of formalization expected and the need to control the variability of the output.   
+Both modes can be adopted within more complex pipelines, integrated with validation, review and iterative refinement tools.
+
+#### <u>Zero-shot Prompting</u>
+Zero-shot prompting uses explicit instructions without concrete examples. It assumes the model can infer the task solely from a clear command. This is useful for standard or generic tasks but more prone to ambiguity or result variability.
+
+#### <u>Few-shot Prompting</u>
+Few-shot prompting embeds one or more examples within the prompt, guiding the model to replicate a demonstrated pattern. In academic contexts, it is especially effective for standardizing formats (e.g., *abstracts, bibliographic entries, methodological summaries*) and maintaining stylistic coherence.
+
+#### <u>Template Use</u>
+Template selection and adaptation are central to this strategy. Recurring structures — e.g., *"Question → Extract → Summary" or "Title → Objective → Methodology → Results"* —facilitate comparable outputs and enhance compatibility with archival and analytical systems.
+
+## 3. Prompt chaining and complex pipelines: a modular approach to output construction
+
+Academic tasks involving progressive information processing — such as *literature reviews*, *thematic analysis* or *argument construction* — benefit significantly from complex pipelines based on prompt chaining.  
+This approach entails sequential execution of multiple prompts, each serving a specific function within a structured workflow.   
+The output from each stage becomes the input for the next, following a modular, cumulative logic.
+
+::: {.callout-note title="<u>Complex pipelines</u>"}
+Complex pipelines differ markedly from the isolated use of LLMs, as they aim to *structure a distributed cognitive process*, in which each step contributes to the construction of a coherent, documentable and verifiable final result.  
+Their adoption makes it possible not only to divide cognitively dense tasks into more manageable units, but also *to improve methodological control and transparency of automatic processing processes*.
+:::
+
+|        **Application example**       | "Systematic review of the literature"                                                                                                                          |
+|:------------------------------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    **Retrieving relevant sources**   | _Using a prompt to query databases or tools such as Elicit or Perplexity AI, in order to identify relevant articles on a given topic._                         |
+|  **Structured metadata extraction**  | _Prompts aimed at extracting and organizing information such as title, authors, date, methodology, type of study, subject area._                               |
+| **Theme recognition and clustering** | _Application of prompts aimed at identifying recurring concepts, semantic classification and building thematic maps._                                          |
+| **Comparative synthesis of results** | _Synthesis command to produce an integrated view of the evidence, with comparison between approaches, results and theoretical positions._                      |
+|  **Generation of the final output**  | _Last prompt to transform the collected material into a finished product, such as a thematic overview, a bibliographic annotation or an articulated abstract._ |
+
+::: {.callout-warning appearance="minimal"}
+#### Complex pipelines differ from isolated prompt use: they aim to construct a distributed cognitive process.     
+Benefits include: *Modularity* - *Reproducibility* - *Methodological transparency* - *Output traceability*.    
+:::
+
+## 4. Advanced prompts: metadata extraction, outline generation, stylistic paraphrasing
+
+The use of LLMs in Academia is not limited to the simple production of texts, but can be extended to more sophisticated functions through the use of **advanced prompts**.  
+These allow you to guide the model in carrying out structured, analytical or transformative tasks, which <u>require a more precise configuration of the prompt and a greater awareness of the semantic capabilities of the model</u>.
+
+Among the most relevant applications are:  
+- The <u>automatic extraction of metadata from scientific articles or other structured documents</u>.  
+<div style="margin-left: 0.5em;">*Through targeted prompts, it is possible to isolate information such as author, year of publication, methodological context, reference discipline or type of study. This type of operation is particularly useful for the construction of bibliographic datasets, the compilation of structured repertoires and the automated analysis of literature.*  
+- The <u>generation of outlines</u>.    
+*During the planning or drafting of scientific contributions, it is possible to ask the model to build logical schemes, argumentative structures or section plans consistent with disciplinary standards. These outlines can then be integrated, modified or expanded by the researcher, acting as a support for the design of articles, reports, project proposals or theses.*  
+- Targeted <u>stylistic paraphrases</u>.  
+*These are reformulations of existing content according to a specific style: formal, technical, popular, or compliant with certain disciplinary registers. This functionality is used in the revision of texts, in the linguistic adaptation for international publications or in the production of multiple versions of the same content for teaching, editorial or communication purposes*.</div>  
+  
+
+::: {.callout-warning appearance="minimal"}
+### Applications include:
+- Structured metadata from PDFs (author, date, methods).  
+- Academic outlines following disciplinary logic.  
+- Stylistic rewriting (formal → plain, Italian → English, etc.).  
+:::
+
+| **Obiettivo:** 	| *Scrivere una sintesi tematica a partire da un corpus bibliografico* 	|                                             	|
+|----------------	|----------------------------------------------------------------------	|---------------------------------------------	|
+|                	| **Funzione**                                                         	| **Tecnica**                                 	|
+| 1              	| Inserimento articoli                                                 	| prompt + upload PDF / DOI                   	|
+| 2              	| Estrazione metadati (autore, anno, metodo)                           	| prompt strutturato                          	|
+| 3              	| Riconoscimento dei temi ricorrenti                                   	| prompt di classificazione                   	|
+| 4              	| Sintesi comparativa dei risultati                                    	| prompt di sintesi con vincolo stilistico    	|
+| 5              	| Output finale in formato accademico                                  	| template APA o report Markdown              	|   
+
+
+
+::: {.callout-warning}
+Effective use of advanced prompts **requires a fine understanding of the model's capabilities and limitations**, as well as a design ability geared toward controlling the output.  
+This is a particularly promising area of experimentation for the world of research, in which AI is used not to replace writing, but to enhance its preparatory, analytical and stylistic phases.
+:::
+
+
+> See: [**Giray,L."Prompt Engineering with ChatGPT: A Guide for Academic Writers"**.](https://doi.org/10.1007/s10439-023-03272-4).     
+> See: [**Generative Artificial Intelligence Prompt Engineering Overview**](https://intranet.icar.cnr.it/wp-content/uploads/2025/01/RT-ICAR-NA-2024-05.pdf). 
+
+## 5. Iteration and Evaluation of output quality
+
+The effectiveness of a prompt cannot be considered a *static datum*, but the result of an <u>iterative optimization process</u>.   
+The interaction with the model requires an *experimental and progressive logic, in which the answers obtained must be constantly subjected to verification, reformulation and comparison*.  
+**Iteration** consists of the targeted repetition of the prompting with incremental changes as variations in the vocabulary, in the instructions order, in the level of specificity or in the structure of the expected format.   
+This process refines the quality of the output, *reducing the interpretative ambiguities of the model and improving consistency with the researcher's objectives*.   
+More than a simple linguistic refinement, it is a *methodological mechanism that allows you to explore the sensitivity of the model to the different input parameters*.
+
+The **evaluation of the quality of the answers** requires clear and shared criteria.   
+In the academic field, the analysis includes not only formal and grammatical correctness, but also other aspects such as:   
+- *conceptual accuracy (absence of factual errors or unjustified inferences)*  
+- *relevance to the demand*   
+- *argumentative cohesion*   
+- *adherence to stylistic or disciplinary standards*  
+- *transparency of sources and implicit assumptions (where relevant)*.
+
+Evaluation cannot be entrusted to generic indicators or intuitive judgments, but <u>must be based on grids or reference models compatible with scientific research and communication practices</u>.  
+*In particular, when the results are used as preliminary materials for publications, systematic reviews or teaching support, it is advisable to document the choices made, justify any reformulations and point out the limits of the output generated.*  
+
+::: {.callout-warning appearance="minimal"}
+### In summary, employing LLMs in the academic field means applying reflective and responsible logic to ensure the reliability and relevance of the content produced.Prompt Engineering in research must be treated as a methodological discipline, not a casual interaction. It supports transparency, reproducibility, and epistemic control in AI-assisted scholarship.:::
+::: 
+
+## 6. Guidelines for creating academic prompts
+
+Below a structured in 6 steps useful for obtaining maximum results in academic research.  
+
+::: {.callout-note icon = false title="1 - Precise definition of the purpose of the research"}
+You need to be transparent about what you want to achieve. A vague prompt leads to vague answers, and you have to turn the search questions into direct instructions for the AI model.  
+The goal must be clear:  
+(incorrect) *"Give me an overview of X."*  
+(corrected) *"Identify the most recent peer-reviewed articles on topic X."*  
+The question must be transformed into an instruction.  
+To the question *"What is the role of AI in qualitative research?"*, the prompt should be:  
+*"List the 5 peer-reviewed articles published from 2022 to 2024 on the role of AI in qualitative research, indicating title, authors, journal, and DOI."*
+:::
+
+::: {.callout-note icon = false title="2 - Provide context and selection criteria"}
+Artificial intelligence needs the necessary context to focus the search and provide relevant results.  
+It is important to include the following parameters:  
+- _Disciplinary scope_: *e.g., "in the context of social sciences" or "with a focus on bioinformatics".*  
+- _Time range_: *e.g., "from the last three years" or "before 2020".*  
+- _Type of output desired_: *"Return a CSV table with columns: Title, Authors, Year, DOI."*  
+- *"Generate a bulleted list."*  
+- *"Provide a detailed explanation."*
+:::
+
+::: {.callout-note icon = false title="3 - Provide examples (Few-Shot prompting)"}
+Showing the AI one or two examples of the desired output, as if it were a model to follow, allows for a more accurate and coherent response.  
+Examples must be clear, promptly including a few pre-filled rows in the desired format:
+*Title, Authors, Year, DOI*  
+"AI in Social Sciences: A Review", Rossi et al., 2023, 10.1234/ai.socsci.2023.01  
+"Qualitative Artificial Intelligence Methods", Smith & Lee, 2022, 10.5678/qual.ai.2022.02  
+Then ask:  
+*"Now continue with three more articles following the same format."*
+:::
+
+::: {.callout-note icon = false title="4 -  Break the task into multiple steps (Chain of Thought)"}
+For complex or multidisciplinary tasks, break the workflow into sequential steps to help the model reason and reduce hallucinations.  
+How to guide AI reasoning:  
+*step 1) "Search for articles using keywords X, Y, Z."*  
+*step 2) "Filter for high-impact journals (Q1/Q2)."*  
+*step 3) "Sort results in reverse chronological order."*  
+*step 4) "Summarize the main findings of each article in 50 words."*
+:::
+
+::: {.callout-note icon = false title="5 - Implement subsequent consistency checks"}
+It is advised not to blindly trust the outputs received from AI. You can ask the model to verify its own results or justify its choices.  
+You may proceed as follows:  
+- _Request for justification_: *"Briefly explain why each article is relevant to my research on X."*  
+- _Fact-Check_: *"For each DOI, confirm its existence and validity on CrossRef."*  
+- _Cross-Review_: *"Review the table and flag any inconsistencies or potential hallucinations."*
+:::
+
+::: {.callout-note icon = false title="6 - Iterate and document"}
+Building effective prompts can be considered an iterative process, as it is unlikely to achieve the desired result on the first try.  
+- _Track versions_: record each prompt variant with date and changes to identify best practices.  
+- _Compare results_: keep only the prompts that produce the most accurate and complete outputs.  
+- _Analyze errors_: when hallucinations occur (*e.g., non-existent articles, incorrect DOIs*), refine your prompt by adding specific constraints (*e.g., "use only Scopus or PubMed databases" or "exclude predatory journals"*).
+:::

@@ -1,0 +1,167 @@
+---
+title: "Scientific and popular communication"
+format: html
+lang: en
+---
+
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+##### Academic blogging
+##### Social Academia (structuring *tweetorials* and *LinkedIn threads*)
+##### Summary for non-experts (TL;DR)
+:::
+
+## Introduction
+
+The **Research Communication** is now an essential extension of Academic work.  
+Whereas in the past the circulation of knowledge was almost exclusively limited to traditional publishing channels (*peer-reviewed journals, conference proceedings, monographs*) the current digital ecosystem has brought about a radical change in **dissemination practices**. 
+
+The growing demand for transparency, the need to promote open access to results, and the urgency of engaging with non-specialist audiences are forcing researchers to <u>experiment with new formats</u> that balance *scientific rigour* and *readability*. 
+In this context, writing is no longer just a tool for intra-disciplinary validation, but also a *means of mediation* that must respond to the logic of visibility, traceability and social impact.  
+
+Hence the centrality of <u>hybrid practices</u> of scientific and popular communication, which are articulated along three main lines: **Academic Blogging, Social Academia** and **Summaries for non-experts**.  
+
+While specialist writing remains the privileged place for <u>certifying results</u>, these practices of extended communication represent the **infrastructure of impact**, the vehicle through which research acquires visibility, public relevance and transformative power. 
+
+👉🏻 [Far from being ancillary operations, they are at the heart of a **new ecology of knowledge**, in which authority no longer derives solely from citation indices or impact factors, but also from the ability to *generate dialogue, inform decision-making processes* and *take root in contemporary digital circuits*.   
+The adoption of GAI as a support for scientific communication imposes an additional **critical responsibility**: it is up to the <u>researcher</u> to ensure that any form of algorithmic mediation does not compromise the conceptual fidelity or epistemic quality of the text.]{.mark}
+
+::: {.callout-warning icon="false" appearance="simple"}
+<div style="font-size: 1.15em; line-height: 1.6;">
+In this way, GAI takes on the role of **enabling technology**. It does not replace authorial competence, but <u>amplifies its possibilities</u>, offering tools for *reformulation, stylistic variation, discourse network analysis,* and *content optimisation*.   
+In other words, the machine can facilitate the transposition of knowledge between different registers and audiences, but it remains the **researcher's task** to ensure *consistency, accuracy,* and *integrity*.
+</div>
+:::
+
+## 1. Academic Blogging
+
+Among the scientific communication practices that have become established over the last two decades, **Academic Blogging** occupies a prominent position as a tool for mediating between the language of specialist writing and the readability requirements of digital communication.
+
+Unlike peer-reviewed journals (which represent the main channel of scientific validation), the primary purpose of Academic Blogs is not the epistemic certification of results, but their **dissemination in broader contexts**, often hybridising discursive registers and visibility strategies typical of the web. 
+
+The goal is therefore not to simplify the complexity of research, but to "**refocus**” it. 
+
+👉🏻[*Reformulating a technical abstract into a 400-500 word text means translating concepts and data into a narrative structure that preserves methodological accuracy but is accessible to readers who do not necessarily belong to the narrow disciplinary circle.*]{.mark}
+
+In this sense, **blogging** serves a <u>dual purpose</u>: 
+
+- it broadens the <u>potential impact of scientific work</u> by making it accessible through search engines and digital platforms;
+- it promotes the <u>construction of an authorial presence</u> that documents the intermediate stages of research over time, fostering transparency in the knowledge process and *open science* practices. 
+
+Regular publications contribute to the creation of a **coherent archive** that not only reproduces the final results, but also makes visible the moments of *reflection, conceptual revision* and *methodological experimentation*.
+
+From a **methodological** point of view, "*rewriting a technical abstract in the form of a post*" involves several stages.  
+
+a) **Identification of the conceptual core**: the researcher isolates a key thesis or result and reformulates it in order to answer an implicit question from the reader that forms the backbone of the work.  
+AI can act as a <u>heuristic support</u>, generating "alternative headlines" that can guide the reception of the text as titles formulated in an *interrogative, assertive* or *informative way* that stimulate the reader's curiosity without sacrificing conceptual accuracy.   
+⚠️ [The final selection remains the prerogative of the researcher, whose task is to critically evaluate the algorithmic proposals in light of the disciplinary context and target audience.]{.mark}  
+
+    👉 <u>Example</u>: from the abstract “*We analysed the impact of open peer review practices on the quality of publications in the social sciences*”, the headline "*Open peer review: does it really improve the quality of articles in the social sciences*?"
+
+b) **Narrative restructuring**: the task consists of transforming a text dense with technical terms into a linear narrative that facilitates comprehension.  
+AI can intervene here as a <u>cognitive offloading tool</u>, producing alternative drafts that reduce terminological density or suggest more fluid rhetorical patterns, for example by proposing historical analogies or controlled metaphors that make the subject accessible without distorting it.  
+⚠️ [In this case too the researcher's supervision is essential. If the algorithm generates excessive simplifications or ambiguous formulations, it is up to the author to reintroduce rigour and epistemic consistency.]{.mark}  
+
+    👉 <u>Example</u>: a graph in the article can become a *simplified infographic* or a *descriptive paragraph* that explains the trend in a discursive manner.
+
+c) **Optimisation and dissemination**: blog writing is influenced by the logic of the digital ecosystem made by *visibility,indexing* and *interaction*.  
+The <u>calls to action</u> at the end of the text aim to encourage the reader to take a specific action (*read the full article, share the content, participate in a discussion*) and can be refined with the help of GAI tools that suggest *linguistic variations tailored to the target audience*.   
+The same logic applies to the <u>SEO meta description</u>, a short summary of 150–160 characters that acts as an interface with search engines.   
+⚠️ [AI can propose multiple alternatives, optimised for different keyword clusters, while the final decision rests with the researcher, who verifies their semantic adherence to the original content.]{.mark}
+
+    👉 <u>Example of a meta description</u>: "*A study of open peer review practices shows how the dynamics of editorial quality in the social sciences are changing.*"
+
+Blog writing thus becomes a **laboratory for reflection** in which researchers can experiment with new forms of discourse, test the reception of hypotheses still in the exploratory phase, and interact with wider communities of readers, including policy-makers, students, and the general public.
+
+::: {.callout-warning icon="false" appearance="simple"}
+<div style="font-size: 1.15em; line-height: 1.4;">
+The use of AI, if kept within the limits of an instrumental support and never a substitute, **enhances this process** by offering a range of expressive and operational solutions that the human author filters, controls and critically integrates.
+</div>
+:::
+
+##### <u>Examples of blogs</u>
+
+- [LSE Impact Blog (London School of Economics)](https://blogs.lse.ac.uk/impactofsocialsciences/)= *platform that collects contributions from researchers, rewritten in accessible language and accompanied by titles optimised for online dissemination*.  
+- [The Conversation](https://theconversation.com/)= *offers articles written by academics but edited by communication professionals, with the explicit aim of mediating between scientific rigour and public enjoyment*.  
+- [Scholarly Kitchen Blog](https://scholarlykitchen.sspnet.org/)= *a privileged observatory on academic communication practices, showing how blogs can become not only a tool for dissemination, but also a place for critical reflection on editorial and scientific processes themselves*. 
+
+
+## 2. Social Academia: structuring *tweetorials* and *LinkedIn threads*
+
+The growing centrality of social media in the contemporary communication ecosystem has also led to a redefinition of **scientific dissemination practices**.
+
+What is referred to as **Social Academia** is not merely an exercise in personal self-promotion, but rather a set of <u>strategies for the micro-dissemination of research content</u> that exploit the logic of digital platforms to broaden the circulation of knowledge.  
+Unlike Academic Blogs, which focus on relatively long and narratively complex texts, Social Academia *imposes reduced formats, rapid timing* and *constant competition for the reader's attention*. 
+
+👉 [The goal for everyone is to make **research results visible**, stimulate critical interaction and consolidate communities of practice and interest around scientific topics.]{.mark}
+
+The use of platforms such as *Twitter/X* and *LinkedIn* has made central the **tweetorial** or **thread format**, i.e. a <u>sequence of micro-texts arranged in logical succession</u>, the construction of which requires *specific rhetorical and strategic skills*.
+
+a) **Segmenting the topic** into autonomous but connected units of meaning, capable of maintaining the reader's attention and gradually guiding them towards the central thesis.    
+
+b) **Choosing the hashtags** that plays an indexing and positioning role, as they connect the content to existing discursive networks, facilitating findability and entry into global thematic conversations. 
+
+c) **Determing the timing the publication**, important for the visibility of content that depends on when it is disseminated, in relation to the activity cycles of digital scientific communities.  
+
+::: {.callout-note icon="false" appearance="simple"}
+## AI can be incorporated into these practices in different ways, always subject to critical control by the researcher.
+:::
+
+During the **thread design phase**, GAI tools can help produce *multiple drafts of the text sequence*, suggesting alternative logical orders or identifying transition points between one micro-text and another. 
+
+👉 The author retains the <u>task of verifying</u> epistemic consistency and fidelity to scientific data, correcting undue simplifications or lexical slips. 
+
+👉 As for the <u>choice of hashtags</u>, AI can analyse industry trends and propose terminology clusters that optimise content visibility, avoiding the use of labels that are too generic or, conversely, overly sector-specific. 
+
+👉 Even in the case of <u>timing</u>, predictive analysis algorithms can provide indications of the moments of maximum engagement probability, but it will always be up to the author to decide whether these metrics coincide with the needs of the target community.
+
+::: {.callout-tip}
+## The conscious use of Social Academia is not limited to increasing individual visibility, but contributes to the <u>creation of collective discursive spaces</u> in which research results can be discussed, contextualised and critically evaluated.   
+In this sense, social media become true "**community laboratories**", where scientific knowledge meets diverse audiences and is measured against the speed and unpredictability of digital circuits. 
+::: 
+⚠️ [When used as an auxiliary tool for generating drafts and analysing discursive networks, AI amplifies the researcher's expressive possibilities, but cannot replace their epistemic and authorial responsibility.]{.mark}
+
+
+## 3. Summary for non-experts (TL;DR)
+
+The growing complexity of scientific production has highlighted the need for textual devices capable of acting as an interface between academic research and audiences who do not share the same level of specialisation.  
+In this perspective **short summaries**, frequently referred to by the acronym <u>TL;DR</u> (*Too Long; Didn't Read*), have taken on a central role in contemporary knowledge dissemination policies. 
+
+Originally created as colloquial formulas within digital communities, these summaries are now recognised as <u>essential tools for conveying complex knowledge to audiences</u> such as *policy makers, administrators, journalists or interested citizens*, who need immediate and pragmatic access to research results.
+
+::: {.callout-tip}
+Their function is not limited to <u>simplification</u>, but rather consists in the **construction of a cognitive transfer device** capable of preserving the epistemic validity of the content while making it usable in heterogeneous decision-making and communication contexts.
+:::
+
+From a <u>methodological</u> point of view, **writing a TL;DR** involves a "rigorous selection of materials" which requires a few steps.   
+
+- *Step 1* = **Isolate the most significant result**, i.e. the conceptual core that represents the <u>contributory claim</u> of the work and which must be understandable without the support of the entire argumentative apparatus. This operation requires an act of *authorial interpretation*, since not all data or empirical evidence has the same degree of communicative transferability. 
+
+- *Step 2* = **Articulate the content in an accessible linguistic register**, free of unexplained technicalities, but at the same time resistant to the risk of trivialisation. 
+
+- *Step 3* = **Explicit the practical or political implications of the research**: not a simple conclusion, but a projection that clarifies how the results may affect professional, regulatory or cultural practices.
+
+👉🏻 [The introduction of GAI in this process opens up new perspectives, which must nevertheless be evaluated with critical caution. **Automatic summarisation algorithms** are capable of generating *multiple summaries*, with varying degrees of granularity, from the original text. These outputs can offer researchers a range of *stylistic and structural possibilities*, acting as catalysts for the final elaboration.]{.mark}  
+
+::: {.callout-warning icon="false"}
+## The selection of content to be included cannot be left entirely to the machine: if left to its own devices, AI tends to favour statistically recurring information rather than conceptually decisive information, risking distorting the epistemic hierarchy of the work.
+⚠️  **For this reason, the <u>role of the author remains essential</u>, both in *validating the generated content* and in *refining the language* to ensure semantic consistency and contextual appropriateness.**
+:::
+
+In more advanced stages, AI can also support optimisation for different audiences. For example, a 120-word summary is for a policy brief, a 280-character summary for an informative post, an introductory note for an institutional portal. 
+
+👉🏻 *In any case, the value of the process lies in the **critical dialogue** between human and artificial intelligence, not in the replacement of one with the other*.
+
+The <u>strategic importance of TL;DR summaries</u> can be fully understood by considering their **political** as well as communicative function. A text of just a few lines can guide regulatory choices, influence public opinion or help define an institution's agenda. 
+
+Far from being a limitation, **brevity** becomes a condition for effectiveness, since reducing a complex work to 100-150 words means carrying out a selection process that not only communicates, but also *interprets and enhances the research*.
+
+👉 [In this sense, short summaries are an **autonomous text genre** that requires specific writing skills, rhetorical sensitivity and awareness of the social and institutional dynamics within which they will be placed.]{.mark} 
+
+
+### Further reading
+
+•    [OECD Policy Briefs](https://www.oecd.org/policy-briefs/): paradigmatic examples of texts that condense complex analyses into targeted summaries for policy makers, characterised by rigour and immediacy.  
+•    [Semantic Scholar – TLDR function]( https://www.semanticscholar.org/): open-access platform that automatically generates one-sentence summaries for millions of articles in computer science, biology and medicine, directly in search results.  
+•    [Making Science Simple: Corpora for the Lay Summarisation of Scientific Literature](https://arxiv.org/abs/2210.09932): study proposing datasets with biomedical research texts associated with lay summaries written by experts, offering concrete examples of summaries accessible to non-specialists.  
+•	[TLDR: Extreme Summarisation of Scientific Documents](https://aclanthology.org/2020.findings-emnlp.428.pdf): example of extremely concise summaries — even of a single sentence — capable of capturing the main contribution of a scientific article, accompanied by annotated and validated TL;DR datasets.   
+•	[AGU (American Geophysical Union) Practical Guide to Plain Language Summaries](https://www.agu.org/-/media/files/agu-programs/spgr/science-communication/toolkit_-_plain_language_summary.pdf): open access PDF guide illustrating how to develop summaries in plain language, avoiding technical jargon and contextualising research for a non-expert audience.  

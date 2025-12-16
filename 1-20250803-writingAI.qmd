@@ -1,0 +1,225 @@
+---
+title: "Artificial Intelligence for Academic Writing: Strategies, Applications, and Limitations"
+format: html
+---
+
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+
+##### First Draft Generation: Title, Abstract, Introduction  
+##### Co-editing and Stylistic Refinement  
+##### Guided Drafting for calls and grants: example prompts  
+:::
+
+## 1. Integration of LLM-based Tools in academic writing
+
+The integration of tools based on advanced language models (LLMs) into academic writing is significantly transforming the <u>practices of scientific composition</u>, from exploratory phases to text production.  
+Although writing remains an irreplaceable skill in the process of knowledge construction, AI can be employed as a **co-authorial tool** to assist researchers with specific tasks, while maintaining human control over content and argumentation.
+
+::: {.callout-important icon="false"}
+## Transparency and traceability in the use of AI in academic contexts
+In recent years, the use of GAI in the production of scientific content has raised significant issues regarding research *ethics*, *authorship attribution* and *methodological transparency*.  
+As a result, several International Institutions, Funding Agencies, and Scientific Journals **have issued guidelines that recommend—or in some cases mandate—explicit disclosure of the use of automated language models such as ChatGPT within research outputs**.
+::: 
+
+#### <u>Key Policies and Guidelines</u>  
+  
+The main legislative and regulatory references include:  
+
+-   **COPE – Committee on Publication Ethics**  
+    It published a guideline in 2023 stating that <u>authors should clearly state</u> whether, how and at what stage of writing they used AI tools, specifying that models cannot be credited as co-authors. ([COPE position – Authorship and AI, 2023](https://doi.org/10.24318/cCVRZBms)  
+
+-   **European University Institute (EUI)**\
+    The 2024 document *Guidelines for the Responsible Use of AI in Research* requires that any substantial use of AI in the writing, summarizing  or editing of academic texts <u>must be explicitly documented</u>, at least in metadata, acknowledgments, or a dedicated methodological section. ([EUI Ethics Committee 2024](https://www.eui.eu/Documents/ServicesAdmin/DeanOfStudies/ResearchEthics/2024.06-Ethics-Commitee-EUI-GENAI-DIGITAL.pdf)  
+
+-   **Nature, Science, Springer, Elsevier**\
+   Leading international scientific journals, including *Nature*, *Science* and *Elsevier*, prohibit the attribution of co-authorship to AI models and require, in methods or acknowledgements, <u>a technical note specifying whether parts of the text</u> (e.g., abstract, bibliography, reformulations)</u> were generated or assisted through LLMs tools</u>.  
+
+-   **European Funding Bodies (e.g. [ERC](https://erc.europa.eu/homepage), [Horizon Europe](https://commission.europa.eu/funding-tenders/find-funding/eu-funding-programmes/horizon-europe_en),  [MSCA - Marie Skłodowska‑Curie](https://marie-sklodowska-curie-actions.ec.europa.eu)**)  
+    While not yet enforcing strict rules, some funding agencies include the <u>disclosure of automated tools</u> used in the preparation of proposals within ethical guidelines, in line with FAIR (*Findable, Accessible, Interoperable, Reusable*) principles and the European Code of Conduct for Research Integrity ([ALLEA 2023](https://allea.org/portfolio-item/european-code-of-conduct-2023/).)  
+
+In this scenario, the use of AI for academic writing **cannot be considered neutral or implicitly accepted**: *researchers must transparently state the extent and nature of technological involvement, clarifying whether AI served as linguistic support, a paraphrasing tool, or contributed to the generation of structured portions of the text*.
+  
+This new responsibility reflects a broader transformation in traceability criteria within contemporary scientific research, where tools—as well as results—are subject to **accountability**. ([Novelli, Taddeo, Floridi, AI & Society, 2024)](https://doi.org/10.1007/s00146-023-01635-y).
+
+### 1.1 Generation of the '*First Draft*': title, abstract, introduction
+
+The elaboration of a *first draft* constitutes one of the most critical and often burdensome phases of the academic writing process.  
+In this context, GAI can offer significant support by <u>facilitating the initiation of text production through the automated generation of initial drafts related to standardized sections of a scientific article</u>, such as the *title, abstract, and introduction*.  
+This intervention is configured as a form of **structural assisted writing**, in which the <u>model does not provide conceptually autonomous content</u> but proposes plausible textual templates based on data provided by the user, such as *disciplinary field, research objective, employed methodology, or research question*.
+
+<u>For example</u>:
+
+- For a **title**, AI can suggest alternatives with varying degrees of specificity, synthesis and attractiveness, while respecting disciplinary style conventions.
+
+- For an **abstract**, generation can follow predefined structures (e.g., [IMRaD](https://libguides.umn.edu/StructureResearchPaper)), or adapt to specific calls (e.g., Horizon Europe, ERC), incorporating key elements: *problem, methodology, expected results, and implications*.
+
+- For an **introduction**, AI can assist in setting up a logical-argumentative sequence, articulating the relevance of the topic, a synthetic state of the art, and an initial statement of the objectives or hypothesis.
+
+The value of an AI-generated *first draft* does not lie in its final quality—which generally remains inferior to that produced by an experienced researcher—but rather in its heuristic and propulsive function: <u>it helps overcome the initial creative block, offers a textual skeleton to work from, and suggests coherent linguistic structures, also useful for non-native authors</u>.
+
+::: {.callout-tip}
+## It must be emphasized, however, that the automatic first draft should be considered an unvalidated product, subject to full scientific and stylistic revision.
+:::
+
+
+The greatest risk is the generation of text that is formally plausible but conceptually vacuous (*synthetic plausibility*), which may include <u>generic statements, theoretical gaps or fabricated citations</u>*(“**hallucinations**”).
+
+::: {.callout-note appearance="simple" icon="false"}
+## Therefore, the use of a first draft must be accompanied by metalinguistic and methodological skills that enable the researcher to critically assess its epistemic coherence, rhetorical adequacy, and disciplinary relevance.
+:::  
+
+#### <u>Comparison diagram of first draft with AI and by the researcher's</u> 
+
+|                **Aspect**               |                   **AI-Generated First Draft**                   |                    **Researcher-Reviewed Version**                   |
+|:---------------------------------------:|:----------------------------------------------------------------:|:--------------------------------------------------------------------:|
+| _Argumentative structure   _            | Formally coherent, but tends to be generic                       | Coherent with the project’s theoretical and logical framework        |
+| _Disciplinary vocabulary   _            | Adequate in general terms, but often superficial                 | Aligned with the vocabulary of the specific discipline               |
+| _Consistency with the research project_ | Risk of irrelevant generalizations                               | Aligned with objectives, context, and research questions             |
+| _Methodological accuracy_               | Standard methodological descriptions, not contextualized         | Accurate, with reference to methods actually used                    |
+| _Style and linguistic register_         | Uniform and readable, but not always   discipline-appropriate    | Tailored to the target (journal, grant call, academic audience)      |
+| _Citations and references_              | Sometimes missing or generated imprecisely                       | Properly inserted and verifiable                                     |
+| _Originality of contribution_           | Low: tends to reproduce frequent and neutral patterns            | Explicit articulation of the original contribution to the literature | 
+
+### 1.2 Key differences between AI-generated drafts and researcher-reviewed academic writing  
+    
+a) **Argumentative Structure**  
+The AI‐generated draft often reproduces standard rhetorical patterns but frequently lacks conceptual grounding. The revised version establishes a logically coherent structure aligned with the project’s hypothesis and theoretical framework.
+
+b) **Disciplinary Language**  
+Although language models mimic an academic register, they tend to rely on generic or overused terms. The researcher refines the vocabulary to adhere strictly to the conventions and epistemological precision required by the discipline.
+
+c) **Alignment with Research Design**  
+The AI draft may introduce unwarranted generalizations or assumptions. Human revision restores internal consistency by confining the text to the actual objectives, methods, and research questions of the study.
+
+d) **Methodological Accuracy**  
+AI often defaults to generic methodological descriptions (e.g., “qualitative interviews,” “thematic analysis”) without contextual detail. The researcher amends these sections to reflect the specific methodological choices actually employed.
+
+e) **Stylistic Appropriateness**  
+While the automated draft is syntactically fluent, its tone is stylistically neutral. The human editor introduces modulations of register, emphasis, and tone according to the target audience (e.g., scholarly journal readers, funding panel, academic committee).
+
+f) **Citations and Source Integrity**  
+Models can omit references or generate them inaccurately. The researcher verifies each citation’s accuracy and integrates all sources coherently into the narrative.
+
+g) **Originality of Contribution**  
+AI outputs tend to default to safe, conventional formulations. The researcher highlights the original contribution, theoretical novelty, or methodological innovation that distinguishes the work.  
+
+
+### 2. Co-editing and stylistic refinement: advanced linguistic assistance in academic writing  
+
+Beyond the automatic generation of content, one of the most impactful applications of AI in scholarly writing lies in the **co-editing phase**, understood as targeted support for the linguistic and rhetorical polishing of pre-existing text.  
+In this role, AI does not function as an autonomous knowledge generator but as a **parametric editorial assistant**, capable of *proposing localized revisions or comprehensive reformulations depending on the usage context and communicative objectives*.
+
+Co-editing proves especially effective in two critical sections of academic production: the <u>methodological description</u> and the <u>discussion</u>.  
+In the *methodological section*, AI can enhance expository clarity by eliminating lexical ambiguities and smoothing the presentation of adopted methods and techniques.  
+In the *discussion section*, it can facilitate the articulation of inferences and the linkage between results, literature and theoretical implications—thereby improving argumentative coherence and syntactic readability.
+
+Advanced assisted writing tools allow users to parameterize the rewriting process by specifying desired levels of *formality*, *target length*, *scientific register* or *communicative tone* (e.g., assertive, descriptive, popular).  
+This makes the AI intervention highly adaptable to different communication contexts, whether preparing a peer-review journal abstract, a public presentation, or a policy brief for institutional stakeholders.
+
+::: {.callout-tip}
+## It is, however, essential that these operations not be regarded as <u>neutral automations</u>: every AI-generated suggestion must undergo critical evaluation, taking into account conceptual consistency, terminological fidelity, and adherence to the original communicative intent.  
+The collaboration between author and system must remain reflective and deliberate, ensuring human oversight over argumentative density, epistemic alignment, and the rhetorical identity of the text.
+:::
+
+#### <u>Operational features of automated co-editing</u>
+
+The AI platforms available today for academia offer a growing range of advanced features.
+
+It's notable to remember:
+
+- **Controlled rewriting (*constrained paraphrasing*)**: the user can request rewrites with specific stylistic or rhetorical constraints, such as increased conciseness, variation in tone  or translation from technical to popular language. This feature is useful for adapting the same content to *different audiences* (e.g., specialist journal, European call, internal communiqué).
+
+- **Selective synthesis**: AI is able to detect redundant or excessively dense passages-for example, verbose methodological sections or scattershot theoretical descriptions-and propose a more essential version, while maintaining informational relevance and respecting any editorial space constraints.
+
+- **Textual cohesion and logical transitions**: by analyzing thematic and rhetorical progression, the system can suggest the addition or modification of connectives, transitions, and textual markers, improving the internal fluency of academic discourse, especially in texts intended for international reviewers or in multilingual contexts.
+
+### 3. Guided drafting for calls and grants: examples of applicable prompts
+
+The use of LLMs in the *drafting phase of project proposals*, *application forms* or *grant abstracts* is today one of the most strategic areas for the academic and competitive research sector.  
+These tools are configured as **semi-automatic writing assistants**, capable of generating preliminary versions (*first drafts*) of complex textual sections, starting from suitably calibrated prompts.
+This functionality is particularly effective in supporting <u>strategic writing</u>,  that is, writing geared toward calls with specific formal and rhetorical requirements, where *clarity of objectives*, *measurability of impacts*, *methodological relevance*, and *compliance with the language of the funder* are decisive elements.  
+
+##### Structured prompts: how to drive textual generation  
+
+The effectiveness of the result depends largely on the **quality** and **accuracy** of the prompt.  
+The following are some <u>effective prompts</u> in **grant writing**:^[*Grant writing is the structured process of writing a project proposal aimed at obtaining funding from public bodies, private foundations, international organizations, or research agencies. It is a highly specialized form of writing, combining rhetorical, design, normative and strategic skills.  
+Operationally, grant writing is not limited to writing the text, but also involves:
+- the analysis of the relevant call for proposals and its eligibility and evaluation criteria;
+- the ability to translate a scientific idea into a clear and convincing project narrative;
+- the structuring of content according to predefined formats (e.g., abstract, state of the art, methodology, impacts, budget, work packages);
+- the adaptation of style and vocabulary to the expectations of the funding body (policy-driven, evidence-based, stakeholder-oriented).  
+In academia, grant writing is a strategic cross-cutting skill, as it conditions access to resources critical to research, career, and scientific visibility. The ability to write effective proposals is now considered, for all intents and purposes, an integral part of the researcher profile, particularly in national and international competitive contexts (e.g., Horizon Europe, ERC, Marie Skłodowska Curie, PRIN, PNRR)*.]
+
+✏️ <u>Prompt for project title definition (concise and focused)</u>  
+*"Propose five possible titles for a European project exploring the impact of digital platforms on youth political participation. The title should be short, clear, evocative and suitable for a Horizon Europe call"*
+ 
+✏️ <u>Prompt for generating project abstract (*first draft*)</u>  
+*"Write an abstract of up to 250 words for a project that aims to promote social cohesion through digital interventions in marginalized urban settings. The text should include objectives, methodological approach, expected impacts and relevance to the call."*
+
+✏️ <u>Prompt for academic calls (e.g., ERC, Marie Skłodowska-Curie)</u>  
+*"Draft a scholarly synthesis for an MSCA application studying the building of language capital among migrants and educational institutions in Europe. The text should be consistent with the European format and use a formal but accessible tone."*
+
+✏️ <u>Prompt for methodological sections</u>  
+*"Reformat this methodological paragraph (paste text) in a more technical way, with academic vocabulary, while maintaining clarity and avoiding redundancy. Specify that this is a qualitative design based on semi-structured interviews."*
+
+✏️ <u>Prompt for language adaptation</u>  
+*"Rewrite this text (paste) in formal academic English, suitable for a submission in the humanities. Maintain conceptual precision and disciplinary vocabulary, avoiding literal translations."*
+
+✏️ <u>Prompt for call for paper or announcement</u>  
+*"Draft a short description (max 250 words) for a call for paper on “Ethics and AI in Social Research.” The paper should attract theoretical and empirical contributions, with an authoritative and inclusive tone."*  
+
+### 3.1 Ethical considerations and statement of use. 
+
+It is also essential to distinguish between **linguistic assistance** and the **generation of original scientific content**: only the former can be delegated, while the construction of the argumentation, the selection of sources, and the definition of the thesis remain tasks proper to scientific authorship.  
+
+::: {.callout-important}
+## Usage considerations
+It is essential to remember that these texts should not be considered final products, but **intermediate working tools**: drafts on which to critically intervene to correct, deepen, position.  
+In addition, templates can be gradually “<u>trained</u>” to better meet user needs through iterative prompts and progressive refinements of context (e.g., *by providing pre-written sections or bullet points with project data*).   
+The use of AI in academic writing, particularly in evaluation (grant, peer review), requires **methodological transparency**.  
+It is recommended <u>to state</u>, in the methodological notes or metadata of the proposal, the possible use of AI tools, especially when intervening in substantial stages of writing.
+:::
+
+### Tools for academic writing
+
+🔎 [JENNI](https://jenni.ai/it/for-researchers)  
+🔎 [RYTR](https://rytr.me/)  
+🔎 [SCALENUT](https://www.scalenut.com/)    
+🔎 [JASPER](https://www.jasper.ai/)  
+🔎 [PROWRITINGAID](https://prowritingaid.com/)  
+🔎 [TEXTCORTEX](https://textcortex.com/en)  
+🔎 [QUILLBOT](https://quillbot.com/)  
+🔎 [HYPERWRITEAI](https://www.hyperwriteai.com/)  
+🔎 [COPY](https://www.copy.ai/)  
+🔎 [PAPERPAL](https://paperpal.com/home)  
+
+#### Comparison of the features of the suggested tools
+
+|    **Tool**   | **Free Plan/Trial Available** | **Supported Languages** |                **Best for**                |     **Access Type**     |
+|:-------------:|:-----------------------------:|:-----------------------:|:------------------------------------------:|:-----------------------:|
+|      Rytr     |            Free plan          |  More than 30 languages |       Plagiarism and coherence check       |  Web, Chrome extension  |
+|    Scalenut   |           Free trial          |       English only      |        Thesis rewriting and editing        |           Web           |
+|    Jenni AI   |            Free plan          |    Multiple languages   |         Creative writing solutions         |           Web           |
+|   Jasper AI   |           Free trial          |  More than 30 languages |         Multilingual thesis writing        |           Web           |
+| ProWritingAid |            Free plan          |       English only      |          Citations and references          | Web, browser extensions |
+|   TextCortex  |           Free trial          |  More than 25 languages |           Strengthening arguments          |  Web, Chrome extension  |
+|   Writesonic  |           Free trial          |  More than 25 languages |     Advanced thesis writing with GPT-4     |           Web           |
+|    Quillbot   |            Free plan          |  More than 30 languages |     Language refinement and enhancement    |     Web, extensions     |
+|  HyperWriteAI |           Free trial          |       Any language      |        Thesis rewriting and editing        |           Web           |
+|    Copy.ai    |           Free trial          |  More than 30 languages | Thesis generation and argument enhancement |           Web           |
+|    Paperpal   |          Free version         |  More than 30 languages |  Academic translations and coherence check |   Web, MS Word add-in   |
+
+### References
+
+> See: [Pividori M, Greene CS. (2024) A publishing infrastructure for Artificial Intelligence (AI)-assisted academic authoring.](https://doi.org/10.1093/jamia/ocae139).  
+> See: [Kwon, D. (2025). Is it OK for AI to write science papers? Nature survey shows researchers are split.](https://www.nature.com/articles/d41586-025-01463-8)     
+> See: [Salvagno M, Taccone FS, Gerli AG. (2023) Can artificial intelligence help for scientific writing?](https://doi.org/10.1186/s13054-023-04380-2.)
+> See: [Khalifa, M., & Albadawy, M. (2024). Using artificial intelligence in academic writing and research: An essential productivity tool. Computer Methods and Programs in Biomedicine Update, 5, 100145.](https://doi.org/10.1016/j.cmpbup.2024.100145)   
+> See: [Hosseini, M., Rasmussen, L. M., & Resnik, D. B. (2023). Using AI to write scholarly publications. Accountability in Research](https://doi.org/10.1080/08989621.2023.2168535)  
+> See: [Meyer, JG, Urbanowicz, RJ, Martin, PCN et al.(2023)ChatGPT and large language models in academia: opportunities and challenges.](https://doi.org/10.1186/s13040-023-00339-9)  
+> See: [Godwin, R. C., DeBerry, J. J., Wagener, B. M., Berkowitz, D. E., & Melvin, R. L. (2024). Grant drafting support with guided generative AI software.](https://doi.org/10.1016/j.softx.2024.101784)  
+> See: [Kasierski, B., & Fagnano, E. (2024, October). Optimizing the Grant Writing Process: A Framework for Creating a Grant Writing Assistant Using ChatGPT 4.](https://doi.org/10.1145/3641237.3691693)  
+> See: [Panda, S., & Kaur, D. N. (2024). Exploring the role of generative AI in academia: Opportunities and challenges](https://doi.org/10.18231/j.ijlsit.2024.003)   
+
+<br>
+---

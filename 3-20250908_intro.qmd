@@ -1,0 +1,55 @@
+---
+title: "Implications of the use of AI in research"
+format: html
+lang: eng
+---
+
+The question of epistemology and transparency in the use of AI in research processes is a decisive factor in the very <u>legitimacy of contemporary science</u>.
+
+The adoption of Generative Systems is not merely an instrumental update, but has a profound impact on the <u>logic of knowledge production</u>, altering the criteria by which knowledge is constructed, validated and shared.
+
+The GAI, in its ability to *select*, *organise* and *synthesise sources*, directly intervenes in the definition of “**scientific truth**”, expanding the possibilities of access to information but at the same time introducing new areas of opacity and fragility in terms of **verifiability**.
+
+The tools developed in the field of **Explainable AI (XAI)** are a significant attempt to restore transparency to otherwise uninterpretable processes, but they fail to bridge the gap between the <u>epistemic needs</u> of the scientific community and the <u>opaque complexity of deep architectures</u>.
+
+::: callout-important
+## The relationship between researcher and AI is one of <u>co-agency</u>, in which humans retain the role of *guarantor of cognitive and ethical processes*, but must contend with a *technological agent* that introduces new possibilities and, at the same time, new opacity.
+:::
+
+This transformation requires the Academic Community to reflect on the <u>soundness of the founding principles of modern science</u>:\
+- the verifiability of results\
+- the methodological transparency\
+- the neutrality of sources\
+- the individual and collective responsibility in the evaluation phases.
+
+Introducing AI Systems, particularly their generative applications, tests these assumptions along <u>four main lines</u>:
+
+1.  **the Epistemological Dimension of Transparency**\
+2.  **the issue of Bias and Source quality**\
+3.  **the redefinition of Accountability in peer review processes**\
+4.  **towards a renewed Operational Ethic**.
+
+The use of GAI in research cannot be considered a simple technical support, but must be treated as an **epistemic object in its own right**, capable of influencing the entire <u>knowledge ecosystem</u>.
+
+👉 On the one hand, AI significantly <u>expands the analytical and synthetic capabilities of researchers</u>, offering tools capable of processing huge amounts of data and generating hypotheses.
+
+👉 On the other hand, it <u>introduces concrete risks</u>, such as *algorithmic opacity, the propagation of errors or biases, the weakening of traditional accountability mechanisms* and *the potential erosion of public trust in science*.
+
+Analysing these implications in depth means maintaining a <u>constant tension</u> between *technological innovation* and *scientific integrity* as a guiding principle, so that AI can be integrated without compromising the principles that guarantee the credibility of research.
+
+## Key References
+
+-   [UNESCO Recommendation on the Ethics of Artificial Intelligence](https://www.unesco.org/en/articles/recommendation-ethics-artificial-intelligence)\
+    *First global ethical framework on the use of AI, with principles on transparency, accountability and inclusion. (2021 International recommendation)*
+
+-   [EU Artificial Intelligence Act (AI Act)](https://artificialintelligenceact.eu/)\
+    *Binding regulations governing AI systems, including those used in research, with documentation and monitoring requirements. (2024 Legislation)*
+
+-   [EUI - European University Institute - Guidelines for the Responsible Use of Artificial Intelligence for Research](https://www.eui.eu/Documents/ServicesAdmin/DeanOfStudies/ResearchEthics/2024.06-Ethics-Commitee-EUI-GENAI-DIGITAL.pdf)\
+    *Document specific to the research context: emphasises disclosure, traceability and scientific integrity. (2024 Academic guidelinese)*
+
+-   [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922)\
+    *Critical analysis of the risks of bias, opacity and epistemic impact of large language models. (2021 Conference paper (FAccT))*
+
+-   [OECD Principles on Artificial Intelligence](https://www.oecd.org/en/topics/ai-principles.html)\
+    *Policy principles for the responsible use of AI, also adopted by OECD member countries*

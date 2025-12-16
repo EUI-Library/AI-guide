@@ -1,0 +1,240 @@
+---
+title: "Mapping the Workflow of an Academic Paper: Integrating AI at Every Stage"
+format: html
+lang: en
+---
+
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+##### Introduction: why a systemic approach to AI use
+
+##### Stages of academic writing and corresponding AI “touchpoints”
+
+##### Step-by-step case studies: practical AI applications in the editorial workflow
+
+##### From map to method: recommendations for researcher autonomy
+:::
+
+## 1. Introduction: why a systemic approach to AI use
+
+Integrating GAI into scholarly writing — given its capabilities, limitations, and constraints — cannot be reduced to the occasional use of stand-alone tools.\
+The proliferation of applications that *automate*, *assist* or *augment* various phases of scientific production demands a **comprehensive methodological reflection** on the overall structure of intellectual work. In research, especially within the Social Sciences and Humanities (SSH), writing is not merely a final step but a <u>cognitive device</u> through which analytical results are consolidated, articulated, and debated.\
+Accordingly, adopting LLM-based technologies capable of *generating text, reformulating concepts, synthesizing sources or suggesting alternative phrasings* can fundamentally **reshape the editorial process**.
+
+::: {.callout-warning icon="false"}
+## Systematically mapping AI–writing interactions is essential to ensure transparency, epistemological control, and effective valorization of the human contribution.
+:::
+
+A <u>systemic approach</u> enables researchers to:
+
+-   Pinpoint where AI can be employed both effectively and responsibly\
+-   Avoid inappropriate delegation that risks originality or theoretical coherence\
+-   Develop a sustainable, replicable strategy guiding scholars from project design to final publication.
+
+## 2. Stages of academic writing and AI “Touchpoints”
+
+Academic writing unfolds as a multi-stage process rather than a single, linear task. Each stage entails distinct *cognitive, linguistic*, and *organizational demands*, which can be supported — if methodologically integrated — by AI tools.
+
+A structured map of principal AI **“touchpoints”** across the editorial workflow is given.\
+This section aims to provide a <u>structured mapping of the main points of interaction</u> (‘**touchpoints**’) between GAI-based technologies and the various stages of the academic writing process.
+
+::: {.callout-note icon="false"}
+## When used critically and in context, these tools can support, optimise, or strengthen scientific writing activities, while preserving the irreplaceable role of theoretical reflection and epistemological control by the researcher.
+:::
+
+The GAI should be integrated at *specific points in the editorial process*, with differentiated functions — from suggestions to assistance, partial automation or validation — **avoiding a totalising** or **automatic approach**. Its value lies in its ability to intervene at targeted stages of the process, acting as a methodological ally in the most critical or time-consuming steps, without <u>compromising scientific rigour</u>.
+
+The proposed structure adopts a **logical-procedural approach** and is developed through 6 <u>operational segments</u> (*editorial workflow*), corresponding to *six strategic junctures in the cycle of elaboration and formalisation of the academic text*. It is a composite process, and each step involves conceptual, operational and stylistic choices.
+
+Although these phases do not necessarily follow a strictly linear order (as they may involve returns, revisions or restructuring), it is possible to identify a **shared procedural grid** that allows the writing cycle to be mapped from initial design to publication.
+
+### a. Defining scope and formulating the research question
+
+:::: {style="margin-left: 1.4em;"}
+The first phase involves <u>identifying the relevant subject area</u>, defining the *research problem* and *preliminarily structuring the objectives*.\
+👉🏻 *In this phase, AI can be useful as an exploratory tool for generating provisional titles, summarising areas of interest that emerge from the literature or comparing alternative formulations of the same hypothesis*.
+
+::: callout-warning
+## LLM-based tools can help refine search queries, provided that human intervention is geared towards verifying their epistemological consistency, originality and disciplinary relevance.
+:::
+::::
+
+### b. Finding, selecting and summarising scientific literature
+
+:::: {style="margin-left: 1.4em;"}
+One of the fundamental components of academic writing is the <u>construction of a theoretical framework</u>.
+
+👉🏻 Recent applications of AI in the field of bibliography allow for the automation, at least in part, of certain operations: *searching for primary and secondary sources, automatic extraction of abstracts and keywords, construction of concept maps, identification of related or contrasting studies*.
+
+::: callout-warning
+## However, the critical selection of sources, the analysis of references and the assessment of relevance to one's project remain highly cognitive activities that cannot be delegated.
+:::
+::::
+
+### c. Planning the argumentative structure (outline)
+
+:::: {style="margin-left: 1.4em;"}
+Once the field of investigation has been defined and the bibliographic material acquired, the text is <u>structured by defining an outline</u>.\
+This step requires the *ability to logically organise the sections* (e.g. IMRaD or narrative structure), *assign argumentative functions to each paragraph* and *anticipate consistency between passages*.\
+👉🏻 *AI can assist in generating outlines from a summary description of the project, suggesting coherent internal structures*.
+
+::: callout-warning
+## It is the researcher's responsibility to adapt the generated proposal to the specifics of their theoretical and methodological framework.
+:::
+::::
+
+### d. Composition of the *first draft*
+
+:::: {style="margin-left: 1.4em;"}
+The drafting of the *first draft* is the <u>moment when analyses, references and hypotheses are consolidated</u>. Starting from refined prompts, GAI allows you to obtain preliminary versions of text sections, with a certain adherence to formal and structural criteria.
+
+::: callout-warning
+## However, it is essential to emphasise that the quality of the content produced depends largely on the clarity of the input and the researcher's ability to integrate, modify or reject what is proposed. In this perspective, AI takes on the role of editorial assistant, not author.
+:::
+::::
+
+### e. Content review and stylistic refinement
+
+:::: {style="margin-left: 1.4em;"}
+This fifth phase involves <u>editing, rephrasing and improving readability</u>.\
+AI can be used to *rephrase complex sentences, harmonise the linguistic register, suggest logical transitions* or *optimise information density*.\
+Some tools also allow you to set specific parameters such as level of formality, tone, length or type of audience.
+
+::: callout-warning
+## However, any proposed stylistic or syntactic changes must be evaluated in relation to the function that the text performs within the scientific discourse.
+:::
+::::
+
+### f. Final check and preparation for submission
+
+:::: {style="margin-left: 1.4em;"}
+The final stage includes activities such as <u>checking the accuracy of citations, consistency between the text and bibliography, adaptation to specific editorial styles</u> (APA, MLA, Chicago, etc.), <u>final linguistic verification</u> and, where applicable, <u>adaptation of the text to the standards required for submission</u>.\
+GAI can also provide support to facilitate *formal standardisation, suggest target journals based on the content covered, and generate short accompanying texts* (cover letters, abstracts for online submission).
+
+::: callout-warning
+## Even at this stage, there is still a need for accurate human checking, especially in highly formalised contexts.
+:::
+::::
+
+## 3. Step-by-step case studies: practical applications of AI in the editorial workflow
+
+To encourage the informed adoption of GAI in the academic context, it is useful to propose a **series of case studies**, each focusing on a *strategic moment in the writing cycle*.\
+These examples are not prescriptive models, but rather *operational scenarios that illustrate the potential applications of AI tools*, highlighting their advantages, limitations and optimal conditions of use.\
+👉 Each case is presented as a sequence of operations with an indication of the <u>type of tool</u> that can be used, the <u>type of prompt or input required</u>, and the <u>expected contribution to the production or revision of the content</u>.
+
+#### Case studies
+
+::: {.callout-note appearance="simple" icon="false"}
+1️⃣ – **Automatic Extraction of Key SSH Articles**\
+**Objective**: Quickly identify an initial selection of relevant sources to define the state of the art.\
+**Procedure**:\
+1. Query a semantic AI engine (e.g., *Elicit, Scite Assistant*) with a natural-language prompt (e.g.,*“Key debates on digital inclusion in education”*)\
+2. Evaluate returned items—titles, abstracts, reliability metrics\
+3. Manually confirm relevance; archive full texts.\
+**Output**: An initial systematic map of key sources, useful for building the theoretical background.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+2️⃣ – **Guided generation of structured outlines**\
+**Objective**: Build a coherent argumentative structure for the scientific article, following the IMRaD format or equivalent.\
+**Procedure**:\
+1. Provide a prompt containing a provisional title, research objectives and expected output type (e.g. *“Create an outline for an empirical social science paper on X”*).\
+2. Request a division into sections (Introduction, Methods, Results, Discussion) with brief descriptions of the contents of each.\
+3. Verify that the proposals are consistent with the research design and adapt the structure according to the target (call for proposals, journal, conference).\
+**Output**: Flexible outline, consistent with the editorial standards of the discipline.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+3️⃣ – **Draft introductory paragraph with critical review**\
+**Objective**: Produce a first draft of the introductory paragraph to be used as a working basis.\
+**Procedure**:\
+1. Enter the main research questions, theoretical references and empirical context into the prompt.\
+2. Request a controlled generation, indicating length, tone and level of formality (e.g. “Generate a formal academic introductory paragraph, max 150 words”).\
+3. Critically evaluate the text produced: relevance, quality of vocabulary, accuracy of statements.\
+4. Modify, rewrite or integrate according to your own style and theoretical framework.\
+**Output**: A text that is consistent in form, to be refined in content to ensure originality and rigour.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+4️⃣ – **Automatic verification of logical consistency between sections**\
+**Objective**: Check the consistency between the introduction, objectives and conclusions, highlighting any logical discrepancies or redundancies.\
+**Procedure**:\
+1. Upload the partial or complete text to an AI environment (e.g. Claude or ChatGPT with document upload mode).\
+2. Enter a prompt such as: ‘Assess whether the conclusions are consistent with the objectives stated in the introductory section. Indicate any omissions or inconsistencies.\
+3. Analyse the feedback provided and verify the validity of the observations, adapting the relevant sections.\
+**Output**: Suggestions for strengthening the linearity of argumentation and logical clarity of scientific texts.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+5️⃣ – **Generation of a cover letter for submission to an academic journal**.\
+**Objective**: Write a formal cover letter, in accordance with editorial standards, to be sent together with the manuscript.\
+**Procedure**:\
+1. Enter the main data (article title, journal name, summary of the contribution, authors' affiliations).\
+2. Request a formal cover letter, using a prompt such as: *"Create a cover letter for the submission of a scientific article in the field of sociology, addressed to the editorial board of \[journal name\]*."\
+3. Review the proposed text, customising it according to the specifics of the manuscript and the target journal.\
+**Output**: A concise, professional letter, consistent with academic editorial practices.
+:::
+
+::: {.callout-note appearance="simple" icon="false"}
+6️⃣ – **Stylistic adaptation of the text to an international target audience**\
+**Objective**: Rewrite an article written in Italian into standardised scientific English, suitable for international publication.\
+**Procedure**:\
+1. Translate the text into English using specialised tools (e.g. DeepL Write, Papercup, Paperpal).\
+2. Enter selected sections of the text into the AI platform and indicate the desired stylistic parameters: level of formality, length, disciplinary terminology.\
+3. Review the proposals, checking for terminological accuracy, adherence to international standards and syntactic fluency.\
+**Output**: A coherent and readable version in English, ready for human proofreading or editorial review.
+:::
+
+## 4. From map to method: recommendations for researcher autonomy
+
+The representation of touchpoints between AI and the editorial process should not be understood as a simple descriptive diagram.\
+On the contrary, it represents the <u>start of a methodological reflection that needs to be translated into conscious and intentional operational practices</u>.\
+A map is useful insofar as it becomes a **method**: *a structured set of choices, procedures and checks that allow the researcher to interact with AI tools in a manner consistent with the principles of scientific research*.\
+From this perspective, the adoption of GAI cannot be interpreted as an automatic delegation of editorial skills, but as an opportunity to develop a new form of **epistemic agency**.\
+This agency refers to the *ability of the research subject to consciously, reflectively and responsibly guide the process of knowledge production, selecting tools, interpreting data and evaluating content* in light of explicit theoretical and methodological goals.\
+It implies critical autonomy in governing technical mediations, without relinquishing conceptual and ethical control over one's scientific work.
+
+::: callout-important
+## Epistemic agency is a form of cognitive responsibility that distinguishes the producer of knowledge (the researcher) from a passive executor of technical automatisms.
+
+It involves:\
+• *not delegating the construction of scientific argumentation entirely to AI or other external tools*\
+• *knowing how to interpret and filter the information and suggestions generated independently*\
+• *preserving theoretical intentionality, i.e. consistency between operational choices and the cognitive objectives of the research*.
+:::
+
+This results in an <u>active and reflective approach</u>, based on a balance between technical automation and theoretical control.
+
+::: {.callout-warning icon="false"}
+## GAI can play an advanced supporting role in scientific production only if it is part of a solid methodological framework capable of preserving the integrity, authorship and originality of scientific contributions.
+
+The challenge, therefore, is to transform the use of AI into a cognitive alliance guided by methodological awareness, rather than a standardised, opaque or disempowering process.\
+Only in this way will it be possible to integrate technological innovation without compromising the critical and design value of academic writing.
+:::
+
+### Recommendations
+
+❗️ **Esplicitare il ruolo dell’AI nel flusso di lavoro**\
+👉🏻 Annotare in quali fasi e per quali scopi si è ricorso a strumenti generativi, contribuendo alla trasparenza metodologica.\
+*Tale documentazione, integrata nel protocollo metodologico, contribuisce a garantire la riproducibilità, la trasparenza e l’integrità scientifica dell’elaborato, in linea con le raccomandazioni dei principali enti di finanziamento e riviste peer-reviewed.*
+
+❗️ **Valutare criticamente ogni output prodotto**\
+👉🏻 Nessun contenuto generato dall’AI dovrebbe essere accettato in modo automatico, ma analizzato in termini di coerenza con il progetto, adeguatezza scientifica e rigore formale.\
+*L’adozione acritica di contenuti sintetici o stilisticamente corretti, ma privi di profondità teorica o coerenza argomentativa, può compromettere la qualità complessiva del testo e alterarne il valore scientifico*.
+
+❗️ **Coltivare l’ibridazione tra competenze tecniche e conoscenze disciplinari**\
+👉🏻 Un uso efficace dell’AI nella scrittura accademica richiede una doppia alfabetizzazione: da un lato, la familiarità con le logiche di funzionamento dei modelli generativi (es. prompt design, temperature, contesto), dall’altro, la padronanza delle convenzioni linguistiche e argomentative della propria area di studio.\
+*Solo attraverso questa integrazione il ricercatore può operare scelte consapevoli, selezionare strumenti appropriati e orientare l’AI verso risultati epistemicamente validi*.
+
+❗️ **Garantire la tracciabilità delle revisioni**\
+👉🏻 È buona prassi mantenere un archivio delle modifiche apportate ai contenuti generati dall’AI, indicando quali porzioni sono state riscritte, adattate o validate.\
+*Ciò consente non solo di conservare il controllo autoriale sul testo, ma anche di ricostruire a posteriori il processo redazionale in caso di valutazioni, revisioni o verifiche etiche. La tracciabilità si configura, in questo senso, come un criterio fondamentale di responsabilità scientifica e integrità editoriale*.
+
+------------------------------------------------------------------------
+
+## References
+
+> See: [Flanagin, A., Kendall-Taylor, J., & Bibbins-Domingo, K. (2023). Guidance for Authors, Peer Reviewers, and Editors on Use of AI, Language Models, and Chatbots.](https://doi.org/10.1001/jama.2023.12500)\
+> See: [Rodafinos, A. (2025). The Integration of Generative AI Tools in Academic Writing: Implications for Student Research.](https://doi.org/10.37256/ser.6220256517)\
+> See: [Hanafi, A. M., Al-mansi, M. M., & Al-Sharif, O. A. (2025). Generative AI in Academia: A Comprehensive Review of Applications and Implications for the Research Process.](https://doi.org/10.21608/ijeasou.2025.349520.1041)\
+> See: [Johnson, C. W., & Paulus, T. (2024). Generating a Reflexive AI-Assisted Workflow for Academic Writing.](https://doi.org/10.46743/2160-3715/2024.7634)\
+> See: [Bairagi, M., & Lihitkar, S. R. (2025). Empowering Research Workflows and Information Retrieval in Academic Libraries through AI Tools.](https://doi.org/10.2991/978-94-6463-712-0_6)

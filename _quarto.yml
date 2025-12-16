@@ -1,0 +1,42 @@
+project:
+  type: book
+
+book:
+  title: "AI training"
+  author: "Daniela Marzano"
+  date: "12/16/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: "Part 1: Fundamentals of Generative AI e Tools"
+      chapters:
+        - 1-20250710-GAI-evolution.qmd
+        - 1-20250718-GAItools.qmd
+        - 1-20250719-promptengineering.qmd
+        - 1-20250726-ricercaSSH.qmd
+        - 1-20250803-writingAI.qmd
+        - 1-20250812-workflow.qmd
+    - part: "Part 2: Advanced applications of AI in Research and Creativity"
+      chapters:
+        - 2-20250820-AIcreativepartner.qmd
+        - 2-20250825-AIprogettazione.qmd
+        - 2-20250830_GrantAutom.qmd
+        - 2-20250903_Communic_Scient.qmd
+    - part: "Part 3: Ethical aspects and responsibility in the use of AI"
+      chapters:
+        - 3-20250908_epistrasp.qmd
+        - 3-20250908_intro.qmd
+        - 3-20250915_biasqualita.qmd
+        - 3-20250922_accountability.qmd
+        - 3-20250922_eticaselfaudit.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt

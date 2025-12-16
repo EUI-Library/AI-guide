@@ -1,0 +1,117 @@
+---
+title: "Bias and source quality"
+format: html
+lang: en
+---
+
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+##### Sources of bias in training data 
+##### Strategies for the traceability and verifiability of algorithmic decisions
+:::
+
+## 1. Sources of bias in training data
+
+One of the most problematic aspects of using AI in research processes is the **bias** inherent in training data.  
+The data of training of models are never <u>neutral</u>, but reflect *quantitative* and *qualitative* imbalances that derive from their very composition. 
+
+The prevalence of certain languages, geographical areas or disciplines leads to an <u>over-representation</u> of specific contexts, while other perspectives remain marginal or absent.   
+
+[👉 The result is **partial knowledge**, which risks presenting itself as universal despite being based on incomplete foundations.]{.mark}
+
+Alongside these quantitative imbalances, AI systems incorporate **implicit cultural biases**.   
+The data reflect the *values*, *conventions* and *symbolic hierarchies* of the communities that generated them.  
+When these perspectives are assumed to be neutral, algorithms end up replicating *gender stereotypes, ethnocentric views* or *ideologically oriented representations*, masking them behind the supposed objectivity of statistical calculation.
+
+A further source of criticism lies in **methodological biases**.   
+The collection, selection and normalisation of data respond to criteria that are not always made "explicit", but which directly influence the outcomes of training.  
+Choices relating to *sampling methods*, *corpus cleaning* or the definition of *conceptual categories* determine an invisible structure that guides the model's inferences. 
+
+::: {.callout-warning icon="false" appearance="simple"}
+<span style='font-size:1.2em; color: #ff0000ff;'>
+👉 In this sense, bias is not an accidental residue, but rather a **structural consequence** of the dataset construction process.
+</span>
+:::
+
+These different levels of distortion converge to generate a significant **epistemic risk**, i.e. the possibility that scientific research is based on already compromised knowledge, without these limitations being immediately recognisable.  
+The apparent authority of AI-generated texts can conceal <u>systematic imbalances</u>, imposing on the Academic Community the need to develop **critical monitoring tools**.
+
+The issue of the **traceability** of algorithmic decisions therefore takes on 
+importance.
+<u>Audit logs</u>, <u>fairness metrics</u> and <u>data documentation practices</u> are fundamental tools for making the path leading to a given output recognisable and verifiable. 
+
+These mechanisms do not solve the structural problems of datasets, but they introduce elements of **accountability** that allow researchers to evaluate the consistency of results with criteria of transparency and fairness. 
+
+::: {.callout-warning icon="false" appearance="simple"}
+<span style='font-size:1.2em; color: #ff0000ff;'>
+👉 The distinction between <u>verified knowledge</u> and <u>probabilistic inference</u> becomes an essential condition for preventing automation from compromising the epistemic reliability of research.
+</span>
+:::
+
+Another critical element concerns the **nature of the content** produced by generative systems, which may include *non-existent bibliographic references*, *invented citations*, or *distorted summaries of articles* that have actually been published.  
+These phenomena, often referred to as algorithmic **“hallucinations”**, directly undermine scientific credibility if they are not promptly recognised and corrected. 
+
+::: {.callout-note icon="false" appearance="simple"}
+<span style='font-size:1.2em'>
+The responsibility therefore falls on the <u>researcher</u>, who is called upon to **rigorously distinguish** between what belongs to the domain of scientific validity and what remains a statistical projection without empirical basis.
+</span>
+:::
+
+The problem of bias, therefore, cannot be reduced to a technical issue, but also has **ethical** and **political implications**.  
+Research risks consolidating inequalities already present in society if shared criteria of inclusivity and fairness are not developed in the selection and management of data.  
+The GAI, from a potentially emancipatory resource, can become a <u>device of exclusion</u> if left unchecked. 
+
+[ 👉 For this reason, alongside individual critical vigilance, it is essential to promote **institutional policies** and **editorial guidelines** that guarantee the reliability of sources, the transparency of datasets and respect for the principles of pluralism and neutrality that underpin the scientific community.]{.mark}
+
+### Further Readings
+
+> *See* Types of bias in AI models [Article on bias in AI - (data/dev/interaction bias)](https://www.modernpathology.org/article/S0893-3952(24)00266-7/fulltext)  
+> *See* Quantification of bias in pre-existing content [USC analysis of “common” facts used by AI](https://viterbischool.usc.edu/news/2022/05/thats-just-common-sense-usc-researchers-find-bias-in-up-to-38-6-of-facts-used-by-ai/)  
+> *See* Bibliographic hallucinations [Nature research on citations invented by ChatGPT](https://doi.org/10.1038/s41598-023-41032-5)  
+> *See* Frequency of hallucinations in scientific texts [Study on the rate of false citations in psychology](https://www.psypost.org/chatgpt-hallucinates-fake-but-plausible-scientific-citations-at-a-staggering-rate-study-finds/)   
+> *See* Open-source tools for managing and measuring bias [AI Fairness 360 Toolkit (IBM)](https://doi.org/10.48550/arXiv.1810.01943)  
+> *See* Generative image production analysis [Bias in Generative AI](https://doi.org/10.48550/arXiv.2403.02726)   
+> *See* AI and SSH [Can Generative AI improve social science?](https://doi.org/10.1073/pnas.2314021121)  
+> *See* Bias embedded in training data [On the Dangers of Stochastic Parrots](https://dl.acm.org/doi/abs/10.1145/3442188.3445922)  
+
+
+## 2. Strategies for the traceability and verifiability of algorithmic decisions
+
+One of the key issues in the use of AI systems in scientific research, is the ability to guarantee the **reconstruction** and **validation** of the <u>decision-making processes</u> that lead to a given output. 
+
+Unlike human work, where the analysis and inference phases can be explicitly justified and discussed, algorithms operate through <u>chains of calculations</u> that are often *opaque* and *difficult to interpret*, even for the developers themselves. 
+
+👉 **To reduce this lack of transparency, it is necessary to introduce tools that allow the model's performance to be systematically documented, monitored and evaluated.**
+
+In this perspective, **audit logs** represent a first fundamental mechanism.   
+They consist of udetailed records of the <u>steps taken by the algorithm during data processing</u>, from the input phase to the generation of the output, including any intermediate transformations.  
+These records not only allow the path followed by the system to be *traced retrospectively*, but also identify any <u>critical issues</u>, such as the use of partial sources or the application of undeclared selection criteria. 
+
+::: {.callout-warning icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #000000ff;'>
+👉 In Academic context, this traceability has significant **epistemic value**, because it allows not only the final results to be subjected to intersubjective control, but also the entire process that produced them.
+</span>
+:::
+
+Alongside process documentation, there is the issue of **verifying the fairness of results**. Algorithms are not just calculation tools, but devices that incorporate and convey specific hierarchies of relevance.  
+**Fairness metrics** have been developed precisely to make these dynamics "measurable", translating dimensions often considered qualitative, such as *inclusion*, *representativeness* or *non-discrimination*, into numerical parameters.   
+Through <u>comparative indicators</u>, for example, it is possible to verify whether a model tends to favour certain categories of data or users over others, and whether these imbalances are statistically significant.
+
+[👉 The joint application of <u>audit logs</u> and <u>fairness metrics</u> is not limited to technical monitoring, but opens up the possibility of developing shared responsibility in AI management.]{.mark}
+
+::: {.callout-warning icon="false" appearance="simple"}
+<span style='font-size:1.1em; color: #ff0000ff;'>
+This means shifting the focus from isolated output to the **production context**, where methodological choices and evaluation criteria must be made <u>explicit</u> and subjected to <u>collective discussion</u>.   
+In this sense, the verifiability of algorithmic decisions becomes a <u>structural element of scientific governance</u>, a device aimed not only at ensuring greater transparency, but also at strengthening the <u>epistemic legitimacy</u> of the results obtained.
+</span>
+:::
+
+Finally, it is important to emphasise that **traceability** and **fairness assessment** cannot be understood as occasional or ancillary practices, but must become an integral part of research procedures.  
+
+[The <u>systematic adoption</u> of these tools is a necessary condition for preserving the reliability of scientific knowledge in the age of automation, preventing the complexity of generative models from translating into a deficit of critical control. ]{.mark}
+
+
+### Further Readings
+
+> *See* [From Data to Insight: Why Traceability is Crucial for AI Success](https://www.acodis.io/blog/from-data-to-insight-why-traceability-is-crucial-for-ai-success)  
+> *See* [The Rise of AI Audit Trails: Ensuring Traceability in Decision-Making](https://www.aptusdatalabs.com/thought-leadership/the-rise-of-ai-audit-trails-ensuring-traceability-in-decision-making?)  
+> *See* [What is AI Traceability? Benefits, Tools & Best Practices](https://data.world/blog/what-is-ai-traceability-benefits-tools-best-practices/)  

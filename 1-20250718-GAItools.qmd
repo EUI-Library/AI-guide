@@ -1,0 +1,251 @@
+---
+title: "Updated Overview of Generative AI Tools"
+format: html
+---
+
+::: {.callout-note icon="false"}
+## Content
+
+-   Practical introduction to GAI Tools
+-   Large Language Models (LLMs) for research
+-   Specialized tools for bibliographic and document research
+-   Plugins and APIs for SSH and STEM: when and why to use them
+-   Operational recommendations for researchers in Social Sciences
+:::
+
+## 1. Practical introduction to GAI Tools
+
+The integration of Generative AI (GAI) tools into research activities requires an informed and conscious selection of the available resources. It is essential for a researcher to distinguish between different types of operational tools and to understand how they work in relation to specific research goals.
+
+We can classify tools into three main categories:
+
+-   **General-purpose Language Models (LLMs)**: mainly used for writing, editing, and language support tasks.
+-   **Specialized Documentary Tools**: focused on the collection, synthesis, and analysis of scientific literature.
+-   **Integrated Automation Systems**: plugins, APIs, or hybrid platforms that extend basic capabilities, adapting them to customized workflows.
+
+The effective use of these tools requires not only technical knowledge but also the ability to assess their suitability based on:
+
+-   *Transparency and traceability of results*
+-   *Data source currency and validity*
+-   *Level of customization allowed (advanced prompting, proprietary data training)*
+-   *Compliance with ethical and regulatory requirements specific to academic research*
+
+::: {.callout-important icon="false" title="<span style='font-size:1.1em; color: #133869ff;'>Particularly in *SSH (Social Sciences and Humanities)*, these aspects are critical due to risks such as methodological biases, ambiguities in intellectual property management, and sensitive data handling issues.</span>"}
+:::
+
+## 2. Large Language Models (LLMs) for research
+
+LLMs currently represent some of the most widely adopted AI tools in academic research. These models rely on deep learning architectures trained on extensive volumes of textual data and are designed to generate coherent linguistic content, supporting activities such as drafting, summarization, and data analysis.
+
+### 2.1 ChatGPT-4
+
+**Developed by:** [**OpenAI**](https://openai.com)
+
+ChatGPT-4 is a language model developed by OpenAI owned by Sam Altman, which was made available to the public in November 2022. It is based on  state-of-the-art deep learning architectures and is designed for the production of textual content and human-machine interaction in a natural language. 
+
+**Key Features:**\
+- The ability to generate multilingual texts, with a high level of semantic and syntactic coherence even on very articulated and specialized texts;  
+- The use in conversational mode optimized to be able to sustain prolonged dialogues while maintaining thematic and contextual coherence, progressively adapting the answers according to the user's requests;  
+- Integration with pre-configured APIs and platforms to allow the incorporation of the model into custom software and workflows, although deep customization of the model (fine-tuning) remains reserved for authorized parties with regulated access.  
+- A wide availability of tools and ancillary resources, thanks to the wide diffusion and presence of a consolidated ecosystem of third-party applications, extensions and interfaces.
+
+| **Strengths** | **Limitations** |
+|:------------------------:|:--------------------------------------------:|
+| High versatility in writing, editing, translation tasks | No native real-time data access except through plugins or external systems |
+| Large user community | Outputs always require researcher validation to avoid the risk of inaccuracies or **hallucinations** |
+| Extensive documentation |  |
+
+**Recommended uses cases:**\
+- Preliminary drafting of articles, abstracts, and project proposals\
+- Linguistic and stylistic revision\
+- Support in formulating research questions.
+
+### 2.2 Claude
+
+**Developed by:** [**Anthropic**](https://www.anthropic.com/)
+
+Claude is developed by Anthropic, known for its explicit orientation towards AI models called "*constitutional*", i.e. designed to privilege security, transparency and respect for ethical principles defined a priori. The first model was released in March 2023.
+
+**Key Features:**\
+- It prioritizes robustness and control of the content generated, reducing the risk of inaccurate or inappropriate responses, particularly on complex or ethically sensitive topics.
+- It is very versatile, as it can be applied in diversified activities, from the drafting of texts to the analysis of complex data, therefore suitable for academic tasks or for structured business uses.
+- It demonstrates a high capacity for contextual comprehension, being able to grasp nuanced contexts and nuances of human language, also being able to manage very extensive conversation contexts, revision of long documents, transcriptions, legal acts or articulated reports. In fact, it is designed to maintain consistency on higher text sequences than other LLMs, being able to contain up to 200 thousand tokens (equivalent to about 500 pages of text) in the basic version without losing the logical thread.
+- It allows regulated access, as it is accessible through APIs and proprietary platforms with a less widespread usage model than other LLMs and a fine-tuning policy  reserved exclusively for entities with advanced security requirements, such as public bodies and universities.
+- It was developed with a strong focus on AI ethics and safety . During his training, careful and controlled sources were privileged, with limited exposure to open data, reducing the risk of bias and information biases.
+- The owner company guarantees regular updates of the model, aimed at the progressive improvement of capabilities, precision and operational safety, with the aim of keeping Claude always aligned with market and research needs.
+
+
+| **Strengths** | **Limitations** |
+|:------------------------------------------:|:--------------------------:|
+| High safety and ethical standards, particularly suited to contexts involving sensitive data management | No direct access to real-time data; less widespread in Europe |
+|  | Higher average operating costs compared to other LLMs |
+
+**Recommended uses cases:**\
+- Drafting texts in fields governed by ethical codes\
+- Critical review of content generated by other models\
+- Interactions involving sensitive or highly specific data
+
+### 2.3 Gemini
+
+**Developed by:** [**Google DeepMind**](https://deepmind.google/)
+
+Gemini is a multimodal language model developed by Google DeepMind, designed to integrate the processing of text, images, structured data, and other input modalities within a single architecture. Released during 2024, it represents one of the most recent evolutions in the field of Large Language Models (LLMs) with extensive applications in both academic and industrial settings.
+
+**Key Features:**\
+- It has a multimodal architecture, as it has been designed to simultaneously process text, images, tabular data and other forms of input. This ability distinguishes it from models focused exclusively on natural language, expanding the application possibilities in interdisciplinary contexts, such as Digital Humanities or the analysis of complex datasets.
+- It has an  advanced multilingual language capacity, comparable to that of ChatGPT-4, with the possibility of generating articulated content, summaries, translations and analysis of specialized texts.
+- It has native integration with the Google ecosystem: it has been designed to work in synergy with Google Workspace and other services of the Google Cloud platform, facilitating integration into the research and document management workflows already in use at many academic institutions.
+- Allows access via APIs and cloud tools. The model is available to users through Google Cloud Platform, with access and customization policies that provide specific configurations for universities, public bodies and companies. Fine-tuning personalization is only allowed in authorized environments, in line with Google's security and compliance policies.
+Gemini benefits from constant updates, both at the data and architecture level, keeping the model aligned with evolving language, knowledge sources, and regulatory needs.
+
+
+| **Strengths** | **Limitations** |
+|:-----------------------------------:|:---------------------------------:|
+| Advanced multimodal data analysis | Not a real-time information retrieval system |
+| linguistic capabilities suited to specialized text analysis | Requires substantial infrastructure |
+|  | Less documentation available within SSH academic contexts |
+
+**Recommended uses cases:**\
+- Projects involving multimodal source analysis\
+- Development of integrated educational and communication materials\
+- Support in building complex datasets
+
+### 2.4 Perplexity AI
+
+**Developed by:** [**Perplexity AI**](https://www.perplexity.ai/)
+
+Perplexity AI is a language model-based query system designed to complement the capabilities of LLMs with document search and source verification capabilities. Launched in 2022 and further developed until 2025, it differs from traditional LLMs for the combination of text generation and retrieval of updated information, with transparent indication of the sources consulted.
+
+**Key Features:**\
+- Avere una architettura ibrida LLM + motore di ricerca. Combina l’elaborazione linguistica tipica dei modelli generativi con un sistema di interrogazione su database e fonti online, restituendo risposte accompagnate da riferimenti bibliografici o collegamenti diretti alle fonti originali.
+- E’ stato concepito specificamente per supportare attività di revisione della letteratura, fact-checking e interrogazioni esplorative, risultando quindi particolarmente utile in ambito giornalistico e accademico, essendo anche ottimizzazione per la ricerca bibliografica.
+- Possiede una capacità linguistica focalizzata perché pur basandosi su modelli linguistici comparabili a quelli di altri LLM, Perplexity AI privilegia risposte concise e orientate all’informazione piuttosto che alla generazione di testi lunghi o articolati.
+- E’ disponibile sia come applicazione web sia integrabile in sistemi di gestione documentale tramite API, con configurazioni specifiche per istituzioni di ricerca e aziende. La possibilità di personalizzazione mediante fine-tuning è limitata e subordinata ad accordi specifici.
+- A differenza di modelli addestrati su dati statici, Perplexity AI si aggiorna automaticamente grazie alla componente search integrata, garantendo risposte basate su fonti recenti. 
+- Possiede una elevata trasparenza nel processo di generazione delle risposte.
+
+| **Strengths** | **Limitations** |
+|:---------------------------:|:-----------------------------------------:|
+| Automatic updating via integrated search components | Less suitable than other LLMs for drafting extended content or managing complex documents |
+| High transparency in the response generation process | The quality and relevance of answers depend on the availability and reliability of the queried sources. |
+
+**Recommended uses cases:**\
+- Preliminary research and verification\
+- Exploratory bibliographic research\
+- Fact-checking activities
+
+### 2.5 DeepSeek
+
+**Developed by:** [**DeepSeek AI**](https://www.deepseek.com/en)
+
+**Key Features:**\
+- Specifically designed with an emphasis on long-context understanding and multilingual processing, offering optimized performance for both general-purpose and domain-specific academic tasks.\
+- Built on transformer architectures and trained on an extensive multilingual corpus (including scientific and technical texts), enhancing its applicability in research settings that require high linguistic precision.\
+- Capable of handling extended input sequences beyond the standard limits of many mainstream LLMs, allowing for the processing of large documents, legal texts, or comprehensive datasets without fragmentation.\
+- Provides configurable access through both web interfaces and APIs, with customization options such as proprietary dataset integration and specialized vocabulary training, particularly relevant for academic and institutional use.
+
+| Strengths | Limitations |
+|:-------------------------------:|:-------------------------------------:|
+| High reliability in multilingual academic writing and translation tasks, with particular attention to terminological consistency. | As of now, DeepSeek is less widespread in Western academic institutions compared to models like ChatGPT‑4 or Claude, partly due to access policies and licensing restrictions. |
+| Enhanced performance in long-document summarization, literature review synthesis, and complex query handling within structured academic frameworks. | Real-time data retrieval capabilities are not natively embedded; reliance on external plugins or customized configurations is necessary for up-to-date information access. |
+| Integration with knowledge base systems and research management platforms, supporting structured data extraction and semantic analysis workflows. | Requires higher computational resources than standard LLMs, especially when operating at full capacity for long-context processing. |
+
+**Recommended uses cases:**\
+- Drafting and reviewing multilingual academic papers, particularly in contexts involving technical or regulatory terminology.\
+- Summarization and synthesis of large volumes of research literature, including legal or policy documents.\
+- Integration into academic platforms for semantic search, knowledge extraction, and multilingual document management.
+
+## 3. Specialized Tools for bibliographic and document research
+
+Beyond general-purpose LLMs, there are AI tools designed specifically to support bibliographic and document research. They integrate querying, classification, and synthesis functions aimed at optimizing literature review phases.
+
+#### [![Elicit](images/elicit.png){width="16%"}](https://elicit.com/)
+
+Elicit is a tool specifically developed to **support bibliographic and document research activities** by leveraging LLMs applied to structured academic corpora.\
+Unlike traditional search engines, Elicit is <u>capable of automatically extracting structured information from scientific articles, such as research questions, methods, key results, and citations</u>.
+
+Its core functions include:\
+- *Automatic identification and extraction of research-relevant elements from articles (e.g., title, authors, research questions, methods, results, citations)*.\
+- *Synthesis of responses through thematic clustering and semantic categorization, facilitating the formulation of research hypotheses already informed by the state of the art*.\
+- *Export of structured data in CSV or JSON formats, allowing integration with qualitative analysis software or reference management systems*.
+
+For example, using Elicit, researchers can generate summary tables containing:\
+- *Main articles identified based on a query*\
+- *Automatically synthesized abstracts*\
+- *Extracted research questions and primary findings*\
+- *Structured citation metadata*.
+
+These features make Elicit particularly suitable for <u>preparing systematic reviews and meta-analyses</u>, offering researchers not only a <u>list of sources</u> but also <u>structured overviews</u> that can directly inform project design, grant proposal drafting, and academic writing processes.
+
+Compared to generic LLMs, Elicit provides:\
+- **Focused output**: responses are oriented towards factual and structured information rather than general linguistic generation.\
+- **Source verification**: results are derived from curated academic databases, enhancing the reliability and validity of the information obtained.\
+- **Workflow integration**: data produced by Elicit can be incorporated into existing academic workflows, including qualitative analysis platforms and reference management systems.
+
+However, it is important to note that Elicit does not replace the critical evaluation of sources by the researcher. While the tool offers substantial support in reducing the time needed for literature search and data extraction, <u>**each piece of information should be validated**</u> according to the standards of academic rigor and methodology.
+
+#### [![Scite](images/scite.png){width="14%"}](https://scite.ai/)
+
+Scite is a specialized platform designed to **support bibliometric analysis and literature evaluation** by focusing on the citation context of academic publications.\
+Unlike traditional bibliographic databases, which report citation counts without specifying their nature, Scite <u>enables researchers to assess not only the number but also the type and content of citations received by a given article</u>.
+
+Its principal functionalities include:\
+- *Analysis of citation context, distinguishing between supportive citations, contrasting citations, and neutral mentions*.\
+- *Integration with academic databases to provide comprehensive and structured citation data across multiple disciplines*.\
+- *Visualization of citation patterns through interactive dashboards, facilitating both individual article assessment and broader literature mapping*.
+
+For each publication, Scite provides:\
+- *The total number of citations, classified into supportive, contrasting, and mentioning categories*.\
+- *Detailed reports including the text surrounding each citation, allowing for qualitative evaluation of the citing sources*.\
+- *Metrics that can complement traditional bibliometric indicators, offering a more nuanced understanding of a publication’s impact*.
+
+These features make Scite particularly valuable in phases such as:\
+- **Literature review**, where researchers need to identify not only frequently cited works but also those that are positively or negatively discussed within the academic community.\
+- **Research assessment and evaluation processes**, where citation context can inform more sophisticated performance metrics.\
+- **Grant proposal preparation and institutional reporting**, where evidence of scholarly impact requires qualitative as well as quantitative support.
+
+While Scite enhances citation analysis capabilities, **it does not substitute for in-depth content analysis by domain experts**. <u>The interpretation of citation types and their implications remains the responsibility of the researcher</u>. Additionally, coverage may vary depending on discipline and database integration, making it advisable to verify source completeness and relevance in each specific research context.
+
+## 4. Plugins and APIs for SSH and STEM: when and why to use them
+
+In Academic research contexts — whether in Social Sciences and Humanities (SSH) or STEM discipline — the use of plugins and **APIs associated with GAI models plays a crucial role** whenever functional integration with existing information systems or automation of recurring tasks is required.\
+Unlike general-purpose tools, [**APIs (Application Programming Interface)**](https://www.ibm.com/think/topics/api) allow direct incorporation of language model capabilities or specialized platforms into workflows already established within institutional or corporate environments</u>.
+
+Typical applications include:\
+- <u>Automated classification and organization of textual data</u>, achieved by integrating language models within document management systems or digital archives, allowing for more efficient handling and retrieval of large volumes of unstructured information.\
+- <u>Automated generation of metadata and descriptors for datasets</u>, which facilitates the management and curation of research archives, bibliographic repositories, or complex digital collections by systematically assigning structured information to each resource.\
+- <u>Controlled multilingual content translation</u>, through the use of AI integrated into editorial platforms or academic repositories. This approach enables not only the automatic translation of content but also the application of customized dictionaries or specialized glossaries to ensure terminological consistency and accuracy across different languages.\
+- <u>Semantic querying of complex databases</u>, allowing researchers to submit natural language queries that surpass the limitations of traditional keyword-based search systems, thereby improving the precision and relevance of retrieved results.
+
+In **STEM fields**, plugins are commonly adopted to extend functionalities such as:\
+- *Statistical analysis*\
+- *Symbolic computation*\
+- *Code generation*\
+- *Data visualization*.
+
+In **SSH contexts**, plugins are particularly useful for:\
+- *Extending bibliographic database and historical archive querying capabilities*\
+- *Integrating text mining and sentiment analysis tools*\
+- *Automating the production of reports or summaries from complex linguistic corpora*.
+
+::: {.callout-tip title="<span style='font-size:1.1em; color: #133869ff;'>Important Considerations</span>"}
+The adoption of plugins and APIs involves **specific evaluations concerning security, sensitive data management, and regulatory compliance, especially within the European academic context where regulations such as GDPR apply**.\
+You can choose between plugins and APIs depending on your project’s nature.\
+Plugins are easier to use because they come ready-made and already integrated. APIs, on the other hand, let you customize things more, but they require <u>more technical skills</u> to set up and manage.
+:::
+
+## 5. Operational recommendations for researchers in Social Sciences
+
+Integrating GAI tools into social research processes requires a **rigorous methodological approach and careful assessment of operational and ethical implications**.\
+Below are some key recommendations to guide their effective and ethical integration:
+
+| **Recommendations** |
+|:----------------------------------------------------------------------:|
+| Clearly define the scope of LLM and AI tool usage |
+| Systematically verify content reliability—AI outputs always require critical review. |
+| Prefer tools with transparent source referencing (e.g., Perplexity AI, Scite). |
+| Ensure data adequacy, favoring SSH-specific corpora. |
+| Document all AI tool usage explicitly in reports and publications. |
+| Address ethical and legal profiles, ensuring compliance with GDPR, AI Act, and institutional policies |
+
+It is advisable for Research Institutions and Groups to **establish clear internal AI use policies**, updated regularly according to technological and regulatory evolution, ensuring adequate training for team members.

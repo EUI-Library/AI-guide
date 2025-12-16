@@ -1,0 +1,248 @@
+---
+title: "Use Cases in Social Sciences and Humanities (SSH) Research"
+format: html
+lang: en
+---
+
+::: {.callout-note icon="false" title="<span style='font-size:1.2em; color: #133869ff;'>Content</span>"}
+###### Text Mining and Topic Modeling applied to textual corpora in SSH
+
+###### Assisted Qualitative Analysis: Automatic Coding and Sentiment Analysis
+
+###### Multilevel Translation and Linguistic Adaptation for Academic Environments
+
+###### Practical Examples and Implementation Scenarios
+:::
+
+------------------------------------------------------------------------
+
+## 1. Text Mining and Topic Modeling applied to textual corpora in SSH
+
+The application of AI-based tools — particularly language models and automated language processing techniques — has opened new perspectives for textual analysis within the social sciences and humanities.\
+Unlike STEM disciplines, where computational tools are well established, **integrating AI into SSH** research processes requires *careful and contextualized methodological reflection*.\
+A primary area of application concerns **text mining** and **topic modeling** on textual corpora.\
+These techniques *enable the automatic identification of latent thematic structures within large volumes of text*, allowing researchers to explore *discursive patterns, lexical frequencies, and semantic co-occurrences*.\
+Automatic text analysis through computational methods is increasingly relevant in SSH research, especially when dealing with *large, unstructured, and heterogeneous textual sources*.\
+In this context, text mining and topic modeling emerge as <u>two distinct but complementary tools</u> for the systematic exploration of linguistic corpora.\
+The analysis can be conducted on <u>different sources</u> (*interviews, newspaper articles, administrative documents, parliamentary proceedings*) and <u>yields interpretable visual outputs</u> (*thematic maps, dendrograms, conceptual networks*).\
+**However, it is essential that these tools be employed not as substitutes but as complements to theoretically grounded analysis**.
+
+### 1.1 Text Mining: structured extraction from textual data
+
+**Text mining** refers to the set of computational techniques aimed at the automatic extraction of structured information from natural language text.\
+In **SSH contexts**, the goal of text mining is to <u>transform textual documents into quantitative, interpretable representations that can feed *exploratory, descriptive, or inferential analyses*</u>.
+
+Typical **applications** include:\
+- Analysis of political language in parliamentary speeches.\
+- Study of rhetoric in media or institutional communication.\
+- Exploration of collective narratives in historical, memorial, or literary sources.\
+- Thematic mapping of open-ended interview datasets.
+
+This approach relies on [**Natural Language Processing (NLP)**](https://www.ibm.com/think/topics/natural-language-processing) tools such as:\
+- *Tokenization*\
+- *Lemmatization*\
+- *Part-of-speech (POS) tagging*\
+- *Named Entity Recognition (NER)*\
+- *Lexical co-occurrence analysis*\
+- *Construction of Document-Term Matrices (DTM)*
+
+> See: [*"Part-of-speech (POS) tagging" - Stanford University*](https://web.stanford.edu/~jurafsky/slp3/old_oct19/8.pdf).\
+> See: [*"Named Entity Recognition (NER)" - IBM*](https://www.ibm.com/it-it/think/topics/named-entity-recognition).
+
+### 1.2 Topic Modeling: identifying latent structures
+
+**Topic modeling** encompasses statistical methods that automatically uncover the principal themes within a large collection of documents without prior specification.\
+It operates by <u>identifying groups of words that frequently co-occur, presumed to represent a common topic</u>. *Each document is viewed as a mixture of topics, and each topic is represented by a distribution of semantically related terms*. In practice, the model does not "understand" meaning as a human would but computes word co-occurrence patterns and infers thematic presence accordingly. The researcher then interprets each word cluster and assigns a label or meaning.
+
+The most widely adopted model is [**"Latent Dirichlet Allocation (LDA)**](https://dl.acm.org/doi/pdf/10.5555/944919.944937), which assumes each document to be a mixture of topics and each topic a distribution over terms.
+
+::: {.callout-note appearance="minimal"}
+## In **SSH** topic modeling allows to:
+
+-   Highlight primary themes in a corpus without a priori coding.\
+-   Track thematic evolution over time (e.g., *temporal topic modeling*).\
+-   Compare thematic emphasis across document groups (e.g., *governmental vs. civic sources*).\
+-   Support category identification in qualitative studies with large datasets.\
+:::
+
+Interpretation of topics remains a fundamentally qualitative operation, requiring theoretical expertise and domain knowledge.\
+**Topic modeling does not replace interpretive analysis but extends its scope and reproducibility**.
+
+#### Example Schema: Topic Modeling on a News Article Corpus
+
+| Context | Corpus of 1,000 articles from national newspapers, published between 2020 and 2024, related to the topic of environment and climate policies. |
+|---------------------|---------------------------------------------------|
+| Objective | To identify the main themes present in the articles,/ without defining them from the start. |
+| \(1\) Text pre-processing | Text cleanup (removal of punctuation, stopwords, etc.) / Reduction of words to the basic form (lemmatization) / Construction of the document-term matrix (which words appear in which articles, and how often) |
+| \(2\) Application of the model (e.g. *LDA – Latent Dirichlet Allocation*) | The model statistically processes co-occurrences and returns a series of “topics”, each consisting of a list of frequent words. |
+
+#### <u>Example of synthetic output:</u>
+
+| **Topic** | **Most Representative Words** | **Interpretation (by the Researcher)** |
+|:----------------:|:-------------------------------:|:-------------------:|
+| 1 | emissions, CO₂, fuels, industry, coal | Energy transition and decarbonization |
+| 2 | drought, extreme events, flooding, heatwave, damage | Impacts of climate change |
+| 3 | COP26, agreements, UN, targets, Paris | International climate policy and conferences |
+| 4 | mobility, transportation, electric vehicles, incentives, public transit | Urban sustainability policies |
+
+|  |  |
+|-----------------|-------------------------------------------------------|
+| \(3\) Analysis and visualization | Distribution of topics by year → which themes increase or decrease over time / Comparison by newspaper → which newspapers emphasize certain themes / Mapping of topics within political discourse → e.g. overlapping with parliamentary discourses |
+| \(4\) Limitations and Critical Use | The model suggests groups of words, not “meanings”: the interpretation of the themes is the responsibility of the researcher. The results depend a lot on the quality of the corpus and the technical choices (number of topics, filter parameters, etc.) |
+
+### 1.3 Methodological Considerations and Limitations
+
+Both techniques present critical constraints. We have to pay attention to:\
+- **Preprocessing quality** (cleaning, normalization) significantly affects results\
+- **Topic interpretation** demands careful, theory-informed human mediation\
+- **Parameter choices** (number of topics, filtering thresholds) are inherently arbitrary and must be transparently justified
+
+::: {.callout-important title="<span style='font-size:1.1em; color: #133869ff;'>**Methodological Tip**: Document all preprocessing decisions, triangulate with other data sources, and reflect epistemologically on the limits of automated social inference.</span>"}
+:::
+
+### 1.4 Practical Applications in SSH Research
+
+To better understand its use, some concrete areas of application are suggested, by way of example:\
+- **Cultural History**: applying topic modeling to 19th-century correspondence to identify recurring themes among European intellectuals.\
+- **Sociology of Communication**: analyzing digital platform comments to detect discursive patterns and thematic polarization.\
+- **Political Science**: studying parliamentary speeches to trace party lexicon evolution and contrast with media framing.\
+- **Digital Anthropology**: text mining on thematic forums to extract native categories and semantic maps related to care, consumption, and identity.
+
+#### <u>Recommended Open Source Tools for SSH</u>
+
+-   [tmtoolkit](https://tmtoolkit.readthedocs.io) (Python & R): The most comprehensive for SSH researchers, with direct support for text mining and topic modeling workflows, R/Python interoperability, consistency measures, and visualizations tmtoolkit.
+-   [BERTopic](https://github.com/MaartenGr/BERTopic): Semantic embedding + clustering for advanced thematic discovery. Ideal when corpora require advanced semantic processing and non-trivial topic detection.
+-   [MALLET](http://mallet.cs.umass.edu): High-scale LDA implementations in Java.
+-   [scikit-learn](https://scikit-learn.org) + [Gensim](https://radimrehurek.com/gensim): Effective combination for educational or grassroots projects, with large community and established workflows.
+-   [InfraNodus](https://infranodus.com): Recommended if you want exploratory visualizations, semantic maps, and narrative analysis.
+-   [Top2Vec](https://github.com/ddangelov/Top2Vec): Combine document embedding and topic modeling, automatically detect the number of topics. Useful in exploratory phases where the thematic structure is not known a priori.
+
+::: {.callout-warning title="<span style='font-size:1.1em; color: #133869ff;'>Some tools (e.g. Top2Vec, InfraNodus) are less well-established in mainstream SSH methodology, but are valuable when used critically.Tools such as BERTopic are based on newer technologies (semantic embedding), therefore they require more attention in the interpretation phase.Performance varies based on pre-processing quality and corpus type. </span>"}
+:::
+
+| **Tool / Model** | **Type** | **Recommended usage context** |
+|:----------------:|:-----------------:|-----------------------------------|
+| LDA (via Gensim / scikit-learn) | Probabilistic topic modeling | Structured corpora, homogeneous language, standard thematic analysis |
+| BERTopic | Semantic topic modeling | Complex corpora with semantic variation, specialized or multidisciplinary discourse |
+| Top2Vec | Unsupervised embedding-based topic modeling | Preliminary exploration of large text corpora, automatic topic count detection |
+| MALLET | Gibbs sampling topic modeling | Large-scale datasets requiring high computational efficiency |
+| InfraNodus | Network visualization and analysis | Exploratory phase, narrative or cultural analysis, conceptual mapping |
+| tmtoolkit | Integrated analytical toolkit | Pre-processing, coherence evaluation, end-to-end Python workflow |
+| spaCy | NLP library | Tokenization, lemmatization, syntactic parsing |
+
+### 1.5 Guidelines for use in SSH Projects
+
+The use of topic modeling and text mining techniques in the contexts of SSH requires the *adoption of a series of methodological measures that guarantee the quality, transparency and reproducibility of the analyses*.\
+The main aspects to consider include:
+
+a.  <u>Textual pre-processing phase</u>.\
+    The preliminary processing of textual data is a necessary condition for the reliability of the results. Operations such as *tokenization, elimination of stopwords, lemmatization and lexical normalization* must be carried out rigorously and explicitly documented. Tools such as [spaCy](https://spacy.io/) (for language processing) and tmtoolkit (for integrated management of analytical pipelines) allow you to automate these steps, reducing the variability introduced by manual interventions.
+
+b.  <u>Model selection and appropriateness with respect to the corpus</u>.\
+    The choice of the topic modeling algorithm must be consistent with the *nature of the corpus* and with the *analytical objectives of the project*. Traditional probabilistic models such as LDA, available through libraries such as Gensim or scikit-learn, are appropriate for well-structured and linguistically homogeneous corpus analyses. Models based on semantic embeddings (e.g. BERTopic, Top2Vec) offer greater sensitivity to lexical nuances and are suitable for complex corpora or corpora characterized by high discursive variability. In computationally intensive scenarios, tools such as MALLET stand out for their efficiency and scalability. For research oriented towards the networked visualization of emerging topics, InfraNodus provides an innovative interface useful for the exploratory phase.
+
+c.  <u>Evaluation of the quality of the model</u>.\
+    The quality of the results cannot be taken for granted and requires a multi-level evaluation. From a quantitative point of view, it is advisable to use thematic consistency metrics [Mimno, Wallach et al.,2011](https://aclanthology.org/D11-1024.pdf), many of which are implemented directly in tmtoolkit. However, these metrics must always be accompanied by **qualitative validation by the researcher, based on the critical reading of the topics and their interpretability with respect to the theoretical context and the empirical field of reference**.
+
+#### References
+
+<u>*General references on topic modeling and text mining*</u>\
+\> See: [Blei, D. M., Ng, A. Y., & Jordan, M. I. (2003). Latent dirichlet allocation. Journal of machine Learning research, 3(Jan), 993-1022.](https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)\
+➤ *The foundational paper on the LDA model, the theoretical basis for most of the current topic modeling*.\
+\> See: [Grimmer, J., & Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. Political analysis, 21(3), 267-297.](https://doi.org/10.1093/pan/mps028)\
+➤ *Excellent methodological overview of the use of text mining in political and social sciences*.\
+\> See: [Chang, J., Gerrish, S., Wang, C., Boyd-Graber, J., & Blei, D. (2009). Reading tea leaves: How humans interpret topic models. Advances in neural information processing systems, 22.](https://proceedings.neurips.cc/paper_files/paper/2009/hash/f92586a25bb3145facd64ab20fd554ff-Abstract.html)\
+➤ *The paper introduces new quantitative methods, validated by large studies with users, to measure the semantic significance of topics extracted from probabilistic topic models*.
+
+<u>*Technical references and specific tools*</u>\
+\> See: [Řehůřek, R., & Sojka, P. (2010). Software framework for topic modelling with large corpora.](https://is.muni.cz/repo/884893/lrec2010-rehurek-sojka.pdf)\
+\> See: [Angelov, D. (2020). Top2vec: Distributed representations of topics. arXiv preprint arXiv:2008.09470.](https://doi.org/10.48550/arXiv.2008.09470)\
+\> See: [Grootendorst, M. (2022). BERTopic: Neural topic modeling with a class-based TF-IDF procedure. arXiv preprint arXiv:2203.05794.](https://doi.org/10.48550/arXiv.2203.05794)
+
+<u>*Recommended for courses or self-training*</u>\
+\> See: [Jockers, M. L. (2013). Macroanalysis: Digital methods and literary history. University of Illinois Press.](https://doi.org/10.1007/s10439-023-03272-4)\
+➤ *Application of topic modeling and other digital techniques in the humanities*.\
+\> See: [Silge, J., Robinson, D., & Robinson, D. (2017). Text mining with R: A tidy approach (p. 194). Boston (MA): O'reilly](http://dx.doi.org/10.18637/jss.v083.b01)\
+➤ *Introductory but comprehensive, widely used for teaching in digital humanities courses*.
+
+## 2. Assisted Qualitative Analysis: Automatic Coding and Sentiment Analysis
+
+The use of AI tools in <u>qualitative analysis</u> is progressively changing the way textual material is processed and interpreted in the SSH context. Qualitative analysis assisted by NLP tools can *expand the scale and efficiency of analytical work*, but requires a **high level of methodological control, transparency in operational choices and critical reflection on the results produced**. Two relevant applications in this area are automatic **content coding** and **sentiment analysis**, both intended as forms of support, and <u>not a replacement, for the researcher's interpretative activity</u>.
+
+### 2.1 Automatic Coding
+
+It consists of <u>assigning labels or thematic categories to segments of text based on learned rules</u> (through supervised training) or <u>lexical correspondences</u> (unsupervised approaches).\
+This is particularly useful in projects based on *interviews, focus groups, testimonials, or open-ended responses*, where the analyst has to handle large volumes of data.\
+Tools such as *spaCy, tmtoolkit* or *Transformers by HuggingFace* allow you to automate the semantic annotation phase, facilitating the construction of replicable and systematic encodings. However, analytical validity depends on the precision of the models and the consistency between the categories produced and the theoretical framework of reference.
+
+**References**:\
+\> See: Saldana, J. (2025). The Coding Manual for Qualitative Researchers. SAGE Publications Limited\
+➤ *Theoretical-methodological manual for qualitative coding, with reflections on automatic integration*.\
+\> See: [Benoit, K., Watanabe, K., Wang, H., Nulty, P., Obeng, A., Müller, S., & Matsuo, A. (2018). quanteda: An R package for the quantitative analysis of textual data. Journal of Open Source Software, 3(30), 774-774. 8](https://doi.org/10.21105/joss.00774)\
+➤ *R tool that supports complete workflows for text encoding and classification*.
+
+### 2.2 Sentiment Analysis
+
+Traditionally more widespread in commercial fields, it now also finds <u>relevant applications in social research</u>. It makes it possible to <u>identify the emotional or evaluative polarity expressed in the texts</u> (positive, negative, neutral), or to <u>detect more complex emotions</u> (anger, trust, anxiety, etc.).\
+Classical sentiment analysis methods are based on predefined dictionaries of words marked with polarity (e.g. *"happy" → +1, "disappointed" → -1*).\
+More recently, models based on neural networks (e.g. *BERT, [RoBERTa](https://doi.org/10.48550/arXiv.1907.11692)*) are able to grasp polarity by considering the semantic context of the sentence, with greater robustness on long or ambiguous texts.\
+Tools such as [NRC Emotion Lexicon](https://doi.org/10.4224/21270984) or [EmoLex](https://hal.univ-grenoble-alpes.fr/hal-02526412v1/document) allow you to detect complex emotions (joy, fear, anger, trust...), not just positive or negative feelings.\
+This approach is useful for the analysis of narratives, testimonies or political speeches, in which the affective dimension is articulated in a more nuanced way. In *qualitative research*, it can be used to <u>analyze attitudes towards social phenomena, public policies, institutions or public figures, in contexts such as social media, interviews or historical archives</u>.
+
+::: callout-warning
+However, it should be emphasized that sentiment analysis, in particular, suffers from linguistic ambiguities, irony, and dependence on the textual domain. For this reason, many studies recommend its triangulated use: as a support for manual analysis, as a preliminary exploratory filter or as an integrated technique in mixed designs.
+:::
+
+**References**:\
+\> See: [Mohammad, S. M., & Turney, P. D. (2013). Crowdsourcing a word–emotion association lexicon. Computational intelligence, 29(3), 436-465. 8](https://doi.org/10.1111/j.1467-8640.2012.00460.x)\
+\> See: [Pang, B., & Lee, L. (2008). Opinion mining and sentiment analysis. Foundations and Trends® in information retrieval, 2(1–2), 1-135.](http://dx.doi.org/10.1561/1500000011)
+
+# 3. Multilevel translation and linguistic adaptation for academic environments
+
+The use of advanced language models in the academic field is not limited to the generation of original content, but finds increasing application in the <u>multi-level reformulation and translation of texts</u> intended for scie*ntific publications, calls for papers, project proposals or specialized dissemination materials*.\
+The concept of multilevel translation here refers to the ability to transform content on multiple levels: *linguistic, stylistic, cultural and rhetorical*.\
+In the **SSH context**, this translates into the possibility of adapting a text for different audiences (*editorial boards, funding bodies, general public*) while maintaining the conceptual integrity of the content.\
+Unlike traditional machine translation, which is limited to word-for-word linguistic transfer,<u>GAI enables adaptive interventions on the text—modulating register, tone, and argumentative cohesion</u>.\
+This makes it possible to transform an informal draft into a version that complies with the rhetorical and stylistic standards expected in international settings, for example when preparing *abstracts, letters of intent, scholarly articles, or competitive grant proposals*. In <u>multilingual and collaborative contexts</u>, the use of LLMs can support non-native English authors by providing lexical suggestions, stylistic reformulations, and terminology-consistent translations aligned with the discipline’s specialized vocabulary. Some tools, such as *DeepL Write*, *ChatGPT-4*, or *Claude*, allow you to handle progressive rewrites with control over tone (*formal/informal, concise/explanatory*) and level of specificity.
+
+::: {.callout-warning appearance="minimal"}
+From an operational standpoint, the most effective approach combines **generative AI with the researcher’s critical review**, following a co-authoring model that ensures both efficiency and epistemological oversight. It is also advisable to document any substantial AI-assisted interventions—particularly during editorial revision or peer review—to maintain scientific transparency.
+:::
+
+# 4. Practical Examples and Implementation Scenarios.
+
+The adoption of **GAI tools in SSH research** does not end in the exploratory or writing support phase, but finds concrete application in a variety of methodological and design contexts.\
+Below are some emblematic use scenarios, taken from documented research experiences or in the experimental phase.
+
+**a) Automated Qualitative Analysis**\
+- *Interview transcription and summarisation*: automatic transcription of audio and video interview recordings, producing text organized according to themes that emerge during the conversation.\
+- *Thematic coding*: use of AI to identify and organize predominant themes across large collections of qualitative texts (e.g., *diaries, memoirs, interviews*).
+
+**b) Source exploration and correlation**\
+- *Historiographical or literary research*: use of AI to analyze digitized archives, suggesting linkages among historical sources, annotations, and alternative document interpretations.\
+- *Pattern detection in sources*: us of AI to highlight trends or anomalies in collected data (e.g., *temporal clusters, recurring themes), thereby facilitating the formulation of new research questions*.
+
+**c) Survey instrument design**\
+- *Questionnaire generation*: assist in drafting survey items and questionnaire questions by proposing inclusive wording and plausible response options tailored to the target population.\
+- *Dynamic survey personalization*: adapt question order, phrasing, and layout in real time based on participants’ previous responses.
+
+**d) Social Media Analysis**\
+- *Online discussion summarization*: use of AI to condense large volumes of social media conversations into concise overviews, isolating prevailing opinions and emergent topics.\
+- *Sentiment Analysis*: automatically detect emotions and polarity in public debates on social or political issues.
+
+**e) Automated content production**\
+- *Scientific article summaries*: generate abstracts or automated reviews from collections of publications on a given topic.\
+- *Educational materials*: create tailored lecture notes, quiz items, or interactive simulations designed for student learning or broader public outreach.
+
+**f) Research dissemination and public engagement**\
+- *Custom case-study creation*: produce practical examples or role-play scenarios that reflect real or hypothetical situations to explore social, psychological, or educational dynamics.\
+- *Data simplification and accessibility*: translate complex data into accessible outputs for non-specialist audiences, thereby enhancing comprehension and dissemination of research findings.
+
+------------------------------------------------------------------------
+
+**Bibliographic references**
+
+> See: [Ho, E., Schneider, M., Somanath, S. et al (2024). Sentiment and semantic analysis: Urban quality inference using machine learning algorithms. iScience, 27(7).](http://dx.doi.org/10.1016/j.isci.2024.110192)\
+> See: [Proceedings of the Workshop on Natural Language Processing for Digital Humanities (NLP4DH), December 16-19, 2021, Silchar, India. ©2021 NLP Association of India (NLPAI)](https://aclanthology.org/2021.nlp4dh-1.pdf)\
+> See: Jockers, M. L. (2013). Macroanalysis: Digital methods and literary history. University of Illinois Press.\
+> \> See: [Rozado D, Hughes R, Halberstadt J (2022) Longitudinal analysis of sentiment and emotion in news media headlines using automated labelling with Transformer language models. PLOS ONE 17(10): e0276367](https://doi.org/10.1371/journal.pone.0276367)
